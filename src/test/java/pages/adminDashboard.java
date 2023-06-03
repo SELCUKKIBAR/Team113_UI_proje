@@ -404,26 +404,4 @@ public class adminDashboard {
 
 
 
-
-
-    /*
-Admin giriş yaptıktan sonra sırasıyla
-
-Web Site Section  ve
-
-
-
-
-Email Template      (//*[text()='Email Template'])[1]  (//*[text()='View Email Templates'])[1]
-sayfalarını görüntüleyebildiğimi doğrulayabilmeliyim
-     */
-
-
-
-
-
-
-
-
-
 }
