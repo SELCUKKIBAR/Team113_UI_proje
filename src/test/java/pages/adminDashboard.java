@@ -402,6 +402,4 @@ public class adminDashboard {
     @FindBy(xpath = "(//*[text()='View Email Templates'])[1]")
     public WebElement adminDashboardWebSiteSectionEmailTemplateElementiDogrulama;
 
-
-
 }
