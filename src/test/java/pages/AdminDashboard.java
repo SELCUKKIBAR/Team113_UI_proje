@@ -5,9 +5,9 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import utilities.Driver;
 
-public class adminDashboard {
+public class AdminDashboard {
 
-    public adminDashboard(){
+    public AdminDashboard(){
 
         PageFactory.initElements(Driver.getDriver(),this);
     }
@@ -403,20 +403,274 @@ public class adminDashboard {
     public WebElement adminDashboardWebSiteSectionEmailTemplateElementiDogrulama;
 
 
+    //***** Blog section****
+
+    // adminDasboard>>>> Blog Section
+    @FindBy(xpath = "//*[text()='Blog Section']")
+    public WebElement adminDasboardBlogSectionElementi;
+
+    // adminDasboard>>>> Blog Section>>>Catagories
+    @FindBy(xpath = "(//a[@class='collapse-item'])[3]")
+    public WebElement adminDasboardBlogCatagories;
+
+    // adminDasboard>>>> Blog Section>>>Catagories>>>+add new
+    @FindBy(xpath = "//a[@href='https://qa.tripandway.com/admin/category/create']")
+    public WebElement adminDasboardBlogAddNew;
+
+
+    // adminDasboard>>>> Blog Section>>>Catagories>>>+add new>>> category name
+    @FindBy(xpath = "//input[@name='category_name']")
+    public WebElement adminDasboardBlogAddNewCategoryName;
+
+
+    // adminDasboard>>>> Blog Section>>>Catagories>>>+add new>>> category slug
+    @FindBy(xpath = "//input[@name='category_slug']")
+    public WebElement adminDasboardBlogAddNewCategorySlug;
+
+
+    // adminDasboard>>>> Blog Section>>>Catagories>>>+add new>>> seo_title
+    @FindBy(xpath = "//input[@name='seo_title']")
+    public WebElement adminDasboardBlogAddNewSeo_title;
+
+
+
+    // adminDasboard>>>> Blog Section>>>Catagories>>>+add new>>> Meta_Description
+    @FindBy(xpath = "//textarea[@name='seo_meta_description']")
+    public WebElement adminDasboardBlogAddNewSeo_Meta_Description;
+
+
+    // adminDasboard>>>> Blog Section>>>Catagories>>>+add new>>> Submit
+    @FindBy(xpath = "//button[@type='submit']")
+    public WebElement adminDasboardBlogAddNewSeo_Submit;
+
+
+
+    // adminDasboard>>>> Blog Section>>>Catagories>>>+add new>>> Edit_Category
+    @FindBy(xpath = "//a[@href='https://qa.tripandway.com/admin/category/edit/117']")
+    public WebElement adminDasboardBlogAddNewSeo_Edit_Category;
+
+
+
+    // adminDasboard>>>> Blog Section>>>Catagories>>>+add new>>> Edit_Category_Dogrulama
+    @FindBy(xpath = "//*[text()='Edit Category']")
+    public WebElement adminDasboardBlogAddNewSeo_Edit_Category_Dogrulama;
+
+
+    // adminDasboard>>>> Blog Section>>>Catagories>>>+add new>>> Update
+    @FindBy(xpath = "//*[text()='Update']")
+    public WebElement adminDasboardBlogAddNewSeo_Edit_Update;
+
+
+
+    // adminDasboard>>>> Blog Section>>>Catagories>>>+add new>>> Delete
+    @FindBy(xpath = "//*[@id=\"dataTable\"]/tbody/tr[7]/td[4]/a[2]")
+    public WebElement adminDasboardBlogAddNewSeo_Edit_Delete;
+
+
+
+
+    //*[@id="dataTable"]/tbody/tr[7]/td[4]/a[2]
+
 
 
 
     /*
-Admin giriş yaptıktan sonra sırasıyla
-
-Web Site Section  ve
-
-
-
-
-Email Template      (//*[text()='Email Template'])[1]  (//*[text()='View Email Templates'])[1]
-sayfalarını görüntüleyebildiğimi doğrulayabilmeliyim
+    Admin girişi yaptıktan sonra
+    Blog Section bölümünde Kategegoriler kısmına yeni kategori ekleyip
+    eklediğim kategorinin düzenlenebildiğini
+    ve silinebildiğini sırayla doğrulayabilmeliyim
      */
+
+
+
+    //************* ELİS HANIM*********
+
+    //**********************  ORDER ***************
+
+    //adminDashBoard>>>>orderButton
+    @FindBy(xpath = "//span[text()='Order']")
+    public WebElement adminHomepageOrderbutton;
+
+    //adminDashBoard>>>> birinciSayfaelementi
+    @FindBy(xpath = "(//a[@class='page-link'])[2]")
+    public WebElement adminOrderspageBirincisayfaElementi;
+
+    //adminDashBoard>>>> birinciSayfailkSiparisElementi
+    @FindBy(xpath = "(//td[@class='sorting_1'])[1]")
+    public WebElement birinciSayfailkSiparisElementi;
+
+    //adminDashBoard>>>> dorduncuSayfaelementi
+    @FindBy(xpath="(//a[@class='page-link'])[5]")
+    public WebElement adminOrderspageDorduncusayfaElementi;
+
+    //adminDashBoard>>>> dorduncuSayfaikinciSiradakiSiparisElementi
+    @FindBy(xpath = "(//td[@class='sorting_1'])[2]")
+    public WebElement dorduncuSayfaikinciSiradakiSiparisElementi;
+
+    //adminDashBoard>>>> altinciSayfaelementi
+    @FindBy(xpath = "(//a[@class='page-link'])[5]")
+    public WebElement adminOrderspageAltincisayfaElementi;
+
+    //adminDashBoard>>>> altinciSayfasonSiparisElementi
+    @FindBy(xpath = "(//td[@class='sorting_1'])[10]")
+    public  WebElement altinciSayfasonSiparisElementi;
+
+    //adminDashBoard>>>> ikinciSayfaelementi
+    @FindBy(xpath = "(//a[@class='page-link'])[3]")
+    public WebElement adminOrderspageIkincisayfaElementi;
+
+    //adminDashBoard>>>> ikinciSayfailkSiparisdetailButonu
+    @FindBy(xpath="(//a[text()='Detail'])[1]")
+    public WebElement ikinciSayfailkSiparisdetailButonu;
+
+    //adminDashBoard>>>> OrderdetailsButonu
+    @FindBy(xpath = "//*[text()='Order Detail']")
+    public WebElement OrderdetailsButonu;
+
+    //adminDashBoard>>>> birinciSayfailkSiparisinvoiceButonu
+    @FindBy(xpath = "(//a[text()='Invoice'])[1]")
+    public WebElement birinciSayfailkSiparisinvoiceButonu;
+
+    //adminDashBoard>>>> orderinvoiceButonu
+    @FindBy(xpath = "(//*[text()='Order Invoice'])[2]")
+    public WebElement OrderinvoiceButonu;
+
+    //************************* SUBSCRIBER ****************
+
+    //adminDashBoard>>>> subscriberButonu
+    @FindBy(xpath = "//*[text()='Subscriber']")
+    public WebElement subscriberButonu;
+
+    //************************* ALL SUBSCRIBERS ****************
+    //adminDashBoard>>>> allSubscribersbutonu
+    @FindBy(xpath = "//a[text()='All Subscribers']")
+    public WebElement allSubscribersbutonu;
+
+    //adminDashBoard>>>> allSubscribersbirinciSayfaelementi
+    @FindBy(xpath = "(//a[@class='page-link'])[2]")
+    public WebElement allSubscribersbirinciSayfaelementi;
+
+    //adminDashBoard>>>> allSubscribersikinciSayfaelementi
+    @FindBy(xpath = "(//a[@class='page-link'])[3]")
+    public WebElement allSubscribersikinciSayfaelementi;
+
+    //adminDashBoard>>>> allSubscribersucuncuSayfaelementi
+    @FindBy(xpath = "(//a[@class='page-link'])[4]")
+    public WebElement allSubscribersucuncuSayfaelementi;
+
+    //adminDashBoard>>>> allSubscribersdorduncuSayfaelementi
+    @FindBy(xpath = "(//a[@class='page-link'])[5]")
+    public WebElement allSubscribersdorduncuSayfaelementi;
+
+    //adminDashBoard>>>> allSubscribersbesinciSayfaelementi
+    @FindBy(xpath = "(//a[@class='page-link'])[6]")
+    public WebElement allSubscribersbesinciSayfaelementi;
+
+    //adminDashBoard>>>> allSubscribersaltinciSayfaelementi
+    @FindBy(xpath = "(//a[@class='page-link'])[7]")
+    public WebElement allSubscribersaltinciSayfaelementi;
+
+    //adminDashBoard>>>> allSubscribersyedinciSayfaelementi
+    @FindBy(xpath = "(//a[@class='page-link'])[8]")
+    public WebElement allSubscribersyedinciSayfaelementi;
+
+    //adminDashBoard>>>> allSubscriberssekizinciSayfaelementi
+    @FindBy(xpath = "(//a[@class='page-link'])[9]")
+    public WebElement allSubscriberssekizinciSayfaelementi;
+
+    //adminDashBoard>>>> allSubscribersdokuzuncuSayfaelementi
+    @FindBy(xpath = "(//a[@class='page-link'])[10]")
+    public WebElement allSubscribersdokuzuncuSayfaelementi;
+
+    //adminDashBoard>>>> allSubscribersonuncuSayfaelementi
+    @FindBy(xpath = "(//a[@class='page-link'])[11]")
+    public WebElement allSubscribersonuncuSayfaelementi;
+
+    //************************* SEND EMAIL TO SUBSCRIBERS ****************
+
+    //adminDashBoard>>>> sendEmailtoSubscribersButonu
+    @FindBy(xpath = "//a[text()='Send Email to Subscribers']")
+    public WebElement sendEmailtoSubscribersButonu;
+
+    //adminDashBoard>>>> subjectYaziElementi
+    @FindBy(xpath = "//input[@name='subject']")
+    public WebElement subjectYaziElementi;
+
+    //adminDashBoard>>>> messageTextboxElementi
+    @FindBy(xpath="//div[@role='textbox']")
+    public WebElement textBoxelementi;
+
+    //adminDashBoard>>>> sendEmailButonu
+    @FindBy(xpath = "//button[text()='Send Email']")
+    public WebElement sendEmailButonu;
+
+    //adminDashBoard>>>> emailIssentSuccesfullyYaziElementi
+    //@FindBy  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+    public WebElement emailIssentSuccesfullyYaziElementi;
+
+
+    //adminDashBoard>>>> emailIssentSuccesfullyYaziElementi
+    //@FindBy  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+    public WebElement emailIssentSuccesfullyYaziElementii;
+
+    //***************** Hüseyinn ************
+
+    //adminDashboard>>>>>Sağ Ust Admin03_04_05Profil >>>
+    @FindBy(xpath="//span[@class='mr-2 d-none d-lg-inline text-gray-600 small']")
+    public WebElement adminDashboardAdmin03_04_05Profil;
+
+    //adminDashboard>>>>>Sağ Ust Admin03_04_05Profil >>>change Password Linki
+    @FindBy(xpath = "(//a[@class='dropdown-item'])[1]")
+    public WebElement adminDashboardChangePassword;
+
+    //adminDashboard>>>>>Sağ Ust Admin03_04_05Profil >>>change Password Linki >>>Edit Profile Text
+    @FindBy(xpath = "//h6[@class='m-0 mt-2 font-weight-bold text-primary']")
+    public WebElement adminDashboardEditProfilText;
+
+    //adminDashboard>>>>>Sağ Ust Admin03_04_05Profil >>>change photo Linki
+    @FindBy(xpath = "(//a[@class='dropdown-item'])[2]")
+    public WebElement adminDashboardChangePhoto;
+
+    //adminDashboard>>>>>Sağ Ust Admin03_04_05Profil >>>change Password Linki >>>Edit Photo Text
+    @FindBy(xpath = "//h6[@class='m-0 mt-2 font-weight-bold text-primary']")
+    public WebElement adminDashboardEditPhotoText;
+
+    //adminDashboard>>>>>Sağ Ust Admin03_04_05Profil >>>Logout
+    @FindBy(xpath = "(//a[@class='dropdown-item'])[3]")
+    public WebElement adminDashboardAdmin03_04_05ProfilLogout;
+
+    //adminDashboard  >>>En Alttaki Daraltma Ok İşareti
+    @FindBy(xpath = "//button[@class='rounded-circle border-0']")
+    public WebElement adminDashboardDaraltmaOkIsareti;
+
+    //adminDashboard  >>>Sağ Üst VisitWebsiteButonu
+    @FindBy(xpath = "//a[@class='btn btn-info btn-sm mt-3']")
+    public WebElement adminDashboardVisitWebsiteButonu;
+
+
+    // *********** MERYEM HANIM ***********
+
+    //admin04SagUsttekıCıkısButonu>>>>>>>>>sayfadan cıkıp site ekranına tekrar gidebilmek icin<<<<<<
+
+
+    @FindBy(xpath =" //a[@class='nav-link dropdown-toggle']" )
+    public WebElement admin04sagustbuton;
+
+    @FindBy(xpath =" //i[@class='fas fa-unlock-alt fa-sm fa-fw mr-2 text-gray-400']" )
+    public WebElement ChangePasswordbutonu;
+
+    @FindBy(xpath =" //i[@class='fas fa-image fa-sm fa-fw mr-2 text-gray-400']" )
+    public WebElement ChangePhotobuton;
+
+    @FindBy(xpath =" //a[@class='dropdown-item'][2]" )
+    public WebElement LogoutCikisbutonu;
+
+    @FindBy(xpath =" //div[@class='topbar-divider d-none d-sm-block']" )
+    public WebElement VisitWebsiteSiteEkraninaDonusbutonu;
+
+
+
+
 
 
 
