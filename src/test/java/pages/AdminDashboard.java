@@ -5,9 +5,9 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import utilities.Driver;
 
-public class adminDashboard {
+public class AdminDashboard {
 
-    public adminDashboard(){
+    public AdminDashboard(){
 
         PageFactory.initElements(Driver.getDriver(),this);
     }
