@@ -403,6 +403,85 @@ public class adminDashboard {
     public WebElement adminDashboardWebSiteSectionEmailTemplateElementiDogrulama;
 
 
+    //***** Blog section****
+
+    // adminDasboard>>>> Blog Section
+    @FindBy(xpath = "//*[text()='Blog Section']")
+    public WebElement adminDasboardBlogSectionElementi;
+
+    // adminDasboard>>>> Blog Section>>>Catagories
+    @FindBy(xpath = "(//a[@class='collapse-item'])[3]")
+    public WebElement adminDasboardBlogCatagories;
+
+    // adminDasboard>>>> Blog Section>>>Catagories>>>+add new
+    @FindBy(xpath = "//a[@href='https://qa.tripandway.com/admin/category/create']")
+    public WebElement adminDasboardBlogAddNew;
+
+
+    // adminDasboard>>>> Blog Section>>>Catagories>>>+add new>>> category name
+    @FindBy(xpath = "//input[@name='category_name']")
+    public WebElement adminDasboardBlogAddNewCategoryName;
+
+
+    // adminDasboard>>>> Blog Section>>>Catagories>>>+add new>>> category slug
+    @FindBy(xpath = "//input[@name='category_slug']")
+    public WebElement adminDasboardBlogAddNewCategorySlug;
+
+
+    // adminDasboard>>>> Blog Section>>>Catagories>>>+add new>>> seo_title
+    @FindBy(xpath = "//input[@name='seo_title']")
+    public WebElement adminDasboardBlogAddNewSeo_title;
+
+
+
+    // adminDasboard>>>> Blog Section>>>Catagories>>>+add new>>> Meta_Description
+    @FindBy(xpath = "//textarea[@name='seo_meta_description']")
+    public WebElement adminDasboardBlogAddNewSeo_Meta_Description;
+
+
+    // adminDasboard>>>> Blog Section>>>Catagories>>>+add new>>> Submit
+    @FindBy(xpath = "//button[@type='submit']")
+    public WebElement adminDasboardBlogAddNewSeo_Submit;
+
+
+
+    // adminDasboard>>>> Blog Section>>>Catagories>>>+add new>>> Edit_Category
+    @FindBy(xpath = "//a[@href='https://qa.tripandway.com/admin/category/edit/117']")
+    public WebElement adminDasboardBlogAddNewSeo_Edit_Category;
+
+
+
+    // adminDasboard>>>> Blog Section>>>Catagories>>>+add new>>> Edit_Category_Dogrulama
+    @FindBy(xpath = "//*[text()='Edit Category']")
+    public WebElement adminDasboardBlogAddNewSeo_Edit_Category_Dogrulama;
+
+
+    // adminDasboard>>>> Blog Section>>>Catagories>>>+add new>>> Update
+    @FindBy(xpath = "//*[text()='Update']")
+    public WebElement adminDasboardBlogAddNewSeo_Edit_Update;
+
+
+
+    // adminDasboard>>>> Blog Section>>>Catagories>>>+add new>>> Delete
+    @FindBy(xpath = "//*[@id=\"dataTable\"]/tbody/tr[7]/td[4]/a[2]")
+    public WebElement adminDasboardBlogAddNewSeo_Edit_Delete;
+
+
+
+
+    //*[@id="dataTable"]/tbody/tr[7]/td[4]/a[2]
+
+
+
+
+    /*
+    Admin girişi yaptıktan sonra
+    Blog Section bölümünde Kategegoriler kısmına yeni kategori ekleyip
+    eklediğim kategorinin düzenlenebildiğini
+    ve silinebildiğini sırayla doğrulayabilmeliyim
+     */
+
+
 
     //************* ELİS HANIM*********
 
