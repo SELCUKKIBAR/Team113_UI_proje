@@ -569,6 +569,36 @@ public class adminDashboard {
     public WebElement adminDashboardVisitWebsiteButonu;
 
 
+    // *********** MERYEM HANIM ***********
+
+    //admin04SagUsttekıCıkısButonu>>>>>>>>>sayfadan cıkıp site ekranına tekrar gidebilmek icin<<<<<<
+
+
+    @FindBy(xpath =" //a[@class='nav-link dropdown-toggle']" )
+    public WebElement admin04sagustbuton;
+
+    @FindBy(xpath =" //i[@class='fas fa-unlock-alt fa-sm fa-fw mr-2 text-gray-400']" )
+    public WebElement ChangePasswordbutonu;
+
+    @FindBy(xpath =" //i[@class='fas fa-image fa-sm fa-fw mr-2 text-gray-400']" )
+    public WebElement ChangePhotobuton;
+
+    @FindBy(xpath =" //a[@class='dropdown-item'][2]" )
+    public WebElement LogoutCikisbutonu;
+
+    @FindBy(xpath =" //div[@class='topbar-divider d-none d-sm-block']" )
+    public WebElement VisitWebsiteSiteEkraninaDonusbutonu;
+
+    //adminDashboard  >>>En Alttaki Daraltma Ok İşareti
+    @FindBy(xpath = "//button[@class='rounded-circle border-0']")
+    public WebElement adminDashboardDaraltmaOkIsaretii;
+    //adminDashboard>>>>>Sağ Ust Admin03_04_05Profil >>>
+    @FindBy(xpath="//span[@class='mr-2 d-none d-lg-inline text-gray-600 small']")
+    public WebElement adminDashboardAdmin03_04_05Profili;
+    //adminDashboard>>>>>Sağ Ust Admin03_04_05Profil >>>change Password Linki >>>Edit Profile Text
+    @FindBy(xpath = "//h6[@class='m-0 mt-2 font-weight-bold text-primary']")
+    public WebElement adminDashboardEditProfilTexti;
+
 
 
 
