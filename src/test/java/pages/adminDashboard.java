@@ -668,15 +668,6 @@ public class adminDashboard {
     @FindBy(xpath =" //div[@class='topbar-divider d-none d-sm-block']" )
     public WebElement VisitWebsiteSiteEkraninaDonusbutonu;
 
-    //adminDashboard  >>>En Alttaki Daraltma Ok İşareti
-    @FindBy(xpath = "//button[@class='rounded-circle border-0']")
-    public WebElement adminDashboardDaraltmaOkIsaretii;
-    //adminDashboard>>>>>Sağ Ust Admin03_04_05Profil >>>
-    @FindBy(xpath="//span[@class='mr-2 d-none d-lg-inline text-gray-600 small']")
-    public WebElement adminDashboardAdmin03_04_05Profili;
-    //adminDashboard>>>>>Sağ Ust Admin03_04_05Profil >>>change Password Linki >>>Edit Profile Text
-    @FindBy(xpath = "//h6[@class='m-0 mt-2 font-weight-bold text-primary']")
-    public WebElement adminDashboardEditProfilTexti;
 
 
 
