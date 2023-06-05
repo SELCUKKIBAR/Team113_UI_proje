@@ -468,18 +468,49 @@ public class AdminDashboard {
 
 
 
+    // adminDasboard>>>> Blog Section>>>Blogs
+    @FindBy(xpath = "(//a[@class='collapse-item'])[4]")
+    public WebElement adminDasboardBlogSectionBlogs;
 
-    //*[@id="dataTable"]/tbody/tr[7]/td[4]/a[2]
+
+    // adminDasboard>>>> Blog Section>>>Blogs>>>+addnew
+    @FindBy(xpath = "//a[@href='https://qa.tripandway.com/admin/blog/create']")
+    public WebElement adminDasboardBlogSectionBlogsAddNew;
+
+
+    // adminDasboard>>>> Blog Section>>>Blogs>>>+BlogTitle
+    @FindBy(xpath = "//input[@name='blog_title']")
+    public WebElement adminDasboardBlogSectionBlogsBlogTitle;
+
+
+    // adminDasboard>>>> Blog Section>>>Blogs>>>+BlogSlug
+    @FindBy(xpath = "//input[@name='blog_slug']")
+    public WebElement adminDasboardBlogSectionBlogsBlogSlug;
+
+
+    // adminDasboard>>>> Blog Section>>>Blogs>>>+BlogContent
+    @FindBy(xpath = "//div[@class='note-editable card-block']")
+    public WebElement adminDasboardBlogSectionBlogsBlogContent;
 
 
 
+    // adminDasboard>>>> Blog Section>>>Blogs>>>+BlogShortContent
+    @FindBy(xpath = "//textarea[@name='blog_content_short']")
+    public WebElement adminDasboardBlogSectionBlogsBlogShortContent;
 
-    /*
-    Admin girişi yaptıktan sonra
-    Blog Section bölümünde Kategegoriler kısmına yeni kategori ekleyip
-    eklediğim kategorinin düzenlenebildiğini
-    ve silinebildiğini sırayla doğrulayabilmeliyim
-     */
+
+    // adminDasboard>>>> Blog Section>>>Blogs>>>+BlogPhoto
+    @FindBy(xpath = "(//input[@type='file'])[2]")
+    public WebElement adminDasboardBlogSectionBlogsBlogPhoto;
+
+
+    ///Select Category de kaldım
+
+     /*
+     Admin girişi yaptıktan sonra Blog Section bölümüne
+     Blog kısmına yeni blog yazısı ekleyip eklediğim blog yazısının düzenlenebildiğini
+     ve silinebildiğini sırayla doğrulayabilmeliyim
+      */
 
 
 
