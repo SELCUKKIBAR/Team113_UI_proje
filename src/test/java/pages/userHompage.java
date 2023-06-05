@@ -208,7 +208,7 @@ public class userHompage {
     // Home Page --> footer --> Scroll Top
     @FindBy(xpath = "//div[@class='scroll-top']")
     public WebElement scrollTopHomePage;
-    // Home Page --> Newsletter --> Arama Kutus
+    // Home Page --> Newsletter --> Arama Kutusu
     @FindBy(xpath = "//input[@placeholder='Email Address']")
     public WebElement newsletterAramaKutusu;
     // Home Page --> Newsletter --> Submit
