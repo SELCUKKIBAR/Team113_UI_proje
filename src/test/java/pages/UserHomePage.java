@@ -5,8 +5,8 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import utilities.Driver;
 
-public class userHompage {
-    public userHompage(){
+public class UserHomePage {
+    public UserHomePage(){
         PageFactory.initElements(Driver.getDriver(),this);
     }
 
@@ -235,7 +235,11 @@ public class userHompage {
     @FindBy(xpath = "//div[@class='scroll-top']")
     public WebElement scrollTopHomePage;
 
-    // Home Page --> Newsletter --> Arama Kutus
+
+    // Home Page --> Newsletter --> Arama Kutusu
+
+
+
     @FindBy(xpath = "//input[@placeholder='Email Address']")
     public WebElement newsletterAramaKutusu;
 
@@ -244,8 +248,14 @@ public class userHompage {
     public WebElement newsletterSubmit;
 
     // Home Page --> Newsletter Yazisi
-    @FindBy(xpath = " //*[text()='Newsletter']")
+    @FindBy(xpath = "//*[text()='Newsletter']")
     public WebElement newsletterYazisiHomePage;
+
+
+    // Home Page --> Newsletter sag yukari kosede cikan yazi onay'i
+    @FindBy(xpath = "//*[contains(text(), 'To activate your subscription please check your email and follow instruction there.')]")
+    public WebElement newsletterYaziOnayHomePage;
+
 
     // Home Page --> Our Client Yazisi
     @FindBy(xpath = "//*[text()='OUR CLIENT']")
