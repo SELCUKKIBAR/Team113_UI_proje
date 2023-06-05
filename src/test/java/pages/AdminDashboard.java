@@ -504,13 +504,47 @@ public class AdminDashboard {
     public WebElement adminDasboardBlogSectionBlogsBlogPhoto;
 
 
-    ///Select Category de kaldım
 
-     /*
-     Admin girişi yaptıktan sonra Blog Section bölümüne
-     Blog kısmına yeni blog yazısı ekleyip eklediğim blog yazısının düzenlenebildiğini
-     ve silinebildiğini sırayla doğrulayabilmeliyim
-      */
+    // adminDasboard>>>> Blog Section>>>Blogs>>>SelectCategory
+    @FindBy(xpath = "//select[@name='category_id']")
+    public WebElement adminDasboardBlogSectionSelectCategory;
+
+
+
+    // adminDasboard>>>> Blog Section>>>Blogs>>>ShowComment
+    @FindBy(xpath = "//select[@name='comment_show']")
+    public WebElement adminDasboardBlogSectionShowComment;
+
+
+    // adminDasboard>>>> Blog Section>>>Blogs>>>SEO Information>>>Title
+    @FindBy(xpath ="//input[@name='seo_title']")
+    public WebElement adminDasboardBlogSectionSEOTitle;
+
+
+    // adminDasboard>>>> Blog Section>>>Blogs>>>SEO Information>>>MetaDescription
+    @FindBy(xpath ="//textarea[@name='seo_meta_description']")
+    public WebElement adminDasboardBlogSectionSEOMetaDescription;
+
+
+
+    // adminDasboard>>>> Blog Section>>>Blogs>>>SEO Information>>>Submit
+    @FindBy(xpath ="//button[text()='Submit']")
+    public WebElement adminDasboardBlogSectionSEOSubmit;
+
+
+    // adminDasboard>>>> Blog Section>>>Blogs>>>View
+    @FindBy(xpath ="//a[@href='https://qa.tripandway.com/admin/blog/edit/111']")
+    public WebElement adminDasboardBlogSectionView;
+
+
+    // adminDasboard>>>> Blog Section>>>Blogs>>>ViewDogrulama
+    @FindBy(xpath ="//h1[text()='Edit Blog']")
+    public WebElement adminDasboardBlogSectionViewDogrulama;
+
+
+    // adminDasboard>>>> Blog Section>>>Blogs>>>BlogDelete
+    @FindBy(xpath ="//*[@id=\"dataTable\"]/tbody/tr[7]/td[5]/a[2]")
+    public WebElement adminDasboardBlogSectionBlogDelete;
 
 
 
