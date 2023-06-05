@@ -5,9 +5,9 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import utilities.Driver;
 
-public class adminDashboard {
+public class AdminDashboard {
 
-    public adminDashboard(){
+    public AdminDashboard(){
 
         PageFactory.initElements(Driver.getDriver(),this);
     }
@@ -468,18 +468,49 @@ public class adminDashboard {
 
 
 
+    // adminDasboard>>>> Blog Section>>>Blogs
+    @FindBy(xpath = "(//a[@class='collapse-item'])[4]")
+    public WebElement adminDasboardBlogSectionBlogs;
 
-    //*[@id="dataTable"]/tbody/tr[7]/td[4]/a[2]
+
+    // adminDasboard>>>> Blog Section>>>Blogs>>>+addnew
+    @FindBy(xpath = "//a[@href='https://qa.tripandway.com/admin/blog/create']")
+    public WebElement adminDasboardBlogSectionBlogsAddNew;
+
+
+    // adminDasboard>>>> Blog Section>>>Blogs>>>+BlogTitle
+    @FindBy(xpath = "//input[@name='blog_title']")
+    public WebElement adminDasboardBlogSectionBlogsBlogTitle;
+
+
+    // adminDasboard>>>> Blog Section>>>Blogs>>>+BlogSlug
+    @FindBy(xpath = "//input[@name='blog_slug']")
+    public WebElement adminDasboardBlogSectionBlogsBlogSlug;
+
+
+    // adminDasboard>>>> Blog Section>>>Blogs>>>+BlogContent
+    @FindBy(xpath = "//div[@class='note-editable card-block']")
+    public WebElement adminDasboardBlogSectionBlogsBlogContent;
 
 
 
+    // adminDasboard>>>> Blog Section>>>Blogs>>>+BlogShortContent
+    @FindBy(xpath = "//textarea[@name='blog_content_short']")
+    public WebElement adminDasboardBlogSectionBlogsBlogShortContent;
 
-    /*
-    Admin girişi yaptıktan sonra
-    Blog Section bölümünde Kategegoriler kısmına yeni kategori ekleyip
-    eklediğim kategorinin düzenlenebildiğini
-    ve silinebildiğini sırayla doğrulayabilmeliyim
-     */
+
+    // adminDasboard>>>> Blog Section>>>Blogs>>>+BlogPhoto
+    @FindBy(xpath = "(//input[@type='file'])[2]")
+    public WebElement adminDasboardBlogSectionBlogsBlogPhoto;
+
+
+    ///Select Category de kaldım
+
+     /*
+     Admin girişi yaptıktan sonra Blog Section bölümüne
+     Blog kısmına yeni blog yazısı ekleyip eklediğim blog yazısının düzenlenebildiğini
+     ve silinebildiğini sırayla doğrulayabilmeliyim
+      */
 
 
 
@@ -668,15 +699,6 @@ public class adminDashboard {
     @FindBy(xpath =" //div[@class='topbar-divider d-none d-sm-block']" )
     public WebElement VisitWebsiteSiteEkraninaDonusbutonu;
 
-    //adminDashboard  >>>En Alttaki Daraltma Ok İşareti
-    @FindBy(xpath = "//button[@class='rounded-circle border-0']")
-    public WebElement adminDashboardDaraltmaOkIsaretii;
-    //adminDashboard>>>>>Sağ Ust Admin03_04_05Profil >>>
-    @FindBy(xpath="//span[@class='mr-2 d-none d-lg-inline text-gray-600 small']")
-    public WebElement adminDashboardAdmin03_04_05Profili;
-    //adminDashboard>>>>>Sağ Ust Admin03_04_05Profil >>>change Password Linki >>>Edit Profile Text
-    @FindBy(xpath = "//h6[@class='m-0 mt-2 font-weight-bold text-primary']")
-    public WebElement adminDashboardEditProfilTexti;
 
 
 
