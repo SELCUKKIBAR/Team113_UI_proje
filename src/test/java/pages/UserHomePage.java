@@ -126,18 +126,23 @@ public class UserHomePage {
     // Home Page --> footer --> Privacy Policy
     @FindBy(xpath = "//*[text()='Privacy Policy']")
     public WebElement privacyPolicy;
+
     // Home Page --> footer --> Terms and Conditions
     @FindBy(xpath = "//*[text()='Terms and Conditions']")
     public WebElement termsAndConditions;
+
     // Home Page --> footer -->Featured Packages Yazisi
     @FindBy(xpath = "//*[text()='Featured Packages']")
     public WebElement FeaturedPackagesYazisi;
+
     // Home Page --> Featured Packages --> 3 days in Buenos Aires
     @FindBy(xpath = "(//*[text()='3 days in Buenos Aires'])[2]")
     public WebElement threeDaysInBuenosAires;
+
     // Home Page --> Featured Packages --> 10 days in Buenos Aires
     @FindBy(xpath = "(//*[text()='10 days in Buenos Aires'])[2]")
     public WebElement tenDaysInBuenosAires;
+
     // Home Pages --> Featured Packages --> 3 days in Bangkok
     @FindBy(xpath = "(//*[text()='3 days in Bangkok'])[2]")
     public WebElement threeDaysInBangkok;
@@ -145,96 +150,135 @@ public class UserHomePage {
     // Home Page --> Featured Packages --> 7 days in Salina Island
     @FindBy(xpath = "(//*[text()='7 days in Salina Island'])[2]")
     public WebElement sevenDaysInSalinaIslandFeaturedPackages;
+
     // Home Page --> footer --> Latest Packages Yazisi
     @FindBy(xpath = "//*[text()='Latest Packages']")
     public WebElement LatestPackagesYazisi;
+
     // Home Page --> Latest Packages --> 3 days in Nahcivan
     @FindBy(xpath = "//a[normalize-space()='3 Days in Nahcivan']")
     public WebElement threeDaysInNahcivan;
+
     // Home Page --> Latest Packages --> 5 days in Rome
     @FindBy(xpath = "//a[normalize-space()='3 days in Rome']")
     public WebElement threeDaysInRome;
+
     // Home Page --> Latest Packages --> 5 days California
     @FindBy(xpath = "//*[text()='5 Day California']")
     public WebElement fiveDaysCalifornia;
+
     // Home Page --> Latest Packages --> 7 days in Salina Island
     @FindBy(xpath = "(//*[text()='7 days in Salina Island'])[3]")
     public WebElement sevenDaysInSalinaIslandLatestPackages;
+
     // Home Page --> Latest Packages --> 3 days in Bangkok
     @FindBy(xpath = "(//*[text()='3 days in Bangkok'])[3]")
     public WebElement getThreeDaysInBangkokLatestPackages;
+
     // Home Page --> footer --> Recent Posts
     @FindBy(xpath = "//*[text()='Recent Posts']")
     public WebElement recentPostYazisi;
+
     // Home Page --> Recent Posts --> Huzura Dogru
     @FindBy(xpath = "//div[@class='footer-item mt_30']//a[contains(text(),'Huzura Doğru')]")
     public WebElement huzuraDogru;
+
     // Home Page --> Recent Posts --> Discovering Greenville
     @FindBy(xpath = "(//*[text()='Discovering Greenville: A Hidden Gem in South Carolina'])[3]")
     public WebElement discoveringGreenvilleRecentPost;
+
     // Home Page --> Recent Posts --> Buenos Aires
     @FindBy(xpath = "(//*[text()='Buenos Aires: The Paris of South America'])[3]")
     public WebElement buenosAiresRecentPosts;
+
     // Home Page --> Recent Posts --> Bangkok
     @FindBy(xpath = "(//*[text()='Bangkok: A City of Contrasts'])[3]")
     public WebElement bangkokRecentPosts;
+
     // Home Page --> Recent Posts -->Salina Island
     @FindBy(xpath = "(//*[text()='Salina Island: A Perfect Family Getaway'])[3]")
     public WebElement salinaIslandRecentPosts;
+
     //Home Page --> footer --> Address Yazisi
     @FindBy(xpath = "//*[text()='Address']")
     public WebElement addressYazisi;
+
     // Home Page --> Address --> 34,Edd Lane, NYC, 22335
     @FindBy(xpath = "//*[text()='34, Edd Lane, NYC, 22335']")
     public WebElement addressAddress;
+
     // Home Page --> Address --> 202-456-3789
     @FindBy(xpath = "(//*[text()='202-456-3789'])[2]")
     public WebElement addressTelefonNo;
+
     // Home Page --> Address --> Address -->  info@tripandway.com
     @FindBy(xpath = "(//*[text()='info@tripandway.com'])[2]")
     public WebElement addressEmail;
+
     // Home Page --> footer --> Facebook Logo
     @FindBy(xpath = "//div[@class='col-md-3 col-sm-6 wow fadeInRight']//li[1]//a[1]")
     public WebElement facebookLogoHomePage;
+
     // Home Page--> footer --> Twitter Logo
     @FindBy(xpath = "//a[@href='http://www.facebook.com']//i[@class='fab fa-twitter']")
     public WebElement twitterLogoHomePage;
+
     // Home Page --> footer --> Instagram Logo
     @FindBy(xpath = "//a[@href='http://www.instagram.com']")
     public WebElement instagramLogoHomePage;
+
     // Home Page --> footer --> Pinterest Logo
     @FindBy(xpath = "//a[@href='https://twitter.com']")
     public WebElement pinterestLogoHomePage;
+
     // Home Page --> footer --> Scroll Top
     @FindBy(xpath = "//div[@class='scroll-top']")
     public WebElement scrollTopHomePage;
+
+    // Home Page --> Newsletter --> Arama Kutusu
+
+
     // Home Page --> Newsletter --> Arama Kutus
+
     @FindBy(xpath = "//input[@placeholder='Email Address']")
     public WebElement newsletterAramaKutusu;
+
     // Home Page --> Newsletter --> Submit
     @FindBy(xpath = "//input[@value='Submit']")
     public WebElement newsletterSubmit;
+
     // Home Page --> Newsletter Yazisi
-    @FindBy(xpath = " //*[text()='Newsletter']")
+    @FindBy(xpath = "//*[text()='Newsletter']")
     public WebElement newsletterYazisiHomePage;
+
+    // Home Page --> Newsletter sag yukari kosede cikan yazi onay'i
+    @FindBy(xpath = "//*[contains(text(), 'To activate your subscription please check your email and follow instruction there.')]")
+    public WebElement newsletterYaziOnayHomePage;
+
     // Home Page --> Our Client Yazisi
     @FindBy(xpath = "//*[text()='OUR CLIENT']")
     public WebElement ourClientYazisi;
+
     // Home Page --> Destination --> Marrakesh Morrocco
     @FindBy(xpath = "//a[normalize-space()='Marrakesh, Morocco']")
     public WebElement marrakeshMoroccoHomePage;
+
     // Home Page --> Destination --> Salina Island
     @FindBy(xpath = "//a[normalize-space()='Salina Island, Italy']")
     public WebElement salinaIslandHomePage;
+
     //  Home Page --> Destination --> Istanbul
     @FindBy(xpath = "//a[normalize-space()='Istanbul, Turkey']")
     public WebElement istanbulTurkeyHomePage;
+
     // Home Page --> Our Services --> Bussiness Tour
     @FindBy(xpath = "//h4[normalize-space()='Bussiness Tour']")
     public WebElement bussinessTourHomePage;
+
     // Home Page --> Our Services --> Health Tour
     @FindBy(xpath = "//h4[normalize-space()='Health Tour']")
     public WebElement healthTourHomePage;
+
     // Home Page --> Our Services --> Religious Tour
     @FindBy(xpath = "//h4[normalize-space()='Religious Tour']")
     public WebElement religiousTour;
