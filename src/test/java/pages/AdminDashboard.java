@@ -670,7 +670,7 @@ public class AdminDashboard {
     public WebElement sendEmailButonu;
 
     //adminDashBoard>>>> emailIssentSuccesfullyYaziElementi
-    //@FindBy  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+    @FindBy(xpath = "//*[contains(text(),'Email is sent successfully to all subscribers!')]")
     public WebElement emailIssentSuccesfullyYaziElementi;
 
 
