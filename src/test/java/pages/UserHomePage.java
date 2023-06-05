@@ -235,10 +235,10 @@ public class UserHomePage {
     @FindBy(xpath = "//div[@class='scroll-top']")
     public WebElement scrollTopHomePage;
 
+
     // Home Page --> Newsletter --> Arama Kutusu
 
 
-    // Home Page --> Newsletter --> Arama Kutus
 
     @FindBy(xpath = "//input[@placeholder='Email Address']")
     public WebElement newsletterAramaKutusu;
@@ -251,9 +251,11 @@ public class UserHomePage {
     @FindBy(xpath = "//*[text()='Newsletter']")
     public WebElement newsletterYazisiHomePage;
 
+
     // Home Page --> Newsletter sag yukari kosede cikan yazi onay'i
     @FindBy(xpath = "//*[contains(text(), 'To activate your subscription please check your email and follow instruction there.')]")
     public WebElement newsletterYaziOnayHomePage;
+
 
     // Home Page --> Our Client Yazisi
     @FindBy(xpath = "//*[text()='OUR CLIENT']")
