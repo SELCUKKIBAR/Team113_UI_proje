@@ -106,6 +106,23 @@ public class UserDashboard {
     public WebElement userLoginDashboradEmailAddressTextBox;
 
 
+
+    // userLoginDashboardPage ===> Soldaki Update Profile ===> Password Address textbox'i
+    @FindBy(xpath = "//input[@name='traveller_password']")
+    public WebElement userLoginDashboradPasswordAddressTextBox;
+
+
+    // userLoginDashboardPage ===> Soldaki Update Profile ===> Login
+    @FindBy(xpath = "//button[@type='submit']")
+    public WebElement userLoginDashboradLogin;
+
+
+    // userLoginDashboardPage ===> Dashboard yazisi
+    @FindBy(xpath = "/html/body/div[4]/div/div/div[2]/div/a")
+    public WebElement userLoginDashboradDashboardDogrulama;
+
+
+
     // userLoginDashboardPage ===> Soldaki Update Profile ===> Country textbox'i
     @FindBy(xpath = "//input[@name='traveller_country']")
     public WebElement userLoginDashboradCountryTextBox;
