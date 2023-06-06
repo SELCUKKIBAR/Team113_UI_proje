@@ -52,16 +52,14 @@ public class DriverCross {
         }
 
         return driver;
-
-
     }
+
     public static void closeDriver(){
 
         if (driver != null){
             driver.close();
             driver=null;
         }
-
 
     }
 
@@ -71,8 +69,6 @@ public class DriverCross {
             driver.quit();
             driver=null;
         }
-
-
     }
 
 }
