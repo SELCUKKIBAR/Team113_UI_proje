@@ -112,6 +112,9 @@ public class UserHomePage {
     public WebElement InternationalTourButton;
 
 
+
+
+
     //Home Page --> Our Service --> adventure Tour Button
     @FindBy(xpath = "//a[@href='https://qa.tripandway.com/service/adventure-tour']")
     public WebElement adventureTourButton;
