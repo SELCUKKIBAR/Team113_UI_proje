@@ -444,6 +444,101 @@ public class UserHomePage {
 
 
 
+    // Home Page --> Contact --> Contact Us yazisi
+    @FindBy(xpath = "//h1[text()='Contact Us']")
+    public WebElement contactUsYazisi;
+
+
+    // Home Page --> Contact --> Contact Form --> Submit button
+    @FindBy(xpath = "//button[text()='Submit']")
+    public WebElement submitButton;
+
+
+    // Home Page --> Contact --> Contact Form --> Name textbox'i
+    @FindBy(xpath = "(//*[@type='text'])[1]")
+    public WebElement nameTextBox;
+
+
+    // Home Page --> Contact --> Contact Form --> Phone textbox'i
+    @FindBy(xpath = "(//*[@type='text'])[2]")
+    public WebElement phoneTextBox;
+
+
+    // Home Page --> Contact --> Contact Form --> Email Address textbox'i
+    @FindBy(xpath = "(//*[@type='text'])[3]")
+    public WebElement emailAddressTextBox;
+
+
+    // Home Page --> Contact --> Contact Form --> Message textbox'i
+    @FindBy(xpath = "(//*[@class='form-control'])[4]")
+    public WebElement messageTextBox;
+
+
+    // Home Page --> Contact --> Contact Information --> Address iletisim bilgisi
+    @FindBy(xpath = "(//*[@class='contact-text'])[1]")
+    public WebElement addressIletisimBilgisi;
+
+
+    // Home Page --> Contact --> Contact Information --> Email Address iletisim bilgisi
+    @FindBy(xpath = "(//*[@class='contact-text'])[2]")
+    public WebElement emailAddressIletisimBilgisi;
+
+
+    // Home Page --> Contact --> Contact Information --> Phone iletisim bilgisi
+    @FindBy(xpath = "(//*[@class='contact-text'])[3]")
+    public WebElement phoneIletisimBilgisi;
+
+
+    // Home Page --> Login --> Email Address textbox'i
+    @FindBy(xpath = "(//input[@class='form-control'])[1]")
+    public WebElement loginEmailAddressTextBox;
+
+
+    // Home Page --> Login --> Password textbox'i
+    @FindBy(xpath = "(//input[@class='form-control'])[2]")
+    public WebElement loginPasswordTextBox;
+
+
+    // Home Page --> Login --> Login button
+    @FindBy(xpath = "//button[text()='Login']")
+    public WebElement loginSayfasiLoginButton;
+
+
+    // Home Page --> Login --> Packages --> 5 days in California
+    @FindBy(xpath = "//a[@href='https://qa.tripandway.com/package/california']")
+    public WebElement packagesBesDaysInCalifornia;
+
+
+    // Home Page --> Login --> Packages --> 5 days in California --> Book Your Seat button
+    @FindBy(xpath = "//button[text()='Book Your Seat']")
+    public WebElement bookYourSearButton;
+
+
+    // Home Page --> Login --> Packages --> 7 days in Istanbul --> Book Your Seat button --> Pay with Card
+    @FindBy(xpath = "//span[text()='Pay with Card']")
+    public WebElement payWithCardButton;
+
+
+    // Home Page --> Login --> Packages --> 7 days in Istanbul --> Book Your Seat button --> Pay with Card -- > Card number
+    @FindBy(xpath = "//input[@id='card_number']")
+    public WebElement cardNumberTextBox;
+
+
+    // Home Page --> Login --> Packages --> 7 days in Istanbul --> Book Your Seat button --> Pay with Card -- > MM / YY
+    @FindBy(xpath = "//input[@id='cc-exp']")
+    public WebElement MM_YYTextBox;
+
+
+    // Home Page --> Login --> Packages --> 7 days in Istanbul --> Book Your Seat button --> Pay with Card -- > CVC
+    @FindBy(xpath = "//div[@class='cardCVCInput input right bottom']")
+    public WebElement CVCTextBox;
+
+
+    // Home Page --> Login --> Packages --> 7 days in Istanbul --> Book Your Seat button --> Pay with Card -- > Pay
+    @FindBy(xpath = "//span[@class='iconTick']")
+    public WebElement payTextBox;
+=======
+
 
     //Home Page --> Our Service --> International Tour Button
     @FindBy(xpath ="//a[@href='https://qa.tripandway.com/service/international-tour']")
@@ -675,6 +770,7 @@ public class UserHomePage {
 
     @FindBy(xpath = "//div[@class='ml-4 text-lg text-gray-500 uppercase tracking-wider']")
     public WebElement newsLetterPageExpiredYazisi;
+
 
 
 

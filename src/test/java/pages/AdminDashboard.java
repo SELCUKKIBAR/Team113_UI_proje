@@ -836,8 +836,9 @@ public class AdminDashboard {
     @FindBy(xpath = "//h6[text()='View Destinations']")
     public WebElement adminDashboardViewDestinationsText;
 
-    //************************* DESTINATIONS ****************
 
+
+    //************************* DESTINATIONS ****************
 
 
 
@@ -935,6 +936,7 @@ public class AdminDashboard {
     public WebElement adminDashboardDestinationUpdateOnay;
 
         //************************* PACKAGES ****************
+
 
     //adminDashBoard >>> Packages >>> View Packages Yazisi
     @FindBy(xpath = "//h6[text()='View Packages']")
@@ -1050,9 +1052,6 @@ public class AdminDashboard {
     //adminDashBoard >>> Packages >>> Sagdaki kirmizi renkli silme butonu >> Silme buton'una tiklayinca sag yukari kosede cikan Package deleted onay'i
     @FindBy(xpath = "//*[contains(text(), 'Package is deleted successfully!')]")
     public WebElement adminDashboardPackageDeletedOnay;
-
-
-
 
 
 }
