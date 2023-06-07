@@ -262,7 +262,7 @@ public class AdminDashboard {
 
 
     //adminDashBoard>>>PageSettings>>>Testimonial Dogrulama
-    @FindBy(xpath = "Edit Testimonial Page Information")
+    @FindBy(xpath = "//*[@id=\"collapsePageSettings\"]/div/a[7]")
     public WebElement adminDashboardPageSettingsTestimonialDogrulama;
 
 
@@ -287,6 +287,15 @@ public class AdminDashboard {
 
 
     //adminDashBoard>>>PageSettings>>>Contact
+
+    @FindBy(xpath = "//*[@id=\"collapsePageSettings\"]/div/a[2]")
+    public WebElement adminDashboardPageSettingsFAQ;
+
+
+    //adminDashBoard>>>PageSettings>>>faqdosrulama
+    @FindBy(xpath = "//*[@id=\"content\"]/div/h1")
+    public WebElement adminDashboardPageSettingsFAQDogrulama;
+
     @FindBy(xpath = "//*[text()='Contact']")
     public WebElement adminDashboardPageSettingsContact;
 
@@ -429,7 +438,7 @@ public class AdminDashboard {
 
 
     //adminDashboard>>>>>Web Site Section>>>>FAQ
-    @FindBy(xpath ="(//*[text()='FAQ'])[1]")
+    @FindBy(xpath ="//*[@id=\"collapseWebsite\"]/div/a[6]")
     public WebElement adminDashboardWebSiteSectionFAQ;
 
 
@@ -829,9 +838,6 @@ public class AdminDashboard {
 
     //************************* DESTINATIONS ****************
 
-    //adminDashBoard >>> Destinations >>> View Destinations Yazisi
-    @FindBy(xpath = "//h6[text()='View Destinations']")
-    public WebElement adminDashboardViewDestinationsText;
 
     //adminDashBoard >>> Destinations >>> Add New Linki
     @FindBy(xpath = "//a[@class='btn btn-primary btn-sm']")
@@ -1043,266 +1049,6 @@ public class AdminDashboard {
     public WebElement adminDashboardPackageDeletedOnay;
 
 
-    //adminDashBoard >>> Destinations >>> Add New Linki
-    @FindBy(xpath = "//a[@class='btn btn-primary btn-sm']")
-    public WebElement adminDashboardDestiAddNewLink;
-
-
-    //adminDashBoard >>> Destinations >>> Add New Linki >>> Name textbox'i
-    @FindBy(xpath = "(//input[@type='text'])[1]")
-    public WebElement adminDashboardDestiNameTextbox;
-
-
-    //adminDashBoard >>> Destinations >>> Add New Linki >>> Slug textbox'i
-    @FindBy(xpath = "(//input[@type='text'])[2]")
-    public WebElement adminDashboardDestiSlugTextbox;
-
-
-    //adminDashBoard >>> Destinations >>> Add New Linki >>> Heading textbox'i
-    @FindBy(xpath = "(//input[@type='text'])[3]")
-    public WebElement adminDashboardHeadingTextbox;
-
-
-    //adminDashBoard >>> Destinations >>> Add New Linki >>> Short Description textbox'i
-    @FindBy(xpath = "//textarea[@name='d_short_description']")
-    public WebElement adminDashboardDestiShortDescriptionTextbox;
-
-
-    //adminDashBoard >>> Destinations >>> Add New Linki >>> Package Heading textbox'i
-    @FindBy(xpath = "(//input[@type='text'])[4]")
-    public WebElement adminDashboardPackageHeadingTextbox;
-
-
-    //adminDashBoard >>> Destinations >>> Add New Linki >>> Package Subheading textbox'i
-    @FindBy(xpath = "(//input[@type='text'])[5]")
-    public WebElement adminDashboardPackageSubheadingTextbox;
-
-
-    //adminDashBoard >>> Destinations >>> Add New Linki >>> Detail Heading textbox'i
-    @FindBy(xpath = "(//input[@type='text'])[6]")
-    public WebElement adminDashboardDetailHeadingTextbox;
-
-
-    //adminDashBoard >>> Destinations >>> Add New Linki >>> Detail Subheading textbox'i
-    @FindBy(xpath = "(//input[@type='text'])[7]")
-    public WebElement adminDashboardDetailSubheadingTextbox;
-
-
-    //adminDashBoard >>> Destinations >>> Add New Linki >>> Photo Dosya Seç Button
-    @FindBy(xpath = "//input[@type='file']")
-    public WebElement adminDashboardDestiDosyaSecButton;
-
-
-    //adminDashBoard >>> Destinations >>> Add New Linki >>> Introduction textbox'i
-    @FindBy(xpath = "(//div[@role='textbox'])[1]")
-    public WebElement adminDashboardIntroductionTextbox;
-
-
-    //adminDashBoard >>> Destinations >>> Add New Linki >>> Experience textbox'i
-    @FindBy(xpath = "(//div[@role='textbox'])[2]")
-    public WebElement adminDashboardExperienceTextbox;
-
-
-    //adminDashBoard >>> Destinations >>> Add New Linki >>> Weather textbox'i
-    @FindBy(xpath = "(//div[@role='textbox'])[3]")
-    public WebElement adminDashboardWeatherTextbox;
-
-
-    //adminDashBoard >>> Destinations >>> Add New Linki >>> Hotel textbox'i
-    @FindBy(xpath = "(//div[@role='textbox'])[4]")
-    public WebElement adminDashboardHotelTextbox;
-
-
-    //adminDashBoard >>> Destinations >>> Add New Linki >>> Transportation textbox'i
-    @FindBy(xpath = "(//div[@role='textbox'])[5]")
-    public WebElement adminDashboardTransportationTextbox;
-
-
-    //adminDashBoard >>> Destinations >>> Add New Linki >>> Culture textbox'i
-    @FindBy(xpath = "(//div[@role='textbox'])[6]")
-    public WebElement adminDashboardCultureTextbox;
-
-
-    //adminDashBoard >>> Destinations >>> Add New Linki >>> Title textbox'i
-    @FindBy(xpath = "//input[@name='seo_title']")
-    public WebElement adminDashboardDestiTitleTextbox;
-
-
-    //adminDashBoard >>> Destinations >>> Add New Linki >>> Meta Description textbox'i
-    @FindBy(xpath = "//textarea[@name='seo_meta_description']")
-    public WebElement adminDashboardDestiMetaDescriptionTextbox;
-
-
-    //adminDashBoard >>> Destinations >>> Add New Linki >>> Submit button
-    @FindBy(xpath = "//button[text()='Submit']")
-    public WebElement adminDashboardDestiSubmitButton;
-
-
-    //adminDashBoard >>> Destinations >>> Add New Linki >>> Submit button'una tiklayinca sag yukari kosede cikan Destination added onay'i
-    @FindBy(xpath = "//*[contains(text(), 'Destination is added successfully!')]")
-    public WebElement adminDashboardDestinationAddedOnay;
-
-
-    //adminDashBoard >>> Destinations >>> Sagdaki sari renli duzenleme button'u
-    @FindBy(xpath = "(//a[@class='btn btn-warning btn-sm'])[9]")
-    public WebElement adminDashboardDestiDuzenlemeButton;
-
-
-    //adminDashBoard >>> Destinations >>> Sagdaki sari renli duzenleme button'u >>> Update Button
-    @FindBy(xpath = "//button[text()='Update']")
-    public WebElement adminDashboardDestiUpdateButton;
-
-
-    //adminDashBoard >>> Destinations >>> Sagdaki sari renli duzenleme button'u >>> Update button'una tiklayinca sag yukari kosede cikan Destination updated onay'i
-    @FindBy(xpath = "//*[contains(text(), 'Destination is updated successfully!')]")
-    public WebElement adminDashboardDestinationUpdateOnay;
-
-
-        //************************* PACKAGES ****************
-
-    //adminDashBoard >>> Packages >>> View Packages Yazisi
-    @FindBy(xpath = "//h6[text()='View Packages']")
-    public WebElement adminDashboardViewPackagesText;
-
-
-    //adminDashBoard >>> Packages >>> Add New Linki
-    @FindBy(xpath = "//a[@class='btn btn-primary btn-sm']")
-    public WebElement adminDashboardPackAddNewLink;
-
-
-    //adminDashBoard >>> Packages >>> Add New Linki >>> Name textbox'i
-    @FindBy(xpath = "(//input[@type='text'])[1]")
-    public WebElement adminDashboardPackNameTextbox;
-
-
-    //adminDashBoard >>> Packages >>> Add New Linki >>> Slug textbox'i
-    @FindBy(xpath = "(//input[@type='text'])[2]")
-    public WebElement adminDashboardPackSlugTextbox;
-
-
-    //adminDashBoard >>> Packages >>> Add New Linki >>> Photo Dosya Seç Button
-    @FindBy(xpath = "//input[@type='file']")
-    public WebElement adminDashboardPackDosyaSecButton;
-
-
-    //adminDashBoard >>> Packages >>> Add New Linki >>> Description textbox'i
-    @FindBy(xpath = "(//div[@role='textbox'])[1]")
-    public WebElement adminDashboardDescriptionTextbox;
-
-
-    //adminDashBoard >>> Packages >>> Add New Linki >>> Short Description textbox'i
-    @FindBy(xpath = "(//textarea[@class='form-control h_100'])[1]")
-    public WebElement adminDashboardPackShortDescriptionTextbox;
-
-
-    //adminDashBoard >>> Packages >>> Add New Linki >>> Location textbox'i
-    @FindBy(xpath = "(//textarea[@class='form-control h_100'])[2]")
-    public WebElement adminDashboardLocationTextbox;
-
-
-    //adminDashBoard >>> Packages >>> Add New Linki >>> Start Date textbox'i
-    @FindBy(xpath = "(//input[@class='form-control hasDatepicker'])[1]")
-    public WebElement adminDashboardStartDateTextbox;
-
-
-    //adminDashBoard >>> Packages >>> Add New Linki >>> End Date textbox'i
-    @FindBy(xpath = "(//input[@class='form-control hasDatepicker'])[2]")
-    public WebElement adminDashboardEndDateTextbox;
-
-
-    //adminDashBoard >>> Packages >>> Add New Linki >>> Last Booking Date textbox'i
-    @FindBy(xpath = "(//input[@class='form-control hasDatepicker'])[3]")
-    public WebElement adminDashboardLastBookingDateTextbox;
-
-
-    //adminDashBoard >>> Packages >>> Add New Linki >>> Map textbox'i
-    @FindBy(xpath = "(//textarea[@class='form-control h_100'])[3]")
-    public WebElement adminDashboardMapTextbox;
-
-
-    //adminDashBoard >>> Packages >>> Add New Linki >>> Itinerary textbox'i
-    @FindBy(xpath = "(//div[@role='textbox'])[2]")
-    public WebElement adminDashboardItineraryTextbox;
-
-
-    //adminDashBoard >>> Packages >>> Add New Linki >>> Price textbox'i
-    @FindBy(xpath = "(//input[@class='form-control'])[3]")
-    public WebElement adminDashboardPriceTextbox;
-
-
-    //adminDashBoard >>> Packages >>> Add New Linki >>> Policy textbox'i
-    @FindBy(xpath = "(//div[@role='textbox'])[3]")
-    public WebElement adminDashboardPolicyTextbox;
-
-
-    //adminDashBoard >>> Packages >>> Add New Linki >>> Terms textbox'i
-    @FindBy(xpath = "(//div[@role='textbox'])[4]")
-    public WebElement adminDashboardTermsTextbox;
-
-
-    //adminDashBoard >>> Packages >>> Add New Linki >>> Is Featured dropdown
-    @FindBy(xpath = "//select[@class='form-control']")
-    public WebElement adminDashboardIsFeaturedDropDown;
-
-
-    //adminDashBoard >>> Packages >>> Add New Linki >>> Is Featured dropdown >>> No option'u
-    @FindBy(xpath = "//option[text()='No']")
-    public WebElement adminDashboardIsFeaturedDropDownNoOption;
-
-
-    //adminDashBoard >>> Packages >>> Add New Linki >>> Is Featured dropdown >>> Yes option'u
-    @FindBy(xpath = "//option[text()='Yes']")
-    public WebElement adminDashboardIsFeaturedDropDownYesOption;
-
-
-    //adminDashBoard >>> Packages >>> Add New Linki >>> Destination textbox'i
-    @FindBy(xpath = "//span[@role='textbox']")
-    public WebElement adminDashboardDestinationTextbox;
-
-
-    //adminDashBoard >>> Packages >>> Add New Linki >>> Title textbox'i
-    @FindBy(xpath = "(//input[@class='form-control'])[4]")
-    public WebElement adminDashboardPackTitleTextbox;
-
-
-    //adminDashBoard >>> Packages >>> Add New Linki >>> Meta Description textbox'i
-    @FindBy(xpath = "(//textarea[@class='form-control h_100'])[4]")
-    public WebElement adminDashboardPackMetaDescriptionTextbox;
-
-
-    //adminDashBoard >>> Packages >>> Add New Linki >>> Submit button
-    @FindBy(xpath = "//button[text()='Submit']")
-    public WebElement adminDashboardPackSubmitButton;
-
-
-    //adminDashBoard >>> Packages >>> Add New Linki >>> Submit button'una tiklayinca sag yukari kosede cikan Package added onay'i
-    @FindBy(xpath = "//*[contains(text(), 'Package is added successfully!')]")
-    public WebElement adminDashboardPackageAddedOnay;
-
-
-    //adminDashBoard >>> Packages >>> Sagdaki sari renli duzenleme button'u
-    @FindBy(xpath = "(//a[@class='btn btn-warning btn-sm'])[8]")
-    public WebElement adminDashboardPackDuzenlemeButton;
-
-
-    //adminDashBoard >>> Packages >>> Sagdaki sari renli duzenleme button'u >>> Update Button
-    @FindBy(xpath = "//button[text()='Update']")
-    public WebElement adminDashboardPackUpdateButton;
-
-
-    //adminDashBoard >>> Destinations >>> Sagdaki sari renli duzenleme button'u >>> Update button'una tiklayinca sag yukari kosede cikan Package updated onay'i
-    @FindBy(xpath = "//*[contains(text(), 'Package is updated successfully!')]")
-    public WebElement adminDashboardPackageUpdatedOnay;
-
-
-    //adminDashBoard >>> Packages >>> Sagdaki kirmizi renkli silme butonu
-    @FindBy(xpath = "(//a[@class='btn btn-danger btn-sm'])[8]")
-    public WebElement adminDashboardSilmeButton;
-
-
-    //adminDashBoard >>> Packages >>> Sagdaki kirmizi renkli silme butonu >> Silme buton'una tiklayinca sag yukari kosede cikan Package deleted onay'i
-    @FindBy(xpath = "//*[contains(text(), 'Package is deleted successfully!')]")
-    public WebElement adminDashboardPackageDeletedOnay;
 
 
 }
