@@ -36,6 +36,11 @@ public class UserDashboard {
     public WebElement userLoginDashboardPaymentHistoryButton;
 
 
+    // userLoginDashboardPage ===> Payment History Button ====> All Payments Table
+    @FindBy (xpath= "//h1[normalize-space()='View All Payments']")
+    public WebElement userLoginDashboardPaymentHistoryAllPeymantsTable;
+
+
     // userLoginDashboardPage ===> Update Profile Button
     @FindBy (xpath= "//a[normalize-space()='Update Profile']")
     public WebElement userLoginDashboardUpdateProfileButton;
