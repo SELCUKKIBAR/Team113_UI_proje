@@ -411,6 +411,118 @@ public class UserHomePage {
     @FindBy(xpath = "//a[normalize-space()='Buenos Aires, Argentina']")
     public WebElement buenosArgentinaHomePage;
 
+    @FindBy(className = "toast-message")
+    public WebElement warningMessage;
+
+
+    //Home Page --> Login Button --> Email Adress
+    @FindBy(xpath ="//input[@name='traveller_email']")
+    public WebElement homePageLoginEmail;
+
+    //Home Page --> Login Button --> Password
+    @FindBy(xpath ="//input[@name='traveller_password']")
+    public WebElement homePageLoginPassword;
+
+
+    //Home Page --> AboutUs Button --> Our Mission Text
+    @FindBy(xpath = "//h3[normalize-space()='OUR MISSION']")
+    public WebElement homePageAboutUsButtonOurMissionText;
+
+    //Home Page --> AboutUs Button --> Our Vission Text
+    @FindBy(xpath = "//h3[normalize-space()='OUR VISION']")
+    public WebElement homePageAboutUsButtonOurVissionText;
+
+    //Home Page --> Testimonial --> Stefen Button
+    @FindBy(xpath = "(//div[@class='owl-dot'])[6]")
+    public WebElement testimonialStefenButton;
+
+
+
+    // Home Page --> footer --> Terms and Conditions Head Text
+    @FindBy(xpath = "//h1[normalize-space()='Terms and Conditions']")
+    public WebElement termsAndConditionsHeadText;
+
+
+    // Home Page --> Latest Blog --> HeadText
+    @FindBy(xpath = "//h2[normalize-space()='Latest Blog']")
+    public WebElement latestBlogHeadText;
+
+    // Home Page --> Latest Blog --> Bangkok
+    @FindBy(xpath = "//div[@class='owl-item active']//a[@class='b-head'][normalize-space()='Bangkok: A City of Contrasts']")
+    public WebElement latestBlogBangkok;
+
+    // Home Page --> Latest Blog --> Bangkok Read More
+    @FindBy(xpath = "(//*[@class='button mt_15'])[7]")
+    public WebElement latestBlogBangkokReadMore;
+
+
+    // Home Page --> Latest Blog --> Sout Africa
+    @FindBy(xpath = "//div[@class='owl-item active']//a[@class='b-head'][normalize-space()='Buenos Aires: The Paris of South America']")
+    public WebElement latestBlogAfrica;
+
+    // Home Page --> Latest Blog --> Sout Africa Read More
+    @FindBy(xpath = "(//*[@class='button mt_15'])[8]")
+    public WebElement latestBlogAfricaReadMore;
+
+    // Home Page --> Latest Blog --> Gem
+    @FindBy(xpath = "//div[@class='owl-item active']//a[@class='b-head'][contains(text(),'Discovering Greenville: A Hidden Gem in South Caro')]")
+    public WebElement latestBlogGem;
+
+    // Home Page --> Latest Blog --> Gem Read More
+    @FindBy(xpath = "(//*[@class='button mt_15'])[9]")
+    public WebElement latestBlogGemReadMore;
+
+    // Home Page --> Latest Blog --> Istanbul
+    @FindBy(xpath = "//div[@class='owl-item cloned active']//a[@class='b-head'][normalize-space()='Istanbul: A Fusion of East and West']")
+    public WebElement latestBlogIstanbul;
+
+
+    // Home Page --> Latest Blog --> Istanbul Read More
+    @FindBy(xpath = "(//*[@class='button mt_15'])[10]")
+    public WebElement latestBlogIstanbulReadMore;
+
+    // Home Page --> Latest Blog --> B0gaz Kale
+    @FindBy(xpath = "//div[@class='owl-item cloned active']//a[@class='b-head'][contains(text(),'Discovering the Ancient Capital of the Hittites: B')]")
+    public WebElement latestBlogBogazKale;
+
+    // Home Page --> Latest Blog --> BOgaz Kale Read More
+    @FindBy(xpath = "(//*[@class='button mt_15'])[11]")
+    public WebElement latestBlogBogazKaleReadMore;
+
+    // Home Page --> Latest Blog --> Salina
+    @FindBy(xpath = "//div[@class='owl-item active']//a[@class='b-head'][normalize-space()='Salina Island: A Perfect Family Getaway']")
+    public WebElement latestBlogSalina;
+
+    // Home Page --> Latest Blog --> Salina Read More
+    @FindBy(xpath = "(//*[@class='button mt_15'])[12]")
+    public WebElement latestBlogSalinaReadMore;
+
+
+    // Home Page --> Latest Blog --> After Button
+    @FindBy(xpath = "(//div[@class='owl-next'])[5]")
+    public WebElement latestBlogAfterButton;
+
+    // Home Page --> Latest Blog --> Before Button
+    @FindBy(xpath = "//div[@class='owl-nav']//i[@class='fas fa-angle-left']")
+    public WebElement latestBlogBeforeButton;
+
+
+
+    //Home Page --> Newsletter Sag yukarida cikan Allredy Exixst Yazsi
+
+    @FindBy(xpath = "//body/script[5]")
+    public WebElement newsletteeAlreadyExistYAzisi;
+
+    // Home Page --> Newsletter --> Page Expired Yazi
+
+    @FindBy(xpath = "//div[@class='ml-4 text-lg text-gray-500 uppercase tracking-wider']")
+    public WebElement newsLetterPageExpiredYazisi;
+
+
+
+
+
+
 
 
 

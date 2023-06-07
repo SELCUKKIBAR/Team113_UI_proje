@@ -1,4 +1,50 @@
 package tests.ercan;
 
-public class US_15 {
+import org.testng.Assert;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
+import pages.UserDashboard;
+import pages.UserHomePage;
+import utilities.*;
+
+public class US_15 extends TestBaseRapor {
+
+
+    private UserHomePage userHomePage = new UserHomePage();
+    private SoftAssert softAssert = new SoftAssert();
+
+    @BeforeMethod
+    public void setUp() {
+        Driver.getDriver().get(ConfigReader.getProperty("trpURL"));
+        ReusableMethods.bekle(2);
+
+        Driver.getDriver().manage().window().maximize();
+
+        UserDashboard userDashboard = new UserDashboard();
+        userDashboard.tripandwayCookies.click();
+    }
+
+    @Test
+
+    private void ourVissinOurMissionTest(){
+
+        userHomePage.homePageAboutUsButton.click();
+
+        String actualResult = userHomePage.homePageAboutUsButtonOurMissionText.getText();
+        String expectedResult = "OUR MISSION";
+
+        Assert.assertEquals(actualResult,expectedResult);
+
+        JSUtilities.scrollToElement(Driver.getDriver(),userHomePage.homePageAboutUsButtonOurVissionText);
+
+         actualResult =userHomePage.homePageAboutUsButtonOurVissionText.getText();
+         expectedResult = "OUR VISION";
+
+         Assert.assertEquals(actualResult,expectedResult);
+
+
+
+    }
+
 }
