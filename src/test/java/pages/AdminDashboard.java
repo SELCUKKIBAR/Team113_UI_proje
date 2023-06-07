@@ -839,6 +839,9 @@ public class AdminDashboard {
     //************************* DESTINATIONS ****************
 
 
+
+
+
     //adminDashBoard >>> Destinations >>> Add New Linki
     @FindBy(xpath = "//a[@class='btn btn-primary btn-sm']")
     public WebElement adminDashboardDestiAddNewLink;
@@ -1047,6 +1050,7 @@ public class AdminDashboard {
     //adminDashBoard >>> Packages >>> Sagdaki kirmizi renkli silme butonu >> Silme buton'una tiklayinca sag yukari kosede cikan Package deleted onay'i
     @FindBy(xpath = "//*[contains(text(), 'Package is deleted successfully!')]")
     public WebElement adminDashboardPackageDeletedOnay;
+
 
 
 

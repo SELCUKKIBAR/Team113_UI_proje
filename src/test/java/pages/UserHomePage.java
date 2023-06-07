@@ -11,6 +11,9 @@ public class UserHomePage {
         PageFactory.initElements(Driver.getDriver(),this);
     }
 
+    @FindBy (xpath = "//h1[normalize-space()='Destinations']" )
+    public WebElement destinationsYazisi;
+
 
     // Home Page --> Uyari Mesajlari (Sag yukarida cikan butun uyari mesajlari icin, dinamik locater)
     @FindBy(className = "toast-message")
@@ -65,6 +68,62 @@ public class UserHomePage {
     //Home Page --> Home Button
     @FindBy(xpath = "//ul[@id='menu']//a[normalize-space()='Home']")
     public WebElement homePageHomeButton;
+
+    @FindBy(xpath = "//*[text()='Bangkok, Thailand']")
+    public WebElement destinationsBangkok;
+
+    @FindBy(xpath = "//h1[normalize-space()='Bangkok, Thailand']")
+    public WebElement bangkokYazisi;
+
+    @FindBy(xpath = "//h1[normalize-space()='Greenville, South Carolina']")
+    public WebElement greenvilleYazisi;
+
+    @FindBy(xpath = "//h1[normalize-space()='Buenos Aires, Argentina']")
+    public WebElement buenosAiresYazisi;
+
+    @FindBy(xpath = "//a[normalize-space()='Greenville, South Carolina']")
+    public WebElement destinationsGreenville;
+
+    @FindBy(xpath = "//h1[normalize-space()='Marrakesh, Morocco']")
+    public WebElement marrakeshYazisi;
+
+    @FindBy(xpath = "//h1[normalize-space()='Salina Island, Italy']")
+    public WebElement salinaYazisi;
+
+    @FindBy(xpath = "//h1[normalize-space()='Istanbul, Turkey']")
+    public WebElement istanbulYazisi;
+
+    @FindBy(xpath = "//ul[@id='menu']//a[normalize-space()='Destinations']")
+    public WebElement destinationsUstTaraf;
+
+    @FindBy(xpath = "//h1[normalize-space()='California, USA']")
+    public WebElement californiaYazisi;
+
+    @FindBy(xpath = "//h1[normalize-space()='GOZTEPEIzmir']")
+    public WebElement goztepeYazisi;
+
+
+   @FindBy(xpath = "//a[normalize-space()='Buenos Aires, Argentina']")
+   public WebElement destinationsBuenosAires;
+
+   @FindBy(xpath = "//a[normalize-space()='Marrakesh, Morocco']")
+   public WebElement destinationsMarrakesh;
+
+   @FindBy(xpath = "//a[normalize-space()='Salina Island, Italy']")
+   public WebElement destinationsSalinaIsland;
+
+   @FindBy(xpath = "//a[normalize-space()='Istanbul, Turkey']")
+   public WebElement destinationsIstanbul;
+
+   @FindBy(xpath = "//a[normalize-space()='California, USA']")
+   public WebElement destinationsCalifornia;
+
+   @FindBy(xpath = "//a[normalize-space()='GOZTEPEIzmir']")
+   public WebElement destinationsGoztepe;
+
+   @FindBy(xpath = "//a[normalize-space()='GOZTEPEIzmir']")
+   public WebElement destinationsHerne;
+
 
 
     //Home Page --> Service Button
@@ -325,9 +384,6 @@ public class UserHomePage {
 
 
 
-    // Home Page --> Newsletter --> Arama Kutus
-
-    // Home Page --> Newsletter --> Arama Kutusu
 
 
 
