@@ -537,7 +537,7 @@ public class UserHomePage {
     // Home Page --> Login --> Packages --> 7 days in Istanbul --> Book Your Seat button --> Pay with Card -- > Pay
     @FindBy(xpath = "//span[@class='iconTick']")
     public WebElement payTextBox;
-=======
+
 
 
     //Home Page --> Our Service --> International Tour Button
