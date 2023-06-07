@@ -612,34 +612,29 @@ public class UserHomePage {
     public WebElement testimonial;
 
 
-
-    // Home Page --> footer --> Facebook Logo --> Acilan sayfada "facebook" yazisi
-    @FindBy(xpath = "//img[@class='fb_logo _8ilh img']")
-    public WebElement facebookLogoFacebookYazisiHomePage;
-
-
-
-
-    // Home Page --> footer --> Twitter Logo --> Acilan sayfada "Ayarlar" yazisi
-    @FindBy(xpath = "(//div[@class='css-1dbjc4n r-1awozwy r-sdzlij r-18u37iz r-1777fci r-dnmrzs r-xyw6el r-o7ynqc r-6416eg'])[2]")
-    public WebElement twitterLogoAyarlarYazisiHomePage;
-
-
-    // Home Page--> footer --> LinkedIn Logo
-    @FindBy(xpath = "(//i[@class='fab fa-linkedin-in'])[13]")
-    public WebElement linkedInLogoHomePage;
-
-
-    // Home Page--> footer --> LinkedIn Logo --> Acilan sayfada LinkedIn logosu
-    @FindBy(xpath = "(//*[@aria-busy='false'])[2]")
-    public WebElement linkedInSayfaLinkedInLogoHomePage;
+ // Home Pages -->footer--> Recent Posts--> 1.satir
+ @FindBy(xpath = "(//li)[32]")
+ public WebElement birincisatirdakielement;
+ // Home Pages -->footer--> Recent Posts--> 2.satir
+ @FindBy(xpath = "(//li)[33]")
+ public WebElement ikincisatirdakielement;
+ // Home Pages -->footer--> Recent Posts--> 3.satir
+ @FindBy(xpath = "(//li)[34]")
+ public WebElement ucuncusatirdakielement;
+ // Home Pages -->footer--> Recent Posts--> 4.satir
+ @FindBy(xpath = "(//li)[35]")
+ public WebElement dorduncusatirdakielement;
+ // Home Pages -->footer--> Recent Posts--> 5.satir
+ @FindBy(xpath = "(//li)[36]")
+ public WebElement besincisatirdakielement;
 
 
 
 
-    // Home Page --> footer --> Pinterest Logo --> Acilan sayfada Pinterest logosu
-    @FindBy(xpath = "//i[@class='fab fa-pinterest-p']")
-    public WebElement pinterestSayfaPinterestLogoHomePage;
+
+
+
+
 
 
 
@@ -664,8 +659,7 @@ public class UserHomePage {
     @FindBy(xpath = "//a[normalize-space()='Buenos Aires, Argentina']")
     public WebElement buenosArgentinaHomePage;
 
-    @FindBy(className = "toast-message")
-    public WebElement warningMessage;
+
 
 
     //Home Page --> Login Button --> Email Adress
