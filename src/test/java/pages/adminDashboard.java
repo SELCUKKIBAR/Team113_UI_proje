@@ -402,10 +402,6 @@ public class adminDashboard {
     @FindBy(xpath = "(//*[text()='View Email Templates'])[1]")
     public WebElement adminDashboardWebSiteSectionEmailTemplateElementiDogrulama;
 
-
-
-
-
     /*
 Admin giriş yaptıktan sonra sırasıyla
 
@@ -417,6 +413,39 @@ Web Site Section  ve
 Email Template      (//*[text()='Email Template'])[1]  (//*[text()='View Email Templates'])[1]
 sayfalarını görüntüleyebildiğimi doğrulayabilmeliyim
      */
+
+
+    //adminDashboard>>>>>Sağ Ust Admin03_04_05Profil >>>
+    @FindBy(xpath="//span[@class='mr-2 d-none d-lg-inline text-gray-600 small']")
+    public WebElement adminDashboardAdmin03_04_05Profil;
+
+    //adminDashboard>>>>>Sağ Ust Admin03_04_05Profil >>>change Password Linki
+    @FindBy(xpath = "(//a[@class='dropdown-item'])[1]")
+    public WebElement adminDashboardChangePassword;
+
+    //adminDashboard>>>>>Sağ Ust Admin03_04_05Profil >>>change Password Linki >>>Edit Profile Text
+    @FindBy(xpath = "//h6[@class='m-0 mt-2 font-weight-bold text-primary']")
+    public WebElement adminDashboardEditProfilText;
+
+    //adminDashboard>>>>>Sağ Ust Admin03_04_05Profil >>>change photo Linki
+    @FindBy(xpath = "(//a[@class='dropdown-item'])[2]")
+    public WebElement adminDashboardChangePhoto;
+
+    //adminDashboard>>>>>Sağ Ust Admin03_04_05Profil >>>change Password Linki >>>Edit Photo Text
+    @FindBy(xpath = "//h6[@class='m-0 mt-2 font-weight-bold text-primary']")
+    public WebElement adminDashboardEditPhotoText;
+
+    //adminDashboard>>>>>Sağ Ust Admin03_04_05Profil >>>Logout
+    @FindBy(xpath = "(//a[@class='dropdown-item'])[3]")
+    public WebElement adminDashboardAdmin03_04_05ProfilLogout;
+
+    //adminDashboard  >>>En Alttaki Daraltma Ok İşareti
+    @FindBy(xpath = "//button[@class='rounded-circle border-0']")
+    public WebElement adminDashboardDaraltmaOkIsareti;
+
+    //adminDashboard  >>>Sağ Üst VisitWebsiteButonu
+    @FindBy(xpath = "//a[@class='btn btn-info btn-sm mt-3']")
+    public WebElement adminDashboardVisitWebsiteButonu;
 
 
 
