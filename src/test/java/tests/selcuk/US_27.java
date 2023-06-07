@@ -1,6 +1,7 @@
 package tests.selcuk;
 
 import com.aventstack.extentreports.reporter.configuration.Theme;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 import pages.AdminDashboard;
@@ -11,6 +12,8 @@ import utilities.TestBaseRapor;
 public class US_27 extends TestBaseRapor {
     AdminDashboard adminDashboard = new AdminDashboard();
     SoftAssert softAssert = new SoftAssert();
+
+
     @Test
     public void testCase01(){
 
