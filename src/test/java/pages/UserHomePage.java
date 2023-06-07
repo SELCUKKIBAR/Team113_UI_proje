@@ -287,6 +287,133 @@ public class UserHomePage {
 
 
 
+    //Home Page --> Our Service --> International Tour Button
+    @FindBy(xpath ="//a[@href='https://qa.tripandway.com/service/international-tour']")
+    public WebElement internationalTourButton;
+
+
+
+    //Home Page --> Team Members  --> HeadText
+    @FindBy(xpath ="//h2[normalize-space()='Team Members']")
+    public WebElement teamMembersHeadText;
+
+    //Home Page --> Team Members  --> Avery
+    @FindBy(xpath ="//div[@class='owl-item active']//a[normalize-space()='Avery Johnson']")
+    public WebElement teamMembersAvery;
+
+    //Home Page --> Team Members  --> Knox
+    @FindBy(xpath ="//div[@class='owl-item cloned active']//a[normalize-space()='Knox Mitchell']")
+    public WebElement teamMembersKnox;
+
+    //Home Page --> Team Members  --> Zara
+    @FindBy(xpath ="//div[@class='owl-item cloned active']//a[normalize-space()='Zara Williams']")
+    public WebElement teamMembersZara;
+
+    //Home Page --> Team Members  --> Jaxon
+    @FindBy(xpath ="//div[@class='owl-item cloned active']//a[normalize-space()='Jaxon Green']")
+    public WebElement teamMembersJaxon;
+
+
+
+    //Home Page --> Testimonial --> Head Text
+    @FindBy(xpath = "//h2[normalize-space()='Testimonial']")
+    public WebElement testimonialHeadText;
+
+
+    //Home Page --> Testimonial --> Johnson
+    @FindBy(xpath = "//h2[normalize-space()='Johnson Shealey']")
+    public WebElement testimonialJohanson;
+
+    //Home Page --> Testimonial --> Johanson Button
+    @FindBy(xpath = "//div[@class='testimonial-area pt_80 pb_80']//div[@class='owl-dots']//div[1]")
+    public WebElement testimonialJeohansonButton;
+
+
+    //Home Page --> Testimonial --> Jessica
+    @FindBy(xpath = "//h2[normalize-space()='Jessica Rainy']")
+    public WebElement testimonialJessica;
+
+    //Home Page --> Testimonial --> Jessica Button
+    @FindBy(xpath = "//div[@class='testimonial-gallery owl-carousel wow fadeIn owl-loaded owl-drag']//div[@class='owl-dot active']")
+    public WebElement testimonialJessicaButton;
+
+
+
+    //Home Page --> Testimonial --> Dadiv
+    @FindBy(xpath = "//h2[normalize-space()='Dadiv Smith']")
+    public WebElement testimonialDadiv;
+
+
+    //Home Page --> Testimonial --> Dadiv Button
+    @FindBy(xpath = "//div[@class='testimonial-area pt_80 pb_80']//div[@class='owl-dots']//div[3]")
+    public WebElement testimonialDadivButton;
+
+    //div[@class='testimonial-area pt_80 pb_80']//div[@class='owl-dots']//div[3]
+
+    //Home Page --> Testimonial --> Stefen
+    @FindBy(xpath = "//h2[normalize-space()='Stefen Carman']")
+    public WebElement testimonialStefen;
+
+    //Home Page --> Testimonial --> Head Text
+    @FindBy(xpath = "//h2[normalize-space()='Testimonial']")
+    public WebElement testimonial;
+
+
+
+    // Home Page --> footer --> Facebook Logo --> Acilan sayfada "facebook" yazisi
+    @FindBy(xpath = "//img[@class='fb_logo _8ilh img']")
+    public WebElement facebookLogoFacebookYazisiHomePage;
+
+
+
+
+    // Home Page --> footer --> Twitter Logo --> Acilan sayfada "Ayarlar" yazisi
+    @FindBy(xpath = "(//div[@class='css-1dbjc4n r-1awozwy r-sdzlij r-18u37iz r-1777fci r-dnmrzs r-xyw6el r-o7ynqc r-6416eg'])[2]")
+    public WebElement twitterLogoAyarlarYazisiHomePage;
+
+
+    // Home Page--> footer --> LinkedIn Logo
+    @FindBy(xpath = "(//i[@class='fab fa-linkedin-in'])[13]")
+    public WebElement linkedInLogoHomePage;
+
+
+    // Home Page--> footer --> LinkedIn Logo --> Acilan sayfada LinkedIn logosu
+    @FindBy(xpath = "(//*[@aria-busy='false'])[2]")
+    public WebElement linkedInSayfaLinkedInLogoHomePage;
+
+
+
+
+    // Home Page --> footer --> Pinterest Logo --> Acilan sayfada Pinterest logosu
+    @FindBy(xpath = "//i[@class='fab fa-pinterest-p']")
+    public WebElement pinterestSayfaPinterestLogoHomePage;
+
+
+
+
+    // Home Page --> Destination head Text
+    @FindBy(xpath = "//h2[normalize-space()='Destination']")
+    public WebElement destinationHeadText;
+
+
+
+    //  Home Page --> Destination --> Bangkok
+    @FindBy(xpath = "//a[normalize-space()='Bangkok, Thailand']")
+    public WebElement bangkokThailandHomePage;
+
+
+    //  Home Page --> Destination --> Greenville
+    @FindBy(xpath = "//a[normalize-space()='Greenville, South Carolina']")
+    public WebElement greenvilleCarolinaHomePage;
+
+
+    //  Home Page --> Destination --> Buenos
+    @FindBy(xpath = "//a[normalize-space()='Buenos Aires, Argentina']")
+    public WebElement buenosArgentinaHomePage;
+
+
+
+
 
 
 
