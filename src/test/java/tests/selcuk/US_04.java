@@ -1,6 +1,7 @@
 package tests.selcuk;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.devtools.v85.animation.model.KeyframeStyle;
@@ -11,8 +12,9 @@ import pages.AdminDashboard;
 import pages.UserHomePage;
 import utilities.ConfigReader;
 import utilities.Driver;
+import utilities.TestBaseRapor;
 
-public class US_04{
+public class US_04 extends TestBaseRapor {
 
     @Test
     public void featuredPackages_3days_BuenoAires_goruntuleme (){
@@ -145,14 +147,3 @@ public class US_04{
 
 }
 
-
-
-/*
-TEST CASE 1
-1- Kullanıcı https://qa.tripandway.com/ ana sayfasına gider
-2- Kullanıcı footer bölümüne iner
-3- Kullanıcı 3 DAYS IN BUENOS AIRES'i tıklar
-4- Kullanıcı sayfanın tıklandığını titilina bakarak test eder
-
-
- */

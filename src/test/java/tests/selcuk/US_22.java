@@ -1,5 +1,6 @@
 package tests.selcuk;
 
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
@@ -11,12 +12,13 @@ import pages.UserDashboard;
 import pages.UserHomePage;
 import utilities.ConfigReader;
 import utilities.Driver;
+import utilities.ReusableMethods;
 import utilities.TestBaseRapor;
 
 public class US_22 extends TestBaseRapor {
 
     @Test
-    public void sifreDegistirme() throws InterruptedException {
+    public void sifreDegistirme(){
 
         extentTest = extentReports.createTest("Tripandway ŞİFRE DEĞİŞTİRME testi",
                 "Kullanici açılan sayfanın Header Sağ köşe mesajının DASHBOARD oldugunu test eder");
@@ -65,12 +67,9 @@ public class US_22 extends TestBaseRapor {
 
 
 
-
-
-
         //8- Kullanıcı şifresinin başarılı bir şekilde değişltiğini sağ üst köşede çıkak yeşil Pop up mesajının göründüğünü test ederek doğrular
        WebElement popMesaj = Driver.getDriver().findElement(By.xpath("//*[contains(text(), 'Password is updated successfully')]"));
-       Thread.sleep(1000);
+        ReusableMethods.bekle(2);
        softAssert.assertFalse(popMesaj.isDisplayed(),"pop mesajı görünür olmalı");
         extentTest.info("Kullanıcı popUp mesajını görür..");
 

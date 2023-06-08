@@ -1,17 +1,13 @@
 package tests.selcuk;
 
 
-public class US_27 {
 
 import com.aventstack.extentreports.reporter.configuration.Theme;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 import pages.AdminDashboard;
-import utilities.ConfigReader;
-import utilities.Driver;
-import utilities.SelcukTestBaseRapor;
-import utilities.TestBaseRapor;
+import utilities.*;
 
 public class US_27 extends SelcukTestBaseRapor {
     AdminDashboard adminDashboard = new AdminDashboard();
@@ -50,7 +46,7 @@ public class US_27 extends SelcukTestBaseRapor {
     }
 
     @Test
-    public void generalSettingsElementleriGoruntuleme() throws InterruptedException {
+    public void generalSettingsElementleriGoruntuleme() {
 
         extentTest = extentReports.createTest("Admin panelindeki menülerin kontrol testi",
                 "Kullanici Admin Panelde sol tarafta bulunan General Settings menüsünü test eder");
@@ -147,7 +143,7 @@ public class US_27 extends SelcukTestBaseRapor {
 
         adminDashboard.adminDashboardGeneralSettings.click();
         extentTest.info("Kullanici General Settingse tekrar tıklar");
-        Thread.sleep(1000);
+        ReusableMethods.bekle(2);
 
         softAssert.assertAll();
 
@@ -156,7 +152,7 @@ public class US_27 extends SelcukTestBaseRapor {
     }
 
     @Test
-    public void pageSettings_ElementleriniGoruntuleme() throws InterruptedException {
+    public void pageSettings_ElementleriniGoruntuleme(){
 
         extentTest = extentReports.createTest("Admin panelindeki menülerin kontrol testi",
                 "Kullanici Admin Panelde sol tarafta bulunan Page Settings menüsünü test eder");
@@ -243,7 +239,7 @@ public class US_27 extends SelcukTestBaseRapor {
         extentTest.info("Kullanici Page Settings>>>Other tıklar...");
         softAssert.assertTrue(adminDashboard.adminDashboardPageSettingsOtherDogrulama.isDisplayed());
         extentTest.info("Kullanici Page Settings>>>Other doğrular...");
-        Thread.sleep(1000);
+        ReusableMethods.bekle(2);
         adminDashboard.adminDashboardPageSettingsElementi.click();
 
         extentTest.info("Kullanici PAge Settings menüsündeki elemanları test etti ve tekrar Page Settings'e tıkladı...");
@@ -254,14 +250,14 @@ public class US_27 extends SelcukTestBaseRapor {
     }
 
     @Test
-    public void paymentSettingsElementleriniGoruntuleme() throws InterruptedException {
+    public void paymentSettingsElementleriniGoruntuleme()   {
 
         extentTest = extentReports.createTest("Admin panelindeki menülerin kontrol testi",
                 "Kullanici Admin Panelde sol tarafta bulunan Payment Settings,Dynamic Pages ve Language menülerini test etmeye hazır...");
 
         //TEST CASE 4
         //1- Kullanıcı Sol menüde bulunan "Payment Settings" e tıklar
-        Thread.sleep(1000);
+        ReusableMethods.bekle(1);
         adminDashboard.adminDashboardPaymentSettingsElementi.click();
         extentTest.info("Kullanici Payment Settings'e tıklar...");
 
@@ -284,18 +280,18 @@ public class US_27 extends SelcukTestBaseRapor {
         extentTest.info("Kullanici Dynamic Pages tıklar...");
         softAssert.assertTrue(adminDashboard.adminDashboardDynamicPagesDogrulama.isDisplayed());
         extentTest.info("Kullanici Dynamic Pages doğrular...");
-        Thread.sleep(1000);
+        ReusableMethods.bekle(1);
 
 //burda kaldımmmmmmmmm
         //5- Kullanıcı Language'a tıklar ve "Language Setting" yazsının göründüğünü doğrular
-        extentTest.info("Kullanici Language Setting'e tıklar...");
+        extentTest.info("Kullanici Language Setting tıklar...");
         adminDashboard.adminDashboardLanguageElementi.click();
         softAssert.assertTrue(adminDashboard.adminDashboardLanguageDogrulama.isDisplayed());
-        extentTest.info("Kullanıcı Payment Settings,Dynamic Pages ve Language menülerini test etti...");
+        extentTest.info("Kullanici Language Setting doğrular...");
 
-        Thread.sleep(1000);
+        ReusableMethods.bekle(1);
         adminDashboard.adminDashboardLanguageElementi.click();
-        extentTest.info("Kullanici tekrar Language Setting'e tıklar... ve Website Section menüsünü test etmeye hazır");
+        extentTest.info("Kullanici tekrar Language Setting'e tıklar... ");
 
 
         softAssert.assertAll();
@@ -304,48 +300,64 @@ public class US_27 extends SelcukTestBaseRapor {
     }
 
     @Test
-    public void webSiteSectionElemenleriniGoruntuleme() throws InterruptedException {
+    public void webSiteSectionElemenleriniGoruntuleme() {
 
         extentTest = extentReports.createTest("Admin panelindeki menülerin kontrol testi",
                 "Kullanici Admin Panelde sol tarafta bulunan Website Section menüsünü test etmeye hazır...");
 
         //TEST CASE 5
         //1- Kullanıcı Sol menüde bulunan "Website Section" e tıklar
-        Thread.sleep(1000);
+        ReusableMethods.bekle(1);
         adminDashboard.adminDashboardWebSiteSectionElementi.click();
         extentTest.info("Kullanici Website Section'e tıklar...");
 
         //2- Kullanıcı Sliders elementine tıklar ve açılan sayfada "Sliders" yazısının göründüğünü doğrular
         adminDashboard.adminDashboardWebSiteSectionSliders.click();
+        extentTest.info("Kullanici Website Section Sliders  tıklar...");
         softAssert.assertTrue(adminDashboard.adminDashboardWebSiteSectionSlidersDogrulama.isDisplayed());
+        extentTest.info("Kullanici Website Section Sliders  doğrular...");
 
         //3- Kullanıcı Client elementine tıklar ve açılan sayfada "Clients" yazsının göründüğünü doğrular
         adminDashboard.adminDashboardWebSiteSectionClient.click();
+        extentTest.info("Kullanici Website Section Client  tıklar...");
         softAssert.assertTrue(adminDashboard.adminDashboardWebSiteSectionClientDogrulama.isDisplayed());
+        extentTest.info("Kullanici Website Section Client  doğrular...");
 
         //4- Kullanıcı Services'e tıklar ve "Services" yazsının göründüğünü doğrular
         adminDashboard.adminDashboardWebSiteSectionServices.click();
+        extentTest.info("Kullanici Website Section Servides  tıklar...");
         softAssert.assertTrue(adminDashboard.adminDashboardWebSiteSectionServicesDogrulama.isDisplayed());
+        extentTest.info("Kullanici Website Section Servides  doğrular...");
 
         //5- Kullanıcı Testimonials'a tıklar ve "Testimonials" yazsının göründüğünü doğrular
         adminDashboard.adminDashboardWebSiteSectionTestimonials.click();
+        extentTest.info("Kullanici Website Section Testimonials  tıklar...");
         softAssert.assertTrue(adminDashboard.adminDashboardWebSiteSectionTestimonialsDogrulama.isDisplayed());
+        extentTest.info("Kullanici Website Section Testimonials  doğrular...");
 
         //6- Kullanıcı Team Members'a tıklar ve "Team Members" yazsının göründüğünü doğrular
         adminDashboard.adminDashboardWebSiteSectionTeamMembers.click();
+        extentTest.info("Kullanici Website Section Team Members  tıklar...");
         softAssert.assertTrue(adminDashboard.adminDashboardWebSiteSectionTeamMembersDogrulama.isDisplayed());
+        extentTest.info("Kullanici Website Section Team Members  doğrular...");
 
         //7- Kullanıcı FAQ'a tıklar ve "FAQs" yazsının göründüğünü doğrular
         adminDashboard.adminDashboardWebSiteSectionFAQ.click();
+        extentTest.info("Kullanici Website Section FAQ  tıklar...");
         softAssert.assertTrue(adminDashboard.adminDashboardWebSiteSectionFAQDogrulama.isDisplayed());
+        extentTest.info("Kullanici Website Section FAQ  doğrular...");
 
         //8- Kullanıcı Social Media'a tıklar ve "Social Media Items" yazsının göründüğünü doğrular
         adminDashboard.adminDashboardWebSiteSectionSocialMedia.click();
+        extentTest.info("Kullanici Website Section Social Medya  tıklar...");
         softAssert.assertTrue(adminDashboard.adminDashboardWebSiteSectionSocialMediaDogrulama.isDisplayed());
+        extentTest.info("Kullanici Website Section Social Medya  doğrular...");
 
         //9- Kullanıcı Email Template'a tıklar ve açılan sayfada "Email Templates" yazsının göründüğünü doğrular
         adminDashboard.adminDashboardWebSiteSectionEmailTemplateElementi.click();
+        extentTest.info("Kullanici Website Section EmailTemplate  tıklar...");
         softAssert.assertTrue(adminDashboard.adminDashboardWebSiteSectionEmailTemplateElementiDogrulama.isDisplayed());
+        extentTest.info("Kullanici Website Section EmailTemplate  doğrular...");
         extentTest.info("Kullanici Website Section'e menüsünün testini bitirir...");
 
         softAssert.assertAll();

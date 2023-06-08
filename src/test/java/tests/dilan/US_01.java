@@ -1,7 +1,7 @@
 package tests.dilan;
 
 import org.testng.annotations.Test;
-import org.testng.asserts.SoftAssert;
+stng.asserts.SoftAssert;
 import utilities.ConfigReader;
 import utilities.Driver;
 import utilities.TestBaseRapor;

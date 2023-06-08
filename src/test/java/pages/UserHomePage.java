@@ -5,6 +5,8 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import utilities.Driver;
 
+import java.util.List;
+
 public class UserHomePage {
 
     public UserHomePage(){
@@ -127,9 +129,13 @@ public class UserHomePage {
 
 
     //Home Page --> Service Button
+
     @FindBy(xpath ="//ul[@id='menu']//a[normalize-space()='Services’]")
     public WebElement homeButtonServicesButton;
 
+     //Home Page --> Service Button
+      @FindBy(xpath ="//div[@class='col-md-10 col-sm-12']")
+      public WebElement homePageServicesButton;
 
     //Home Page --> Destination Button
     @FindBy(xpath = "//ul[@id='menu']//a[normalize-space()='Destinations']")
@@ -142,13 +148,19 @@ public class UserHomePage {
 
 
     //Home Page --> AboutUs Button
+
+
+
     @FindBy(xpath = "(//a[normalize-space()='About Us'])[2]")
+
     public WebElement homePageAboutUsButton;
+
 
 
     //Home Page --> Faq Button
     @FindBy(xpath ="//ul[@id='menu']//a[normalize-space()='FAQ']")
     public WebElement homePageFaqButton;
+
 
 
     //Home Page --> Blog Button
@@ -165,23 +177,56 @@ public class UserHomePage {
     @FindBy(xpath = "//div[@class='service-area pt_80 pb_80']//div[@class='main-headline']" )
     public WebElement ourServiceaheadLIneText;
 
-
     //Home Page --> Our Service --> International Tour Button
     @FindBy(xpath ="//a[@href='https://qa.tripandway.com/service/international-tour']")
-    public WebElement InternationalTourButton;
+    public WebElement internationalTourButton;
 
-
-
+    //Home Page --> Our Service --> International Tour Button --> International Tour Title Dogrulama
+    @FindBy(xpath ="//h1[normalize-space()='International Tour']")
+    public WebElement InternationalTourButtonTitleDogrulama;
 
 
     //Home Page --> Our Service --> adventure Tour Button
     @FindBy(xpath = "//a[@href='https://qa.tripandway.com/service/adventure-tour']")
     public WebElement adventureTourButton;
 
+    //Home Page --> Our Service --> adventure Tour Button --> adventure Tour Button Title Dogrulama
+    @FindBy(xpath = "//h1[normalize-space()='Adventure Tour']")
+    public WebElement adventureTourButtonTitleDogrulama;
 
     //Home Page --> Our Service --> culture Tour Button
     @FindBy(xpath = "//a[@href='https://qa.tripandway.com/service/culture-tour']")
     public WebElement cultureTourButton;
+
+    //Home Page --> Our Service --> culture Tour Button --> culture Tour Button Title Dogrulama
+    @FindBy(xpath = "//h1[normalize-space()='Culture Tour']")
+    public WebElement cultureTourButtonTitledogrulama;
+
+    // Home Page --> Our Services --> Bussiness Tour
+    @FindBy(xpath = "//h4[normalize-space()='Bussiness Tour']")
+    public WebElement bussinessTourHomePage;
+
+    // Home Page --> Our Services --> Bussiness Tour Button --> Bussiness Tour Button Title Dogrulama
+    @FindBy(xpath = "//h1[normalize-space()='Bussiness Tour']")
+    public WebElement bussinessTourBottomTitleDogrulama;
+
+
+    // Home Page --> Our Services --> Health Tour
+    @FindBy(xpath = "//h4[normalize-space()='Health Tour']")
+    public WebElement healthTourHomePage;
+
+    // Home Page --> Our Services --> Health Tour Button --> Health Tour Button Title Dogrulama
+    @FindBy(xpath = "//h1[normalize-space()='Health Tour']")
+    public WebElement healthTourBottonTitleDogrulama;
+
+
+    // Home Page --> Our Services --> Religious Tour
+    @FindBy(xpath = "//h4[normalize-space()='Religious Tour']")
+    public WebElement religiousTour;
+
+    // Home Page --> Our Services --> Religious Tour Button --> Religious Tour Button Title Dogrulama
+    @FindBy(xpath = "//h1[normalize-space()='Religious Tour']")
+    public WebElement religiousTourBottonTitleDogrulama;
 
 
     //Home Page --> featured Package Head Text
@@ -383,10 +428,6 @@ public class UserHomePage {
     public WebElement scrollTopHomePage;
 
 
-
-
-
-
     @FindBy(xpath = "//input[@placeholder='Email Address']")
     public WebElement newsletterAramaKutusu;
 
@@ -426,23 +467,6 @@ public class UserHomePage {
     //  Home Page --> Destination --> Istanbul
     @FindBy(xpath = "//a[normalize-space()='Istanbul, Turkey']")
     public WebElement istanbulTurkeyHomePage;
-
-
-    // Home Page --> Our Services --> Bussiness Tour
-    @FindBy(xpath = "//h4[normalize-space()='Bussiness Tour']")
-    public WebElement bussinessTourHomePage;
-
-
-    // Home Page --> Our Services --> Health Tour
-    @FindBy(xpath = "//h4[normalize-space()='Health Tour']")
-    public WebElement healthTourHomePage;
-
-
-    // Home Page --> Our Services --> Religious Tour
-    @FindBy(xpath = "//h4[normalize-space()='Religious Tour']")
-    public WebElement religiousTour;
-
-
 
     // Home Page --> Contact --> Contact Us yazisi
     @FindBy(xpath = "//h1[text()='Contact Us']")
@@ -540,9 +564,8 @@ public class UserHomePage {
 
 
 
-    //Home Page --> Our Service --> International Tour Button
-    @FindBy(xpath ="//a[@href='https://qa.tripandway.com/service/international-tour']")
-    public WebElement internationalTourButton;
+
+
 
 
 
@@ -591,7 +614,6 @@ public class UserHomePage {
     public WebElement testimonialJessicaButton;
 
 
-
     //Home Page --> Testimonial --> Dadiv
     @FindBy(xpath = "//h2[normalize-space()='Dadiv Smith']")
     public WebElement testimonialDadiv;
@@ -610,6 +632,7 @@ public class UserHomePage {
     //Home Page --> Testimonial --> Head Text
     @FindBy(xpath = "//h2[normalize-space()='Testimonial']")
     public WebElement testimonial;
+
 
 
  // Home Pages -->footer--> Recent Posts--> 1.satir
@@ -635,20 +658,13 @@ public class UserHomePage {
 
 
 
-
-
-
-
     // Home Page --> Destination head Text
     @FindBy(xpath = "//h2[normalize-space()='Destination']")
     public WebElement destinationHeadText;
 
-
-
     //  Home Page --> Destination --> Bangkok
     @FindBy(xpath = "//a[normalize-space()='Bangkok, Thailand']")
     public WebElement bangkokThailandHomePage;
-
 
     //  Home Page --> Destination --> Greenville
     @FindBy(xpath = "//a[normalize-space()='Greenville, South Carolina']")
@@ -660,8 +676,6 @@ public class UserHomePage {
     public WebElement buenosArgentinaHomePage;
 
 
-
-
     //Home Page --> Login Button --> Email Adress
     @FindBy(xpath ="//input[@name='traveller_email']")
     public WebElement homePageLoginEmail;
@@ -670,6 +684,8 @@ public class UserHomePage {
     @FindBy(xpath ="//input[@name='traveller_password']")
     public WebElement homePageLoginPassword;
 
+    @FindBy(xpath ="//button[@class='btn btn-primary']")
+     public WebElement homePageAltLoginButton;
 
     //Home Page --> AboutUs Button --> Our Mission Text
     @FindBy(xpath = "//h3[normalize-space()='OUR MISSION']")
@@ -682,7 +698,6 @@ public class UserHomePage {
     //Home Page --> Testimonial --> Stefen Button
     @FindBy(xpath = "(//div[@class='owl-dot'])[6]")
     public WebElement testimonialStefenButton;
-
 
 
     // Home Page --> footer --> Terms and Conditions Head Text
@@ -796,7 +811,29 @@ public class UserHomePage {
     public  WebElement seeAllDestinationButton;
 
 
+    // Book Your Seat Button
+    @FindBy(xpath = "//button[text()='Book Your Seat']")
+    public WebElement bookYourSeatButton;
 
+    // Iframe
+    @FindBy(xpath = "//iframe[@class='stripe_checkout_app']")
+    public WebElement iframe;
+
+
+
+    //FAQ sayfasi==FAQ yazisi
+    @FindBy(xpath = "//h1[text()='FAQ']")
+    public WebElement FAQyazisi;
+
+    //FAQ sayfasi == FAQ Sorular
+    @FindBy(xpath = "//button[@class='accordion-button collapsed']")
+    public List<WebElement> FAQSorular;
+
+
+
+    //userhompahe sağ üst login
+    @FindBy(xpath = "/html/body/div[4]/div/div/div[2]/div/a[2]")
+    public  WebElement userHompageSagUstLoginButton;
 
 
 
