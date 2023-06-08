@@ -68,6 +68,8 @@ public class Driver {
             driver.close();
             driver=null;
         }
+
+
     }
 
     public static void quitDriver(){
@@ -76,6 +78,7 @@ public class Driver {
             driver.quit();
             driver=null;
         }
-    }
 
+
+    }
 }

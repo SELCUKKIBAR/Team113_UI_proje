@@ -15,8 +15,16 @@ public class AdminDashboard {
 
     //***********************ADMİN GİRİŞ EKRANI***********************
     //adminDashBoard>>>Email kutusu
+
+
+  // @FindBy(xpath = "//img[@class='img-profile rounded-circle']")
+  // public WebElement admin04
+
     @FindBy(xpath = "//input[@id='email']")
     public WebElement adminDashboardEmailKutusu;
+
+    @FindBy(xpath = "//a[normalize-space()='Logout']")
+    public WebElement logouttusu;
 
 
     //adminDashBoard>>>Password kutusu
@@ -769,7 +777,10 @@ public class AdminDashboard {
 
     //adminDashBoard>>>> emailIssentSuccesfullyYaziElementi
     //@FindBy  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-    public WebElement emailIssentSuccesfullyYaziElementii;
+
+    // AdminDashBoard>>>> EmailSent All Subs Succesfully
+    @FindBy(xpath = "(//script[4])[2]")
+    public WebElement emailSentAllSuccesfullyElementi;
 
 
     //***************** Hüseyinn ************
@@ -1061,6 +1072,16 @@ public class AdminDashboard {
     //adminDashBoard >>> Packages >>> Sagdaki kirmizi renkli silme butonu >> Silme buton'una tiklayinca sag yukari kosede cikan Package deleted onay'i
     @FindBy(xpath = "//*[contains(text(), 'Package is deleted successfully!')]")
     public WebElement adminDashboardPackageDeletedOnay;
+
+    @FindBy (xpath = "//input[@id='email']")
+    public WebElement AdminLoginEmail;
+
+    @FindBy(xpath = "//input[@id='password']")
+    public WebElement AdminLoginPassword;
+
+
+    @FindBy(xpath = "//button[normalize-space()='Login']")
+    public WebElement AdminLoginLogin;
 
 
 }

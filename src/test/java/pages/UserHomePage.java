@@ -127,9 +127,13 @@ public class UserHomePage {
 
 
     //Home Page --> Service Button
+
     @FindBy(xpath ="//ul[@id='menu']//a[normalize-space()='Services’]")
     public WebElement homeButtonServicesButton;
 
+     //Home Page --> Service Button
+      @FindBy(xpath ="//div[@class='col-md-10 col-sm-12']")
+      public WebElement homePageServicesButton;
 
     //Home Page --> Destination Button
     @FindBy(xpath = "//ul[@id='menu']//a[normalize-space()='Destinations']")
@@ -142,13 +146,19 @@ public class UserHomePage {
 
 
     //Home Page --> AboutUs Button
-    @FindBy(xpath = "//ul[@id='menu']//a[normalize-space()='About Us’]")
+
+    @FindBy(xpath = "//ul[@id='menu']//a[normalize-space()='About Us']")
+
+    @FindBy(xpath = "(//a[normalize-space()='About Us'])[2]")
+
     public WebElement homePageAboutUsButton;
+
 
 
     //Home Page --> Faq Button
     @FindBy(xpath ="//ul[@id='menu']//a[normalize-space()='FAQ']")
     public WebElement homePageFaqButton;
+
 
 
     //Home Page --> Blog Button
@@ -550,6 +560,15 @@ public class UserHomePage {
     @FindBy(xpath = "//span[@class='iconTick']")
     public WebElement payTextBox;
 
+
+
+
+    //Home Page --> Our Service --> International Tour Button
+    @FindBy(xpath ="//a[@href='https://qa.tripandway.com/service/international-tour']")
+    public WebElement internationalTourButton;
+
+
+
     //Home Page --> Team Members  --> HeadText
     @FindBy(xpath ="//h2[normalize-space()='Team Members']")
     public WebElement teamMembersHeadText;
@@ -614,6 +633,31 @@ public class UserHomePage {
     @FindBy(xpath = "//h2[normalize-space()='Testimonial']")
     public WebElement testimonial;
 
+
+
+ // Home Pages -->footer--> Recent Posts--> 1.satir
+ @FindBy(xpath = "(//li)[32]")
+ public WebElement birincisatirdakielement;
+ // Home Pages -->footer--> Recent Posts--> 2.satir
+ @FindBy(xpath = "(//li)[33]")
+ public WebElement ikincisatirdakielement;
+ // Home Pages -->footer--> Recent Posts--> 3.satir
+ @FindBy(xpath = "(//li)[34]")
+ public WebElement ucuncusatirdakielement;
+ // Home Pages -->footer--> Recent Posts--> 4.satir
+ @FindBy(xpath = "(//li)[35]")
+ public WebElement dorduncusatirdakielement;
+ // Home Pages -->footer--> Recent Posts--> 5.satir
+ @FindBy(xpath = "(//li)[36]")
+ public WebElement besincisatirdakielement;
+
+
+
+
+
+
+
+
     // Home Page --> Destination head Text
     @FindBy(xpath = "//h2[normalize-space()='Destination']")
     public WebElement destinationHeadText;
@@ -640,6 +684,8 @@ public class UserHomePage {
     @FindBy(xpath ="//input[@name='traveller_password']")
     public WebElement homePageLoginPassword;
 
+    @FindBy(xpath ="//button[@class='btn btn-primary']")
+     public WebElement homePageAltLoginButton;
 
     //Home Page --> AboutUs Button --> Our Mission Text
     @FindBy(xpath = "//h3[normalize-space()='OUR MISSION']")
@@ -722,6 +768,12 @@ public class UserHomePage {
     @FindBy(xpath = "//div[@class='owl-nav']//i[@class='fas fa-angle-left']")
     public WebElement latestBlogBeforeButton;
 
+    // Home Page --> Latest Blog --> Satir Locatei
+    @FindBy(xpath = "(//div[@class='owl-stage'])[5]")
+    public WebElement latestBlogSatirLocate;
+
+
+
 
 
     //Home Page --> Newsletter Sag yukarida cikan Allredy Exixst Yazsi
@@ -734,6 +786,38 @@ public class UserHomePage {
     @FindBy(xpath = "//div[@class='ml-4 text-lg text-gray-500 uppercase tracking-wider']")
     public WebElement newsLetterPageExpiredYazisi;
 
+    //Home Page --> Registration Button-->>name
+    @FindBy(xpath ="(//*[@class='form-control'])[1]" )
+    public WebElement nameText;
+    //Home Page --> Registration Button-->>email
+    @FindBy(xpath ="(//*[@class='form-control'])[2]" )
+    public WebElement emailText;
+    //Home Page --> Registration Button-->>sifre
+    @FindBy(xpath ="(//*[@class='form-control'])[3]" )
+    public WebElement sifreText;
+    //Home Page --> Registration Button-->>makeRegistration
+    @FindBy(xpath ="//*[text()='Make Registration']" )
+    public WebElement makeRegistrationbutton;
+    //Home Page --> Registration Button-->Pop up mesaji
+    @FindBy(xpath ="//*[contains(text(),'Registration is completed. You can now login.')]" )
+    public WebElement registrationBasariligiriselementi;
+    //userLoginDashboardPage --> Update Button-->Pop up mesaji
+    @FindBy(xpath ="//*[contains(text(),'Profile is updated successfully')]" )
+    public WebElement updateBasariligiriselementi;
+
+    // Home Page ---> See All Destination
+
+    @FindBy(xpath = "//a[normalize-space()='See All Destinations']")
+    public  WebElement seeAllDestinationButton;
+
+
+    // Book Your Seat Button
+    @FindBy(xpath = "//button[text()='Book Your Seat']")
+    public WebElement bookYourSeatButton;
+
+    // Iframe
+    @FindBy(xpath = "//iframe[@class='stripe_checkout_app']")
+    public WebElement iframe;
 
 
 

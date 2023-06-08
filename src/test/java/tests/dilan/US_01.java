@@ -1,6 +1,12 @@
 package tests.dilan;
 
 import org.testng.annotations.Test;
+
+
+
+
+
+
 import org.testng.asserts.SoftAssert;
 import utilities.ConfigReader;
 import utilities.Driver;
@@ -30,6 +36,6 @@ public class US_01 extends TestBaseRapor {
         Driver.closeDriver();
         extentTest.info("Sayfayi kapatir");
 
-    }
 
+    }
 }

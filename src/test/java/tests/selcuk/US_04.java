@@ -17,31 +17,29 @@ import utilities.TestBaseRapor;
 public class US_04 extends TestBaseRapor {
 
     @Test
-    public void testCase01(){
+    public void featuredPackages_3days_BuenoAires_goruntuleme (){
 
-        extentTest = extentReports.createTest("Tripandway FOOTER testi",
-                "Kullanici açılan sayfanın Title'sinin '3 days in Buenos Aires' oldugunu test eder");
 
         //TEST CASE 1
         //1- Kullanıcı https://qa.tripandway.com/ ana sayfasına gider
         Driver.getDriver().get(ConfigReader.getProperty("trpURL"));
-        extentTest.info("Kullanici Tripandway anasayfaya gider...");
 
 
         //2- Kullanıcı footer bölümüne iner
         UserHomePage userHomePage = new UserHomePage();
-        JavascriptExecutor jse = (JavascriptExecutor) Driver.getDriver();
-        jse.executeScript("arguments[0].scrollIntoView();",userHomePage.FeaturedPackagesYazisi);
+
 
         //3- Kullanıcı 3 DAYS IN BUENOS AIRES'i tıklar
+
         userHomePage.threeDaysInBuenosAires.click();
-        extentTest.info("Kullanici 3 days in Buenos Aires'a tıklar...");
 
         //4- Kullanıcı sayfanın tıklandığını titilina bakarak test eder
         String actualTitle = Driver.getDriver().getTitle();
         String expectedTitle = "3 days in Buenos Aires";
 
         Assert.assertTrue(actualTitle.equals(expectedTitle));
+
+
         extentTest.pass("Sayfanın Title'ının '3 days in Buenos Aires' olduğunu doğrular...");
 
 
@@ -49,7 +47,7 @@ public class US_04 extends TestBaseRapor {
     }
 
     @Test
-    public void testCase02(){
+    public void featuredPackages_10days_BuenoAires_goruntuleme(){
 
         extentTest = extentReports.createTest("Tripandway FOOTER testi",
                 "Kullanici açılan sayfanın Title'sinin '10 days in Buenos Aires' oldugunu test eder");
@@ -82,7 +80,7 @@ public class US_04 extends TestBaseRapor {
     }
 
     @Test
-    public void testCase03(){
+    public void featuredPackages_3days_Bangkok_goruntuleme(){
 
         extentTest = extentReports.createTest("Tripandway FOOTER testi",
                 "Kullanici açılan sayfanın Title'sinin '3 days in Bangkok' oldugunu test eder");
@@ -115,7 +113,7 @@ public class US_04 extends TestBaseRapor {
     }
 
     @Test
-    public void testCase04(){
+    public void featuredPackages_7days_SalinaIsland_goruntuleme(){
 
         extentTest = extentReports.createTest("Tripandway FOOTER testi",
                 "Kullanici açılan sayfanın Title'sinin '7 days in Salina Island' oldugunu test eder");
@@ -143,12 +141,9 @@ public class US_04 extends TestBaseRapor {
         extentTest.pass("Sayfanın Title'ının '7 days in Salina Island' olduğunu doğrular...");
 
 
+
         Driver.quitDriver();
     }
 
-
-
-
 }
-
 
