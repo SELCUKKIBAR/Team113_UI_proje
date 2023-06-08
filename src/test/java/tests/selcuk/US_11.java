@@ -1,8 +1,6 @@
 package tests.selcuk;
 
 
-public class US_11 {
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
@@ -13,6 +11,7 @@ import utilities.ConfigReader;
 import utilities.Driver;
 import utilities.ReusableMethods;
 import utilities.TestBaseRapor;
+
 
 public class US_11 extends TestBaseRapor {
 

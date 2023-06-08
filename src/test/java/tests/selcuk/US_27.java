@@ -1,7 +1,6 @@
 package tests.selcuk;
 
 
-public class US_27 {
 
 import com.aventstack.extentreports.reporter.configuration.Theme;
 import org.testng.annotations.BeforeMethod;
