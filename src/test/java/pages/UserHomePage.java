@@ -796,7 +796,13 @@ public class UserHomePage {
     public  WebElement seeAllDestinationButton;
 
 
+    // Book Your Seat Button
+    @FindBy(xpath = "//button[text()='Book Your Seat']")
+    public WebElement bookYourSeatButton;
 
+    // Iframe
+    @FindBy(xpath = "//iframe[@class='stripe_checkout_app']")
+    public WebElement iframe;
 
 
 
