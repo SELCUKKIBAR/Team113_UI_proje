@@ -5,6 +5,8 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import utilities.Driver;
 
+import java.util.List;
+
 public class UserHomePage {
 
     public UserHomePage(){
@@ -783,6 +785,17 @@ public class UserHomePage {
     //userLoginDashboardPage --> Update Button-->Pop up mesaji
     @FindBy(xpath ="//*[contains(text(),'Profile is updated successfully')]" )
     public WebElement updateBasariligiriselementi;
+
+    //FAQ sayfasi==FAQ yazisi
+    @FindBy(xpath = "//h1[text()='FAQ']")
+    public WebElement FAQyazisi;
+
+    //FAQ sayfasi == FAQ Sorular
+    @FindBy(xpath = "//button[@class='accordion-button collapsed']")
+    public List<WebElement> FAQSorular;
+
+
+
 
 
 
