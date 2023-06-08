@@ -127,9 +127,13 @@ public class UserHomePage {
 
 
     //Home Page --> Service Button
+
     @FindBy(xpath ="//ul[@id='menu']//a[normalize-space()='Services’]")
     public WebElement homeButtonServicesButton;
 
+     //Home Page --> Service Button
+      @FindBy(xpath ="//div[@class='col-md-10 col-sm-12']")
+      public WebElement homePageServicesButton;
 
     //Home Page --> Destination Button
     @FindBy(xpath = "//ul[@id='menu']//a[normalize-space()='Destinations']")
@@ -142,13 +146,15 @@ public class UserHomePage {
 
 
     //Home Page --> AboutUs Button
-    @FindBy(xpath = "//ul[@id='menu']//a[normalize-space()='About Us’]")
+    @FindBy(xpath = "//ul[@id='menu']//a[normalize-space()='About Us']")
     public WebElement homePageAboutUsButton;
+
 
 
     //Home Page --> Faq Button
     @FindBy(xpath ="//ul[@id='menu']//a[normalize-space()='FAQ']")
     public WebElement homePageFaqButton;
+
 
 
     //Home Page --> Blog Button
@@ -518,33 +524,8 @@ public class UserHomePage {
 
 
 
-    // Home Page --> footer --> Facebook Logo --> Acilan sayfada "facebook" yazisi
-    @FindBy(xpath = "//img[@class='fb_logo _8ilh img']")
-    public WebElement facebookLogoFacebookYazisiHomePage;
 
 
-
-
-    // Home Page --> footer --> Twitter Logo --> Acilan sayfada "Ayarlar" yazisi
-    @FindBy(xpath = "(//div[@class='css-1dbjc4n r-1awozwy r-sdzlij r-18u37iz r-1777fci r-dnmrzs r-xyw6el r-o7ynqc r-6416eg'])[2]")
-    public WebElement twitterLogoAyarlarYazisiHomePage;
-
-
-    // Home Page--> footer --> LinkedIn Logo
-    @FindBy(xpath = "(//i[@class='fab fa-linkedin-in'])[13]")
-    public WebElement linkedInLogoHomePage;
-
-
-    // Home Page--> footer --> LinkedIn Logo --> Acilan sayfada LinkedIn logosu
-    @FindBy(xpath = "(//*[@aria-busy='false'])[2]")
-    public WebElement linkedInSayfaLinkedInLogoHomePage;
-
-
-
-
-    // Home Page --> footer --> Pinterest Logo --> Acilan sayfada Pinterest logosu
-    @FindBy(xpath = "//i[@class='fab fa-pinterest-p']")
-    public WebElement pinterestSayfaPinterestLogoHomePage;
 
 
 
@@ -569,9 +550,6 @@ public class UserHomePage {
     @FindBy(xpath = "//a[normalize-space()='Buenos Aires, Argentina']")
     public WebElement buenosArgentinaHomePage;
 
-    @FindBy(className = "toast-message")
-    public WebElement warningMessage;
-
 
     //Home Page --> Login Button --> Email Adress
     @FindBy(xpath ="//input[@name='traveller_email']")
@@ -581,6 +559,8 @@ public class UserHomePage {
     @FindBy(xpath ="//input[@name='traveller_password']")
     public WebElement homePageLoginPassword;
 
+    @FindBy(xpath ="//button[@class='btn btn-primary']")
+     public WebElement homePageAltLoginButton;
 
     //Home Page --> AboutUs Button --> Our Mission Text
     @FindBy(xpath = "//h3[normalize-space()='OUR MISSION']")
@@ -675,6 +655,7 @@ public class UserHomePage {
 
     @FindBy(xpath = "//div[@class='ml-4 text-lg text-gray-500 uppercase tracking-wider']")
     public WebElement newsLetterPageExpiredYazisi;
+
 
 
 
