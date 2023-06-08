@@ -13,7 +13,7 @@ import utilities.TestBaseRapor;
 public class US_11 extends TestBaseRapor {
 
     @Test
-    public void testCase01() throws InterruptedException {
+    public void privacyPolicy_goruntuleme() throws InterruptedException {
         extentTest = extentReports.createTest("Tripandway PRIVACY POLICY testi",
                 "Kullanici açılan sayfanın Title'sinin Privacy Policy oldugunu test eder");
         //1- Kullanıcı https://qa.tripandway.com/ ana sayfasına gider

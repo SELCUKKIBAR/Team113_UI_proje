@@ -17,7 +17,7 @@ import utilities.TestBaseRapor;
 public class US_04 extends TestBaseRapor {
 
     @Test
-    public void testCase01(){
+    public void featuredPackages_3days_BuenoAires_goruntuleme (){
 
         extentTest = extentReports.createTest("Tripandway FOOTER testi",
                 "Kullanici açılan sayfanın Title'sinin '3 days in Buenos Aires' oldugunu test eder");
@@ -49,7 +49,7 @@ public class US_04 extends TestBaseRapor {
     }
 
     @Test
-    public void testCase02(){
+    public void featuredPackages_10days_BuenoAires_goruntuleme(){
 
         extentTest = extentReports.createTest("Tripandway FOOTER testi",
                 "Kullanici açılan sayfanın Title'sinin '10 days in Buenos Aires' oldugunu test eder");
@@ -82,7 +82,7 @@ public class US_04 extends TestBaseRapor {
     }
 
     @Test
-    public void testCase03(){
+    public void featuredPackages_3days_Bangkok_goruntuleme(){
 
         extentTest = extentReports.createTest("Tripandway FOOTER testi",
                 "Kullanici açılan sayfanın Title'sinin '3 days in Bangkok' oldugunu test eder");
@@ -115,7 +115,7 @@ public class US_04 extends TestBaseRapor {
     }
 
     @Test
-    public void testCase04(){
+    public void featuredPackages_7days_SalinaIsland_goruntuleme(){
 
         extentTest = extentReports.createTest("Tripandway FOOTER testi",
                 "Kullanici açılan sayfanın Title'sinin '7 days in Salina Island' oldugunu test eder");

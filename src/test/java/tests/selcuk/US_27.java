@@ -7,15 +7,16 @@ import org.testng.asserts.SoftAssert;
 import pages.AdminDashboard;
 import utilities.ConfigReader;
 import utilities.Driver;
+import utilities.SelcukTestBaseRapor;
 import utilities.TestBaseRapor;
 
-public class US_27 extends TestBaseRapor {
+public class US_27 extends SelcukTestBaseRapor {
     AdminDashboard adminDashboard = new AdminDashboard();
     SoftAssert softAssert = new SoftAssert();
 
 
     @Test
-    public void testCase01(){
+    public void adminPanel_giris_dogrulama(){
 
         extentTest = extentReports.createTest("Admin panelindeki menülerin kontrol testi",
                 "Kullanici Admin Panelde sol tarafta bulunan menüleri test eder");
@@ -34,7 +35,7 @@ public class US_27 extends TestBaseRapor {
         //3- Kullanıcı Login Butonuna tıklar
         adminDashboard.adminDashboardLoginButonu.click();
         //4- Kullanıcı sağ üst köşede bulunan admin04 yazsının görürünür olduğunu kontrol ederek Admin panele girdiğini doğrular
-        String expectedMesaj = "admin04";
+        String expectedMesaj = ConfigReader.getProperty("adminKullaniciAdi_1");
         String actualMesaj = adminDashboard.admin04sagustbuton.getText();
 
         softAssert.assertTrue(actualMesaj.equals(expectedMesaj),"Sağ üst köşedeki admin adı doğru olmalı");
@@ -46,7 +47,7 @@ public class US_27 extends TestBaseRapor {
     }
 
     @Test
-    public void testCase02() throws InterruptedException {
+    public void generalSettingsElementleriGoruntuleme() throws InterruptedException {
 
         extentTest = extentReports.createTest("Admin panelindeki menülerin kontrol testi",
                 "Kullanici Admin Panelde sol tarafta bulunan General Settings menüsünü test eder");
@@ -122,7 +123,7 @@ public class US_27 extends TestBaseRapor {
     }
 
     @Test
-    public void testCase03() throws InterruptedException {
+    public void pageSettings_ElementleriniGoruntuleme() throws InterruptedException {
 
         extentTest = extentReports.createTest("Admin panelindeki menülerin kontrol testi",
                 "Kullanici Admin Panelde sol tarafta bulunan Page Settings menüsünü test eder");
@@ -194,7 +195,7 @@ public class US_27 extends TestBaseRapor {
     }
 
     @Test
-    public void testCase04() throws InterruptedException {
+    public void paymentSettingsElementleriniGoruntuleme() throws InterruptedException {
 
         extentTest = extentReports.createTest("Admin panelindeki menülerin kontrol testi",
                 "Kullanici Admin Panelde sol tarafta bulunan Payment Settings,Dynamic Pages ve Language menülerini test etmeye hazır...");
@@ -237,7 +238,7 @@ public class US_27 extends TestBaseRapor {
     }
 
     @Test
-    public void testCase05() throws InterruptedException {
+    public void webSiteSectionElemenleriniGoruntuleme() throws InterruptedException {
 
         extentTest = extentReports.createTest("Admin panelindeki menülerin kontrol testi",
                 "Kullanici Admin Panelde sol tarafta bulunan Website Section menüsünü test etmeye hazır...");
