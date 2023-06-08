@@ -565,9 +565,7 @@ public class UserHomePage {
 
 
 
-    //Home Page --> Our Service --> International Tour Button
-    @FindBy(xpath ="//a[@href='https://qa.tripandway.com/service/international-tour']")
-    public WebElement internationalTourButton;
+
 
 
 
@@ -830,6 +828,12 @@ public class UserHomePage {
     //FAQ sayfasi == FAQ Sorular
     @FindBy(xpath = "//button[@class='accordion-button collapsed']")
     public List<WebElement> FAQSorular;
+
+
+
+    //userhompahe sağ üst login
+    @FindBy(xpath = "/html/body/div[4]/div/div/div[2]/div/a[2]")
+    public  WebElement userHompageSagUstLoginButton;
 
 
 
