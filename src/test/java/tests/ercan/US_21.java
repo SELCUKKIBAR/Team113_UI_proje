@@ -1,7 +1,6 @@
 package tests.ercan;
 
 import org.openqa.selenium.Keys;
-import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
@@ -24,7 +23,7 @@ public class US_21 extends TestBaseRapor {
     @BeforeMethod
     public void setUp() {
         Driver.getDriver().get(ConfigReader.getProperty("trpURL"));
-        ReusableMethods.bekle(5);
+        ReusableMethods.bekle(10);
 
         Driver.getDriver().manage().window().maximize();
 
@@ -38,15 +37,19 @@ public class US_21 extends TestBaseRapor {
 
     public void paymentHistoryTest(){
 
+        extentTest = extentReports.createTest("Payment HIstory Elementinin aktifligi testi","" +
+                "Kullanici admin sayfasina giris yapar , sayfanin payment history elementine tiklar " +
+                "expected ve actual degerlerini dogrulugunu test eder ");
+
         userHomePage.homePageLoginButton.click();
         userHomePage.homePageLoginEmail.sendKeys(ConfigReader.getProperty("adminEmail_01"));
-        userHomePage.homePageLoginPassword.sendKeys(ConfigReader.getProperty("adminPassword_02Login") + Keys.ENTER);
+        userHomePage.homePageLoginPassword.sendKeys(ConfigReader.getProperty("adminPassword_01Login") + Keys.ENTER);
         userDashboard.userLoginDashboardPaymentHistoryButton.click();
 
         String actualResult = userDashboard.userLoginDashboardPaymentHistoryAllPeymantsTable.getText();
         String expectedResult = "View All Payments";
 
-        Assert.assertEquals(actualResult,expectedResult);
+        softAssert.assertEquals(actualResult,expectedResult);
 
 
     }

@@ -18,35 +18,43 @@ public class UserDashboard {
     @FindBy(xpath = "//button[text()='ACCEPT']")
     public WebElement tripandwayCookies;
 
+
     //***********************User Login Dashboard Soldaki Button'lar***********************
 
     // userLoginDashboardPage ===> Sag Dashboard Button
     @FindBy (xpath= "(//a[normalize-space()='Dashboard'])[1]")
     public WebElement userLoginDashboardSagDashboardButton;
 
+
     // userLoginDashboardPage ===> Sol Dashboard Button
     @FindBy (xpath= "(//a[normalize-space()='Dashboard'])[2]")
     public WebElement userLoginDashboardSolDashboardButton;
+
 
     // userLoginDashboardPage ===> Payment History Button
     @FindBy (xpath= "//a[normalize-space()='Payment History']")
     public WebElement userLoginDashboardPaymentHistoryButton;
 
+
     // userLoginDashboardPage ===> Payment History Button ====> All Payments Table
     @FindBy (xpath= "//h1[normalize-space()='View All Payments']")
     public WebElement userLoginDashboardPaymentHistoryAllPeymantsTable;
+
 
     // userLoginDashboardPage ===> Update Profile Button
     @FindBy (xpath= "//a[normalize-space()='Update Profile']")
     public WebElement userLoginDashboardUpdateProfileButton;
 
+
     // userLoginDashboardPage ===> Update Password Button
     @FindBy (xpath= "//a[normalize-space()='Update Password']")
     public WebElement userLoginDashboardUpdatePasswordButton;
 
+
     // userLoginDashboardPage ===> Logout Button
     @FindBy (xpath= "//a[normalize-space()='Logout']")
     public WebElement userLoginDashboardLogoutButton;
+
 
     //***********************Dashboard Sayfasi***********************
 
@@ -54,9 +62,11 @@ public class UserDashboard {
     @FindBy(xpath = "//b[text()='Completed Orders']")
     public WebElement userLoginDashboardCompletedOrdersText;
 
+
     // userLoginDashboardPage ===> Soldaki Dashboard ===> Dashboard Pending Orders yazisi
     @FindBy(xpath = "//*[text()='Pending Orders']")
     public WebElement userLoginDashboardPendingOrdersText;
+
 
     //***********************Payment History Sayfasi***********************
 
@@ -64,15 +74,18 @@ public class UserDashboard {
     @FindBy(xpath = "//h1[text()='View All Payments']")
     public WebElement userLoginDashboardViewAllPaymentsText;
 
+
     // userLoginDashboardPage ===> Soldaki Payment History ===> Tablonun 1. satirindaki butun datalar
     @FindBy(xpath = "//tbody/tr[2]/td")
     public List<WebElement> userLoginDashboardTablonunBirinciSatirindakiDatalar;
+
 
     //***********************Update Profile Sayfasi***********************
 
     // userLoginDashboardPage ===> Soldaki Update Profile ===> Update Profile Yazisi
     @FindBy(xpath = "//h1[text()='Update Profile']")
     public WebElement userLoginDashboradUpdateProfileText;
+
 
     // userLoginDashboardPage ===> Soldaki Update Profile ===> Name textbox'i
     @FindBy(xpath = "//input[@name='traveller_name']")
@@ -82,33 +95,58 @@ public class UserDashboard {
     @FindBy(xpath = "//input[@name='traveller_phone']")
     public WebElement userLoginDashboradPhoneTextBox;
 
+
     // userLoginDashboardPage ===> Soldaki Update Profile ===> Address textbox'i
     @FindBy(xpath = "//input[@name='traveller_address']")
     public WebElement userLoginDashboradAddressTextBox;
+
 
     // userLoginDashboardPage ===> Soldaki Update Profile ===> City textbox'i
     @FindBy(xpath = "//input[@name='traveller_city']")
     public WebElement userLoginDashboradCityTextBox;
 
+
     // userLoginDashboardPage ===> Soldaki Update Profile ===> Email Address textbox'i
     @FindBy(xpath = "//input[@name='traveller_email']")
     public WebElement userLoginDashboradEmailAddressTextBox;
+
+
+
+    // userLoginDashboardPage ===> Soldaki Update Profile ===> Password Address textbox'i
+    @FindBy(xpath = "//input[@name='traveller_password']")
+    public WebElement userLoginDashboradPasswordAddressTextBox;
+
+
+    // userLoginDashboardPage ===> Soldaki Update Profile ===> Login
+    @FindBy(xpath = "//button[@type='submit']")
+    public WebElement userLoginDashboradLogin;
+
+
+    // userLoginDashboardPage ===> Dashboard yazisi
+    @FindBy(xpath = "/html/body/div[4]/div/div/div[2]/div/a")
+    public WebElement userLoginDashboradDashboardDogrulama;
+
+
 
     // userLoginDashboardPage ===> Soldaki Update Profile ===> Country textbox'i
     @FindBy(xpath = "//input[@name='traveller_country']")
     public WebElement userLoginDashboradCountryTextBox;
 
+
     // userLoginDashboardPage ===> Soldaki Update Profile ===> State textbox'i
     @FindBy(xpath = "//input[@name='traveller_state']")
     public WebElement userLoginDashboradStateTextBox;
+
 
     // userLoginDashboardPage ===> Soldaki Update Profile ===> Zip Code textbox'i
     @FindBy(xpath = "//input[@name='traveller_zip']")
     public WebElement userLoginDashboradZipCodeTextBox;
 
+
     // userLoginDashboardPage ===> Soldaki Update Profile ===> Update butonu
     @FindBy(xpath = "//button[@type='submit']")
     public WebElement userLoginDashboradUpdateButton;
+
 
     //***********************Update Password Sayfasi***********************
 
@@ -116,13 +154,16 @@ public class UserDashboard {
     @FindBy(xpath ="//h1[text()='Update Password']")
     public WebElement userLoginDashboardUpdatePasswordText;
 
+
     // userLoginDashboardPage ===> Soldaki Update Password ===> New Password * yazisi
     @FindBy(xpath = "//label[text()='New Password *']")
     public WebElement userLoginDashboardNewPasswordText;
 
+
     // userLoginDashboardPage ===> Soldaki Update Password ===> New Password'un yazilacagi button
     @FindBy(xpath = "//input[@class='form-control']")
     public WebElement userLoginDashboardNewPasswordunYazilacagiButton;
+
 
     // userLoginDashboardPage ===> Soldaki Update Password ===> Update button
     @FindBy(xpath = "//button[@class=\"btn btn-primary\"]")

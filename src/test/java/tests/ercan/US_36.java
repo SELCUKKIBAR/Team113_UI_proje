@@ -1,6 +1,5 @@
 package tests.ercan;
 
-import org.testng.Assert;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 import pages.AdminDashboard;
@@ -22,6 +21,10 @@ public class US_36 extends TestBaseRapor {
     @Test
 
     public void sentEmailallSubscribs(){
+
+        extentTest = extentReports.createTest("Sent Email All subscribs aktifligi testi","" +
+                "Kullanici admin sayfana giris yapar , sayfanin sol en alt bolumunde ki  subscribs sekmesine tiklar" +
+                "Send email subscribs secenegini secer , baslik ve mail yazarak send butonuna tiklar, succesfully yazisini test eder ");
         Driver.getDriver().get(ConfigReader.getProperty("trpAdminURL"));
 
 
@@ -37,13 +40,11 @@ public class US_36 extends TestBaseRapor {
 
         adminDashboard.sendEmailButonu.click();
 
+        String expectedResult = "Email is sent successfully to all subscribers!";
 
-        Assert.assertTrue(adminDashboard.emailIssentSuccesfullyYaziElementi.isEnabled());
+       String actualResult = adminDashboard.emailIssentSuccesfullyYaziElementi.getText();
 
-        Driver.getDriver().close();
-
-
-
+       softAssert.assertTrue(adminDashboard.emailIssentSuccesfullyYaziElementi.isEnabled());
 
 
 
