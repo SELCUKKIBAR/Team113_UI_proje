@@ -32,6 +32,9 @@ public class UserDashboard {
 
 
     // userLoginDashboardPage ===> Payment History Button
+    @FindBy(xpath = "//button[@name='form1']")
+    public WebElement userAltLoginButton;
+
     @FindBy (xpath= "//a[normalize-space()='Payment History']")
     public WebElement userLoginDashboardPaymentHistoryButton;
 
@@ -168,5 +171,10 @@ public class UserDashboard {
     // userLoginDashboardPage ===> Soldaki Update Password ===> Update button
     @FindBy(xpath = "//button[@class=\"btn btn-primary\"]")
     public WebElement userLoginDashboardUpdateButton;
+
+
+
+
+
 
 }
