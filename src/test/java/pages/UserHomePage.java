@@ -127,9 +127,13 @@ public class UserHomePage {
 
 
     //Home Page --> Service Button
+
     @FindBy(xpath ="//ul[@id='menu']//a[normalize-space()='Services’]")
     public WebElement homeButtonServicesButton;
 
+     //Home Page --> Service Button
+      @FindBy(xpath ="//div[@class='col-md-10 col-sm-12']")
+      public WebElement homePageServicesButton;
 
     //Home Page --> Destination Button
     @FindBy(xpath = "//ul[@id='menu']//a[normalize-space()='Destinations']")
@@ -142,13 +146,19 @@ public class UserHomePage {
 
 
     //Home Page --> AboutUs Button
+
+    @FindBy(xpath = "//ul[@id='menu']//a[normalize-space()='About Us']")
+
     @FindBy(xpath = "(//a[normalize-space()='About Us'])[2]")
+
     public WebElement homePageAboutUsButton;
+
 
 
     //Home Page --> Faq Button
     @FindBy(xpath ="//ul[@id='menu']//a[normalize-space()='FAQ']")
     public WebElement homePageFaqButton;
+
 
 
     //Home Page --> Blog Button
@@ -634,11 +644,6 @@ public class UserHomePage {
 
 
 
-
-
-
-
-
     // Home Page --> Destination head Text
     @FindBy(xpath = "//h2[normalize-space()='Destination']")
     public WebElement destinationHeadText;
@@ -660,8 +665,6 @@ public class UserHomePage {
     public WebElement buenosArgentinaHomePage;
 
 
-
-
     //Home Page --> Login Button --> Email Adress
     @FindBy(xpath ="//input[@name='traveller_email']")
     public WebElement homePageLoginEmail;
@@ -670,6 +673,8 @@ public class UserHomePage {
     @FindBy(xpath ="//input[@name='traveller_password']")
     public WebElement homePageLoginPassword;
 
+    @FindBy(xpath ="//button[@class='btn btn-primary']")
+     public WebElement homePageAltLoginButton;
 
     //Home Page --> AboutUs Button --> Our Mission Text
     @FindBy(xpath = "//h3[normalize-space()='OUR MISSION']")
@@ -794,6 +799,7 @@ public class UserHomePage {
 
     @FindBy(xpath = "//a[normalize-space()='See All Destinations']")
     public  WebElement seeAllDestinationButton;
+
 
 
 
