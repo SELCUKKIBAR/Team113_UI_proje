@@ -593,16 +593,25 @@ public class AdminDashboard {
     @FindBy(xpath ="//a[@href='https://qa.tripandway.com/admin/blog/edit/111']")
     public WebElement adminDasboardBlogSectionView;
 
+    // adminDasboard>>>> Blog Section>>>Blogs>>> Sari Edit Butonu
+    @FindBy(xpath ="//*[@id=\"dataTable\"]/tbody/tr[7]/td[5]/a[1]")
+    public WebElement adminDasboardBlogSectionEdit;
 
     // adminDasboard>>>> Blog Section>>>Blogs>>>ViewDogrulama
     @FindBy(xpath ="//h1[text()='Edit Blog']")
     public WebElement adminDasboardBlogSectionViewDogrulama;
 
+    // adminDasboard>>>> Blog Section>>>Blogs>>> Blog Edit Sayfasi >>>> Update Butonu
+    @FindBy(xpath ="(//button[normalize-space()='Update'])[1]")
+    public WebElement adminDasboardBlogSectionUpdate;
 
     // adminDasboard>>>> Blog Section>>>Blogs>>>BlogDelete
     @FindBy(xpath ="//*[@id=\"dataTable\"]/tbody/tr[7]/td[5]/a[2]")
     public WebElement adminDasboardBlogSectionBlogDelete;
 
+    // adminDasboard>>>> Blog Section>>>Blogs>>>YeniEklenenSatir
+    @FindBy(xpath ="//tbody/tr[7]")
+    public WebElement adminDasboardBlogSectionYeniEklenenSatir;
 
     //************* ELİS HANIM*********
 
@@ -660,12 +669,12 @@ public class AdminDashboard {
 
     //adminDashBoard>>>> birinciSayfailkSiparisinvoiceButonu
     @FindBy(xpath = "(//a[text()='Invoice'])[1]")
-    public WebElement birinciSayfailkSiparisinvoiceButonu;
+    public WebElement birinciSayfailkSiparisInvoiceButonu;
 
 
     //adminDashBoard>>>> orderinvoiceButonu
     @FindBy(xpath = "(//*[text()='Order Invoice'])[2]")
-    public WebElement OrderinvoiceButonu;
+    public WebElement orderInvoiceButonu;
 
 
     //************************* SUBSCRIBER ****************
