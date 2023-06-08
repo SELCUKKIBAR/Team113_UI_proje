@@ -25,7 +25,7 @@ public class US_37 extends TestBaseRapor {
         extentTest.info("Admin Login sayfasinda email Address textbox'ina gecerli email girer");
 
         adminDashboard.adminDashboardPasswordKutusu.sendKeys(ConfigReader.getProperty("adminPassword_01"));
-        extentTest.info("Admin Login sayfasinda password textbox'ina gecerli email girer");
+        extentTest.info("Admin Login sayfasinda Password textbox'ina gecerli email girer");
 
         adminDashboard.adminDashboardLoginButonu.click();
         extentTest.info("Admin Login sayfasinda login butonuna tiklar");
@@ -37,7 +37,7 @@ public class US_37 extends TestBaseRapor {
         extentTest.info("Acilan menuden Change Password'e tiklar");
 
         assertTrue(adminDashboard.adminDashboardEditProfilText.isDisplayed(),"Edit Profile yazisi gorunur olmalidir");
-        extentTest.pass(adminDashboard.adminDashboardEditProfilText.getText() + " yazisinin gorunur oldugunu test eder");
+        extentTest.pass("Acilan sayfada " + adminDashboard.adminDashboardEditProfilText.getText() + " yazisinin gorunur oldugunu test eder");
 
         Driver.closeDriver();
         extentTest.info("Sayfayi kapatir");

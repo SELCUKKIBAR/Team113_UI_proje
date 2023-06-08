@@ -27,7 +27,7 @@ public class US_13  {
 
 
     Driver.getDriver().get(ConfigReader.getProperty("trpURL"));
-    userHomePage.destinationsUstTaraf.click();
+
 
     UserDashboard userDashboard = new UserDashboard();
     userDashboard.tripandwayCookies.click();
@@ -41,12 +41,6 @@ public class US_13  {
     public void destinationsGorunurMu(){
 
 
-
-      try {
-        Thread.sleep(3000);
-      } catch (InterruptedException e) {
-
-      }
 
       String expected = "DESTINATIONS";
       String actual = userHomePage.destinationsYazisi.getText();
@@ -65,68 +59,37 @@ public class US_13  {
     JSUtilities.scrollToElement(Driver.getDriver(), userHomePage.destinationsBangkok);
     ReusableMethods.bekle(2);
 
-
-
     userHomePage.destinationsBangkok.click();
 
+    Assert.assertTrue(userHomePage.bangkokYazisi.isDisplayed());
 
-
-    softAssert.assertTrue(userHomePage.bangkokYazisi.isDisplayed(),"Destinations'a tiklayinca acilan sayfada Bangkok yazisi gorunur olmali");
-
-    softAssert.assertAll();
-
-
-
-    Driver.quitDriver();
-
-
-
-
+    Driver.closeDriver();
 
   }
-
-
-
   @Test
-  public void destinationsGreenvilleAktifMi(){
+  public void destinationsGreenvilleAktifMi() {
 
     JSUtilities.scrollToElement(Driver.getDriver(), userHomePage.destinationsBangkok);
     ReusableMethods.bekle(2);
-
 
 
     userHomePage.destinationsGreenville.click();
 
+    Assert.assertTrue(userHomePage.greenvilleYazisi.isDisplayed());
 
+    Driver.closeDriver();
 
-    softAssert.assertTrue(userHomePage.greenvilleYazisi.isDisplayed(),"Destinations'a tiklayinca acilan sayfada GreenVille yazisi gorunur olmali");
-
-    softAssert.assertAll();
-
-
-
-    Driver.quitDriver();
-  }
-
-  @Test
-  public void destinationsBuenosAiresAktifMi(){
+  }@Test
+  public void destinationsBuenosAiresAktifMi (){
 
     JSUtilities.scrollToElement(Driver.getDriver(), userHomePage.destinationsBangkok);
     ReusableMethods.bekle(2);
 
-
-
     userHomePage.destinationsBuenosAires.click();
 
+    Assert.assertTrue(userHomePage.buenosAiresYazisi.isDisplayed());
 
-
-    softAssert.assertTrue(userHomePage.buenosAiresYazisi.isDisplayed(),"Destinations'a tiklayinca acilan sayfada Buenos Aires yazisi gorunur olmali");
-
-    softAssert.assertAll();
-
-
-
-    Driver.quitDriver();
+    Driver.closeDriver();
   }
 
   @Test
@@ -140,14 +103,10 @@ public class US_13  {
     userHomePage.destinationsMarrakesh.click();
 
 
-
-    softAssert.assertTrue(userHomePage.marrakeshYazisi.isDisplayed(),"Destinations'a tiklayinca acilan sayfada Marrakesh yazisi gorunur olmali");
-
-    softAssert.assertAll();
+    Assert.assertTrue(userHomePage.marrakeshYazisi.isDisplayed());
 
 
-
-    Driver.quitDriver();
+    Driver.closeDriver();
   }
 
   @Test
@@ -160,15 +119,10 @@ public class US_13  {
 
     userHomePage.destinationsSalinaIsland.click();
 
+    Assert.assertTrue(userHomePage.salinaYazisi.isDisplayed());
 
+   Driver.closeDriver();
 
-    softAssert.assertTrue(userHomePage.salinaYazisi.isDisplayed(),"Destinations'a tiklayinca acilan sayfada Salina yazisi gorunur olmali");
-
-    softAssert.assertAll();
-
-
-
-    Driver.quitDriver();
   }
   @Test
   public void destinationsIstanbulAktifMi(){
@@ -182,13 +136,11 @@ public class US_13  {
 
 
 
-    softAssert.assertTrue(userHomePage.istanbulYazisi.isDisplayed(),"Destinations'a tiklayinca acilan sayfada Istanbul yazisi gorunur olmali");
-
-    softAssert.assertAll();
+  Assert.assertTrue(userHomePage.istanbulYazisi.isDisplayed());
 
 
+  Driver.closeDriver();
 
-    Driver.quitDriver();
   }
 
   @Test
@@ -203,13 +155,11 @@ public class US_13  {
 
 
 
-    softAssert.assertTrue(userHomePage.californiaYazisi.isDisplayed(),"Destinations'a tiklayinca acilan sayfada California yazisi gorunur olmali");
-
-    softAssert.assertAll();
+ Assert.assertTrue(userHomePage.californiaYazisi.isDisplayed());
 
 
+ Driver.closeDriver();
 
-    Driver.quitDriver();
   }
 
   @Test
@@ -218,26 +168,11 @@ public class US_13  {
     JSUtilities.scrollToElement(Driver.getDriver(), userHomePage.destinationsCalifornia);
     ReusableMethods.bekle(2);
 
-
-
     userHomePage.destinationsGoztepe.click();
 
+    Assert.assertTrue(userHomePage.goztepeYazisi.isDisplayed());
 
-
-    softAssert.assertTrue(userHomePage.goztepeYazisi.isDisplayed(),"Destinations'a tiklayinca acilan sayfada Goztepe yazisi gorunur olmali");
-
-    softAssert.assertAll();
-
-
-
-    Driver.quitDriver();
+    Driver.closeDriver();
   }
-
-
-
-
-
-
-
 
 }
