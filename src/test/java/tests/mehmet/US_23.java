@@ -1,4 +1,4 @@
-/*package tests.mehmet;
+package tests.mehmet;
 
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
@@ -17,6 +17,7 @@ import utilities.ReusableMethods;
 public class US_23 {
 
     UserHomePage userHomePage = new UserHomePage();
+    UserDashboard userDashboard = new UserDashboard();
 
     private SoftAssert softAssert = new SoftAssert();
 
@@ -28,7 +29,7 @@ public class US_23 {
         Driver.getDriver().get(ConfigReader.getProperty("trpURL"));
 
 
-        UserDashboard userDashboard = new UserDashboard();
+
         userDashboard.tripandwayCookies.click();
 
 
@@ -37,23 +38,23 @@ public class US_23 {
     @Test
     public void LogInVelogOutOlma(){
 
-       userHomePage.homePageLoginButton.click();
-        JSUtilities.scrollToElement(Driver.getDriver(), userHomePage.emailAdressKutusu);
+       userHomePage.userHompageSagUstLoginButton.click();
+        JSUtilities.scrollToElement(Driver.getDriver(), userHomePage.homePageLoginEmail);
         ReusableMethods.bekle(2);
 
-        WebElement emailKutusu= userHomePage.emailAdressKutusu;
+        WebElement emailKutusu= userHomePage.homePageLoginEmail;
 
         emailKutusu.sendKeys("mehmetsp5800@gmail.com");
 
-        WebElement passwordKutusu=userHomePage.passwordKutusu;
+        WebElement passwordKutusu=userHomePage.loginPasswordTextBox;
 
         passwordKutusu.sendKeys("123456@@@@@@");
 
-        userHomePage.loginolmaTusu.click();
+        userHomePage.homePageAltLoginButton.click();
 
-        userHomePage.logoutTusu.click();
+        userDashboard.userLoginDashboardLogoutButton.click();
 
-        Assert.assertTrue(userHomePage.loginolmaTusu.isDisplayed());
+        Assert.assertTrue(userHomePage.homePageAltLoginButton.isDisplayed());
 
         Driver.quitDriver();
 
@@ -61,6 +62,6 @@ public class US_23 {
     }
 }
 
- */
+
 
 
