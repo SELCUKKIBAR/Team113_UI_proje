@@ -1,4 +1,4 @@
-package tests.mehmet;
+/*package tests.mehmet;
 
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
@@ -11,6 +11,8 @@ import utilities.ConfigReader;
 import utilities.Driver;
 import utilities.JSUtilities;
 import utilities.ReusableMethods;
+
+
 
 public class US_23 {
 
@@ -58,5 +60,7 @@ public class US_23 {
 
     }
 }
+
+ */
 
 

@@ -5,6 +5,8 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import utilities.Driver;
 
+import java.util.List;
+
 public class UserHomePage {
 
     public UserHomePage(){
@@ -147,7 +149,7 @@ public class UserHomePage {
 
     //Home Page --> AboutUs Button
 
-    @FindBy(xpath = "//ul[@id='menu']//a[normalize-space()='About Us']")
+
 
     @FindBy(xpath = "(//a[normalize-space()='About Us'])[2]")
 
@@ -809,6 +811,15 @@ public class UserHomePage {
     @FindBy(xpath = "//iframe[@class='stripe_checkout_app']")
     public WebElement iframe;
 
+
+
+    //FAQ sayfasi==FAQ yazisi
+    @FindBy(xpath = "//h1[text()='FAQ']")
+    public WebElement FAQyazisi;
+
+    //FAQ sayfasi == FAQ Sorular
+    @FindBy(xpath = "//button[@class='accordion-button collapsed']")
+    public List<WebElement> FAQSorular;
 
 
 
