@@ -60,60 +60,90 @@ public class US_27 extends SelcukTestBaseRapor {
 
         //2- Kullanıcı Logo elementine tıklar ve açılan sayfada "Existing Logo" yazısının göründüğünü doğrular
         adminDashboard.adminDashboardGeneralSettingsLogo.click();
+        extentTest.info("Kullanici General Settings>>Logo'ya tıklar...");
         softAssert.assertTrue(adminDashboard.adminDashboardGeneralSettingsLogoDogrulama.isDisplayed());
+        extentTest.info("Kullanici General Settings>>Logo'u doğrular...");
 
         //3- Kullanıcı Favicon elementine tıklar ve açılan sayfada "Existing Favicon" yazsının göründüğünü doğrular
         adminDashboard.adminDashboardGeneralSettingsFavicron.click();
+        extentTest.info("Kullanici General Settings>>Favicron'a tıklar...");
         softAssert.assertTrue(adminDashboard.adminDashboardGeneralSettingsFavicronDogrulama.isDisplayed());
+        extentTest.info("Kullanici General Settings>>Favicron'u doğrular...");
 
         //4- Kullanıcı Login Background elementine tıklar ve açılan sayfada "Edit Login Background" yazsının göründüğünü doğrular
         adminDashboard.adminDashboardGeneralSettingsBackground.click();
+        extentTest.info("Kullanici General Settings>>Background'a tıklar...");
         softAssert.assertTrue(adminDashboard.adminDashboardGeneralSettingsBackgroundDogrulama.isDisplayed());
+        extentTest.info("Kullanici General Settings>>Background'u doğrular...");
 
         //5- Kullanıcı Top Bar elementine tıklar ve açılan sayfada "Edit Top Bar Information" yazsının göründüğünü doğrular
         adminDashboard.adminDashboardGeneralSettingsTopBar.click();
+        extentTest.info("Kullanici General Settings>>TopBar'ı tıklar...");
         softAssert.assertTrue(adminDashboard.adminDashboardGeneralSettingsTopBarDogrulama.isDisplayed());
+        extentTest.info("Kullanici General Settings>>TopBarı'ı doğrular...");
 
         //6- Kullanıcı Banner elementine tıklar ve açılan sayfada "Edit Banner" yazsının göründüğünü doğrular
         adminDashboard.adminDashboardGeneralSettingsBanner.click();
+        extentTest.info("Kullanici General Settings>>Banner'ı tıklar...");
         softAssert.assertTrue(adminDashboard.adminDashboardGeneralSettingsBannerDogrulama.isDisplayed());
+        extentTest.info("Kullanici General Settings>>Banner'ı doğrular...");
 
         //7- Kullanıcı Footer elementine tıklar ve açılan sayfada "Edit Footer Information" yazsının göründüğünü doğrular
         adminDashboard.adminDashboardGeneralSettingsFooter.click();
+        extentTest.info("Kullanici General Settings>>Footer'ı tıklar...");
         softAssert.assertTrue(adminDashboard.adminDashboardGeneralSettingsFooterDogrulama.isDisplayed());
+        extentTest.info("Kullanici General Settings>>Footer'ı doğrular...");
 
         //8- Kulanıcı Sidebar elementine tıklar ve açılan sayfada "Edit Sidebar Information" yazsının göründüğünü doğrular
         adminDashboard.adminDashboardGeneralSettingsSidebar.click();
+        extentTest.info("Kullanici General Settings>>Sidebar'ı tıklar...");
         softAssert.assertTrue(adminDashboard.adminDashboardGeneralSettingsSidebarDogrulama.isDisplayed());
+        extentTest.info("Kullanici General Settings>>Sidebar'ı doğrular...");
 
         //9- Kullanıcı Color elementine tıklar ve açılansayfada "Edit Color Information" yazsının göründüğünü doğrular
         adminDashboard.adminDashboardGeneralSettingsColor.click();
+        extentTest.info("Kullanici General Settings>>Color'u tıklar...");
         softAssert.assertTrue(adminDashboard.adminDashboardGeneralSettingsColorDogrulama.isDisplayed());
+        extentTest.info("Kullanici General Settings>>Color'u doğrular...");
 
         //10- Kullanıcı Preloader elementine tıklar ve açılan sayfada "Edit Preloader Information" yazsının görğndüğünü doğrular
         adminDashboard.adminDashboardGeneralSettingsPreloader.click();
+        extentTest.info("Kullanici General Settings>>Preloader'u tıklar...");
         softAssert.assertTrue(adminDashboard.adminDashboardGeneralSettingsPreloaderDogrulama.isDisplayed());
+        extentTest.info("Kullanici General Settings>>Preloader'u doğrular...");
 
         //11- Kullanıcı Google Analytic elementine tıklar ve açılan sayfada "Edit Google Analytic Setting" yazsının göründüğünü doğrular
         adminDashboard.adminDashboardGeneralSettingsGoogleAnalytic.click();
+        extentTest.info("Kullanici General Settings>>GoogleAnalytic'ı tıklar...");
         softAssert.assertTrue(adminDashboard.adminDashboardGeneralSettingsGoogleAnalyticDogrulama.isDisplayed());
+        extentTest.info("Kullanici General Settings>>GoogleAnalytic'ı doğrular...");
 
         //12- Kullanıcı Google Recaptcha elementine tıklar ve açılan sayfada "Edit Google Recaptcha Setting" yazsının göründüğünü doğrular
         adminDashboard.adminDashboardGeneralSettingsGoogleRecaptcha.click();
+        extentTest.info("Kullanici General Settings>>GoogleRecaptcha'ı tıklar...");
         softAssert.assertTrue(adminDashboard.adminDashboardGeneralSettingsGoogleRecaptchaDogrulama.isDisplayed());
+        extentTest.info("Kullanici General Settings>>GoogleRecaptcha'ı doğrular...");
 
         //13- Kullanıcı Tawk Live Chat elementine tıklar ve açılan sayfada "Edit Tawk Live Chat Setting" yazsının göründüğünü doğrular
         adminDashboard.adminDashboardGeneralSettingsTawkLiveChat.click();
+        extentTest.info("Kullanici General Settings>>TawkLiveChat'ı tıklar...");
         softAssert.assertTrue(adminDashboard.adminDashboardGeneralSettingsTawkLiveChatDogrulama.isDisplayed());
+        extentTest.info("Kullanici General Settings>>TawkLiveChat'ı doğrular...");
+
         //14- Kullanıcı Cookie Consent elementine tıklar ve açılan sayfada "Edit Cookie Consent Setting" yazsının göründüğünü doğrular
         adminDashboard.adminDashboardGeneralSettingsCookieConsent.click();
+        extentTest.info("Kullanici General Settings>>CookieConsent'ı tıklar...");
         softAssert.assertTrue(adminDashboard.adminDashboardGeneralSettingsCookieConsentDogrulama.isDisplayed());
+        extentTest.info("Kullanici General Settings>>CookieConsent'ı doğrular...");
 
         //15- Kullanıcı Layout elementine tıklar ver açılan sayfada "Edit Layout Information" yazsının göründüğünü doğrular
         adminDashboard.adminDashboardGeneralSettingsLayout.click();
+        extentTest.info("Kullanici General Settings>>Layout'u tıklar...");
         softAssert.assertTrue(adminDashboard.adminDashboardGeneralSettingsLayoutDogrulama.isDisplayed());
+        extentTest.info("Kullanici General Settings>>Layout'u doğrular...");
+
         adminDashboard.adminDashboardGeneralSettings.click();
-        extentTest.info("Kullanici General Settings menüsündeki elemanları test etti ve tekrar General Settings'e tıkladı...");
+        extentTest.info("Kullanici General Settingse tekrar tıklar");
         Thread.sleep(1000);
 
         softAssert.assertAll();
@@ -135,55 +165,81 @@ public class US_27 extends SelcukTestBaseRapor {
 
         //2- Kullanıcı Home elementine tıklar ve açılan sayfada "Edit Home Page Information" yazısının göründüğünü doğrular
         adminDashboard.adminDashboardPageSettingsHome.click();
+        extentTest.info("Kullanici Page Settings>>>Home tıklar...");
         softAssert.assertTrue(adminDashboard.adminDashboardPageSettingsHomeDogrulama.isDisplayed());
+        extentTest.info("Kullanici Page Settings>>Home doğrular...");
 
         //3- Kullanıcı About elementine tıklar ve açılan sayfada "Edit About Page Information" yazsının göründüğünü doğrular
         adminDashboard.adminDashboardPageSettingsAbout.click();
+        extentTest.info("Kullanici Page Settings>>>About tıklar...");
         softAssert.assertTrue(adminDashboard.adminDashboardPageSettingsAboutDogrulama.isDisplayed());
+        extentTest.info("Kullanici Page Settings>>>About doğrular...");
 
         //4- Kullanıcı Service elementine tıklar ve açılan sayfada "Edit Service Page Information" yazsının göründüğünü doğrular
         adminDashboard.adminDashboardPageSettingsService.click();
+        extentTest.info("Kullanici Page Settings>>>Service tıklar...");
         softAssert.assertTrue(adminDashboard.adminDashboardPageSettingsServiceDogrulama.isDisplayed());
+        extentTest.info("Kullanici Page Settings>>>Service doğrular...");
 
         //5- Kullanıcı Blog elementine tıklar ve açılan sayfada "Edit Blog Page Information" yazsının göründüğünü doğrular
         adminDashboard.adminDashboardPageSettingsBlog.click();
+        extentTest.info("Kullanici Page Settings>>>Blog tıklar...");
         softAssert.assertTrue(adminDashboard.adminDashboardPageSettingsBlogDogrulama.isDisplayed());
+        extentTest.info("Kullanici Page Settings>>>Blog doğrular...");
 
         //6- Kullanıcı FAQ elementine tıklar ve açılan sayfada "Edit FAQ Page Information" yazsının göründüğünü doğrular
         adminDashboard.adminDashboardPageSettingsFAQ.click();
+        extentTest.info("Kullanici Page Settings>>>FAQ tıklar...");
         softAssert.assertTrue(adminDashboard.adminDashboardPageSettingsFAQDogrulama.isDisplayed());
+        extentTest.info("Kullanici Page Settings>>>FAQ doğrular...");
 
         //7- KullanıcıTeam Member elementine tıklar ve açılan sayfada "Edit Team Member Page Information" yazsının göründüğünü doğrular
         adminDashboard.adminDashboardPageSettingsTeamMember.click();
+        extentTest.info("Kullanici Page Settings>>>TeamMember tıklar...");
         softAssert.assertTrue(adminDashboard.adminDashboardPageSettingsTeamMemberDogrulama.isDisplayed());
+        extentTest.info("Kullanici Page Settings>>>TeamMember doğrular...");
 
         //8- KulanıcıTestimonial elementine tıklar ve açılan sayfada "Edit Testimonial Page Information" yazsının göründüğünü doğrular
         adminDashboard.adminDashboardPageSettingsTestimonial.click();
+        extentTest.info("Kullanici Page Settings>>>Testimonial tıklar...");
         softAssert.assertTrue(adminDashboard.adminDashboardPageSettingsTestimonialDogrulama.isDisplayed());
+        extentTest.info("Kullanici Page Settings>>>Testimonial doğrular...");
 
         //9- KullanıcıDestination elementine tıklar ve açılansayfada "Edit Destination Page Information" yazsının göründüğünü doğrular
         adminDashboard.adminDashboardPageSettingsDestination.click();
+        extentTest.info("Kullanici Page Settings>>>Destination tıklar...");
         softAssert.assertTrue(adminDashboard.adminDashboardPageSettingsDestinationDogrulama.isDisplayed());
+        extentTest.info("Kullanici Page Settings>>>Destination doğrular...");
 
         //10- Kullanıcı Package elementine tıklar ve açılan sayfada "Edit Package Page Information" yazsının görğndüğünü doğrular
         adminDashboard.adminDashboardPageSettingsPackage.click();
+        extentTest.info("Kullanici Page Settings>>>Package tıklar...");
         softAssert.assertTrue(adminDashboard.adminDashboardPageSettingsPackageDogrulama.isDisplayed());
+        extentTest.info("Kullanici Page Settings>>>Package doğrular...");
 
         //11- Kullanıcı Contact elementine tıklar ve açılan sayfada "Edit Contact Page Information" yazsının göründüğünü doğrular
         adminDashboard.adminDashboardPageSettingsContact.click();
+        extentTest.info("Kullanici Page Settings>>>Contact tıklar...");
         softAssert.assertTrue(adminDashboard.adminDashboardPageSettingsContactDogrulama.isDisplayed());
+        extentTest.info("Kullanici Page Settings>>>Contact doğrular...");
 
         //12- Kullanıcı Term elementine tıklar ve açılan sayfada "Edit Term Page Information" yazsının göründüğünü doğrular
         adminDashboard.adminDashboardPageSettingsTerm.click();
+        extentTest.info("Kullanici Page Settings>>>Term tıklar...");
         softAssert.assertTrue(adminDashboard.adminDashboardPageSettingsTermDogrulama.isDisplayed());
+        extentTest.info("Kullanici Page Settings>>>Term doğrular...");
 
         //13- Kullanıcı Privacy elementine tıklar ve açılan sayfada "Edit Privacy Page Information" yazsının göründüğünü doğrular
         adminDashboard.adminDashboardPageSettingsPrivacy.click();
+        extentTest.info("Kullanici Page Settings>>>Privacy tıklar...");
         softAssert.assertTrue(adminDashboard.adminDashboardPageSettingsPrivacyDogrulama.isDisplayed());
+        extentTest.info("Kullanici Page Settings>>>Privacy doğrular...");
 
         //14- Kullanıcı Other elementine tıklar ve açılan sayfada "Edit Other Page Information" yazsının göründüğünü doğrular
         adminDashboard.adminDashboardPageSettingsOther.click();
+        extentTest.info("Kullanici Page Settings>>>Other tıklar...");
         softAssert.assertTrue(adminDashboard.adminDashboardPageSettingsOtherDogrulama.isDisplayed());
+        extentTest.info("Kullanici Page Settings>>>Other doğrular...");
         Thread.sleep(1000);
         adminDashboard.adminDashboardPageSettingsElementi.click();
 
@@ -208,19 +264,26 @@ public class US_27 extends SelcukTestBaseRapor {
 
         //2- Kullanıcı Payment Information elementine tıklar ve açılan sayfada "Edit Payment Setting" yazısının göründüğünü doğrular
         adminDashboard.adminDashboardPaymentSettingsPaymentInformation.click();
+        extentTest.info("Kullanici Payment Settings>>>Information tıklar...");
         softAssert.assertTrue(adminDashboard.adminDashboardPaymentSettingsPaymentInformationDogrulama.isDisplayed());
+        extentTest.info("Kullanici Payment Settings>>>Information doğrular...");
 
         //3- Kullanıcı Currency Setup elementine tıklar ve açılan sayfada "Edit Currency Setting" yazsının göründüğünü doğrular
         adminDashboard.adminDashboardPaymentSettingsCurrencySetup.click();
+        extentTest.info("Kullanici Payment Settings>>>CurrencySetup tıklar...");
         softAssert.assertTrue(adminDashboard.adminDashboardPaymentSettingsCurrencySetupDogrulama.isDisplayed());
+        extentTest.info("Kullanici Payment Settings>>>CurrencySetup doğrular...");
 
         //4- Kullanıcı Dynamic Pages'e tıklar ve "Dynamic Pages" yazsının göründüğünü doğrular
-        extentTest.info("Kullanici Dynamic Pages'e tıklar...");
+
+
         adminDashboard.adminDashboardDynamicPagesElementi.click();
+        extentTest.info("Kullanici Dynamic Pages tıklar...");
         softAssert.assertTrue(adminDashboard.adminDashboardDynamicPagesDogrulama.isDisplayed());
+        extentTest.info("Kullanici Dynamic Pages doğrular...");
         Thread.sleep(1000);
 
-
+//burda kaldımmmmmmmmm
         //5- Kullanıcı Language'a tıklar ve "Language Setting" yazsının göründüğünü doğrular
         extentTest.info("Kullanici Language Setting'e tıklar...");
         adminDashboard.adminDashboardLanguageElementi.click();
