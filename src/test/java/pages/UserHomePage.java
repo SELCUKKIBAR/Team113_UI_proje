@@ -5,6 +5,8 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import utilities.Driver;
 
+import java.util.List;
+
 public class UserHomePage {
 
     public UserHomePage(){
@@ -181,6 +183,9 @@ public class UserHomePage {
     //Home Page --> Our Service --> International Tour Button
     @FindBy(xpath ="//a[@href='https://qa.tripandway.com/service/international-tour']")
     public WebElement InternationalTourButton;
+
+
+
 
 
     //Home Page --> Our Service --> adventure Tour Button
@@ -450,5 +455,376 @@ public class UserHomePage {
     // Home Page --> Our Services --> Religious Tour
     @FindBy(xpath = "//h4[normalize-space()='Religious Tour']")
     public WebElement religiousTour;
+
+
+
+    // Home Page --> Contact --> Contact Us yazisi
+    @FindBy(xpath = "//h1[text()='Contact Us']")
+    public WebElement contactUsYazisi;
+
+
+    // Home Page --> Contact --> Contact Form --> Submit button
+    @FindBy(xpath = "//button[text()='Submit']")
+    public WebElement submitButton;
+
+
+    // Home Page --> Contact --> Contact Form --> Name textbox'i
+    @FindBy(xpath = "(//*[@type='text'])[1]")
+    public WebElement nameTextBox;
+
+
+    // Home Page --> Contact --> Contact Form --> Phone textbox'i
+    @FindBy(xpath = "(//*[@type='text'])[2]")
+    public WebElement phoneTextBox;
+
+
+    // Home Page --> Contact --> Contact Form --> Email Address textbox'i
+    @FindBy(xpath = "(//*[@type='text'])[3]")
+    public WebElement emailAddressTextBox;
+
+
+    // Home Page --> Contact --> Contact Form --> Message textbox'i
+    @FindBy(xpath = "(//*[@class='form-control'])[4]")
+    public WebElement messageTextBox;
+
+
+    // Home Page --> Contact --> Contact Information --> Address iletisim bilgisi
+    @FindBy(xpath = "(//*[@class='contact-text'])[1]")
+    public WebElement addressIletisimBilgisi;
+
+
+    // Home Page --> Contact --> Contact Information --> Email Address iletisim bilgisi
+    @FindBy(xpath = "(//*[@class='contact-text'])[2]")
+    public WebElement emailAddressIletisimBilgisi;
+
+
+    // Home Page --> Contact --> Contact Information --> Phone iletisim bilgisi
+    @FindBy(xpath = "(//*[@class='contact-text'])[3]")
+    public WebElement phoneIletisimBilgisi;
+
+
+    // Home Page --> Login --> Email Address textbox'i
+    @FindBy(xpath = "(//input[@class='form-control'])[1]")
+    public WebElement loginEmailAddressTextBox;
+
+
+    // Home Page --> Login --> Password textbox'i
+    @FindBy(xpath = "(//input[@class='form-control'])[2]")
+    public WebElement loginPasswordTextBox;
+
+
+    // Home Page --> Login --> Login button
+    @FindBy(xpath = "//button[text()='Login']")
+    public WebElement loginSayfasiLoginButton;
+
+
+    // Home Page --> Login --> Packages --> 5 days in California
+    @FindBy(xpath = "//a[@href='https://qa.tripandway.com/package/california']")
+    public WebElement packagesBesDaysInCalifornia;
+
+
+    // Home Page --> Login --> Packages --> 5 days in California --> Book Your Seat button
+    @FindBy(xpath = "//button[text()='Book Your Seat']")
+    public WebElement bookYourSearButton;
+
+
+    // Home Page --> Login --> Packages --> 7 days in Istanbul --> Book Your Seat button --> Pay with Card
+    @FindBy(xpath = "//span[text()='Pay with Card']")
+    public WebElement payWithCardButton;
+
+
+    // Home Page --> Login --> Packages --> 7 days in Istanbul --> Book Your Seat button --> Pay with Card -- > Card number
+    @FindBy(xpath = "//input[@id='card_number']")
+    public WebElement cardNumberTextBox;
+
+
+    // Home Page --> Login --> Packages --> 7 days in Istanbul --> Book Your Seat button --> Pay with Card -- > MM / YY
+    @FindBy(xpath = "//input[@id='cc-exp']")
+    public WebElement MM_YYTextBox;
+
+
+    // Home Page --> Login --> Packages --> 7 days in Istanbul --> Book Your Seat button --> Pay with Card -- > CVC
+    @FindBy(xpath = "//div[@class='cardCVCInput input right bottom']")
+    public WebElement CVCTextBox;
+
+
+    // Home Page --> Login --> Packages --> 7 days in Istanbul --> Book Your Seat button --> Pay with Card -- > Pay
+    @FindBy(xpath = "//span[@class='iconTick']")
+    public WebElement payTextBox;
+
+
+
+    //Home Page --> Our Service --> International Tour Button
+    @FindBy(xpath ="//a[@href='https://qa.tripandway.com/service/international-tour']")
+    public WebElement internationalTourButton;
+
+
+
+    //Home Page --> Team Members  --> HeadText
+    @FindBy(xpath ="//h2[normalize-space()='Team Members']")
+    public WebElement teamMembersHeadText;
+
+    //Home Page --> Team Members  --> Avery
+    @FindBy(xpath ="//div[@class='owl-item active']//a[normalize-space()='Avery Johnson']")
+    public WebElement teamMembersAvery;
+
+    //Home Page --> Team Members  --> Knox
+    @FindBy(xpath ="//div[@class='owl-item cloned active']//a[normalize-space()='Knox Mitchell']")
+    public WebElement teamMembersKnox;
+
+    //Home Page --> Team Members  --> Zara
+    @FindBy(xpath ="//div[@class='owl-item cloned active']//a[normalize-space()='Zara Williams']")
+    public WebElement teamMembersZara;
+
+    //Home Page --> Team Members  --> Jaxon
+    @FindBy(xpath ="//div[@class='owl-item cloned active']//a[normalize-space()='Jaxon Green']")
+    public WebElement teamMembersJaxon;
+
+
+
+    //Home Page --> Testimonial --> Head Text
+    @FindBy(xpath = "//h2[normalize-space()='Testimonial']")
+    public WebElement testimonialHeadText;
+
+
+    //Home Page --> Testimonial --> Johnson
+    @FindBy(xpath = "//h2[normalize-space()='Johnson Shealey']")
+    public WebElement testimonialJohanson;
+
+    //Home Page --> Testimonial --> Johanson Button
+    @FindBy(xpath = "//div[@class='testimonial-area pt_80 pb_80']//div[@class='owl-dots']//div[1]")
+    public WebElement testimonialJeohansonButton;
+
+
+    //Home Page --> Testimonial --> Jessica
+    @FindBy(xpath = "//h2[normalize-space()='Jessica Rainy']")
+    public WebElement testimonialJessica;
+
+    //Home Page --> Testimonial --> Jessica Button
+    @FindBy(xpath = "//div[@class='testimonial-gallery owl-carousel wow fadeIn owl-loaded owl-drag']//div[@class='owl-dot active']")
+    public WebElement testimonialJessicaButton;
+
+
+
+    //Home Page --> Testimonial --> Dadiv
+    @FindBy(xpath = "//h2[normalize-space()='Dadiv Smith']")
+    public WebElement testimonialDadiv;
+
+
+    //Home Page --> Testimonial --> Dadiv Button
+    @FindBy(xpath = "//div[@class='testimonial-area pt_80 pb_80']//div[@class='owl-dots']//div[3]")
+    public WebElement testimonialDadivButton;
+
+    //div[@class='testimonial-area pt_80 pb_80']//div[@class='owl-dots']//div[3]
+
+    //Home Page --> Testimonial --> Stefen
+    @FindBy(xpath = "//h2[normalize-space()='Stefen Carman']")
+    public WebElement testimonialStefen;
+
+    //Home Page --> Testimonial --> Head Text
+    @FindBy(xpath = "//h2[normalize-space()='Testimonial']")
+    public WebElement testimonial;
+
+
+ // Home Pages -->footer--> Recent Posts--> 1.satir
+ @FindBy(xpath = "(//li)[32]")
+ public WebElement birincisatirdakielement;
+ // Home Pages -->footer--> Recent Posts--> 2.satir
+ @FindBy(xpath = "(//li)[33]")
+ public WebElement ikincisatirdakielement;
+ // Home Pages -->footer--> Recent Posts--> 3.satir
+ @FindBy(xpath = "(//li)[34]")
+ public WebElement ucuncusatirdakielement;
+ // Home Pages -->footer--> Recent Posts--> 4.satir
+ @FindBy(xpath = "(//li)[35]")
+ public WebElement dorduncusatirdakielement;
+ // Home Pages -->footer--> Recent Posts--> 5.satir
+ @FindBy(xpath = "(//li)[36]")
+ public WebElement besincisatirdakielement;
+
+
+
+
+
+
+
+
+
+
+
+
+    // Home Page --> Destination head Text
+    @FindBy(xpath = "//h2[normalize-space()='Destination']")
+    public WebElement destinationHeadText;
+
+
+
+    //  Home Page --> Destination --> Bangkok
+    @FindBy(xpath = "//a[normalize-space()='Bangkok, Thailand']")
+    public WebElement bangkokThailandHomePage;
+
+
+    //  Home Page --> Destination --> Greenville
+    @FindBy(xpath = "//a[normalize-space()='Greenville, South Carolina']")
+    public WebElement greenvilleCarolinaHomePage;
+
+
+    //  Home Page --> Destination --> Buenos
+    @FindBy(xpath = "//a[normalize-space()='Buenos Aires, Argentina']")
+    public WebElement buenosArgentinaHomePage;
+
+
+
+
+    //Home Page --> Login Button --> Email Adress
+    @FindBy(xpath ="//input[@name='traveller_email']")
+    public WebElement homePageLoginEmail;
+
+    //Home Page --> Login Button --> Password
+    @FindBy(xpath ="//input[@name='traveller_password']")
+    public WebElement homePageLoginPassword;
+
+
+    //Home Page --> AboutUs Button --> Our Mission Text
+    @FindBy(xpath = "//h3[normalize-space()='OUR MISSION']")
+    public WebElement homePageAboutUsButtonOurMissionText;
+
+    //Home Page --> AboutUs Button --> Our Vission Text
+    @FindBy(xpath = "//h3[normalize-space()='OUR VISION']")
+    public WebElement homePageAboutUsButtonOurVissionText;
+
+    //Home Page --> Testimonial --> Stefen Button
+    @FindBy(xpath = "(//div[@class='owl-dot'])[6]")
+    public WebElement testimonialStefenButton;
+
+
+
+    // Home Page --> footer --> Terms and Conditions Head Text
+    @FindBy(xpath = "//h1[normalize-space()='Terms and Conditions']")
+    public WebElement termsAndConditionsHeadText;
+
+
+    // Home Page --> Latest Blog --> HeadText
+    @FindBy(xpath = "//h2[normalize-space()='Latest Blog']")
+    public WebElement latestBlogHeadText;
+
+    // Home Page --> Latest Blog --> Bangkok
+    @FindBy(xpath = "//div[@class='owl-item active']//a[@class='b-head'][normalize-space()='Bangkok: A City of Contrasts']")
+    public WebElement latestBlogBangkok;
+
+    // Home Page --> Latest Blog --> Bangkok Read More
+    @FindBy(xpath = "(//*[@class='button mt_15'])[7]")
+    public WebElement latestBlogBangkokReadMore;
+
+
+    // Home Page --> Latest Blog --> Sout Africa
+    @FindBy(xpath = "//div[@class='owl-item active']//a[@class='b-head'][normalize-space()='Buenos Aires: The Paris of South America']")
+    public WebElement latestBlogAfrica;
+
+    // Home Page --> Latest Blog --> Sout Africa Read More
+    @FindBy(xpath = "(//*[@class='button mt_15'])[8]")
+    public WebElement latestBlogAfricaReadMore;
+
+    // Home Page --> Latest Blog --> Gem
+    @FindBy(xpath = "//div[@class='owl-item active']//a[@class='b-head'][contains(text(),'Discovering Greenville: A Hidden Gem in South Caro')]")
+    public WebElement latestBlogGem;
+
+    // Home Page --> Latest Blog --> Gem Read More
+    @FindBy(xpath = "(//*[@class='button mt_15'])[9]")
+    public WebElement latestBlogGemReadMore;
+
+    // Home Page --> Latest Blog --> Istanbul
+    @FindBy(xpath = "//div[@class='owl-item cloned active']//a[@class='b-head'][normalize-space()='Istanbul: A Fusion of East and West']")
+    public WebElement latestBlogIstanbul;
+
+
+    // Home Page --> Latest Blog --> Istanbul Read More
+    @FindBy(xpath = "(//*[@class='button mt_15'])[10]")
+    public WebElement latestBlogIstanbulReadMore;
+
+    // Home Page --> Latest Blog --> B0gaz Kale
+    @FindBy(xpath = "//div[@class='owl-item cloned active']//a[@class='b-head'][contains(text(),'Discovering the Ancient Capital of the Hittites: B')]")
+    public WebElement latestBlogBogazKale;
+
+    // Home Page --> Latest Blog --> BOgaz Kale Read More
+    @FindBy(xpath = "(//*[@class='button mt_15'])[11]")
+    public WebElement latestBlogBogazKaleReadMore;
+
+    // Home Page --> Latest Blog --> Salina
+    @FindBy(xpath = "//div[@class='owl-item active']//a[@class='b-head'][normalize-space()='Salina Island: A Perfect Family Getaway']")
+    public WebElement latestBlogSalina;
+
+    // Home Page --> Latest Blog --> Salina Read More
+    @FindBy(xpath = "(//*[@class='button mt_15'])[12]")
+    public WebElement latestBlogSalinaReadMore;
+
+
+    // Home Page --> Latest Blog --> After Button
+    @FindBy(xpath = "(//div[@class='owl-next'])[5]")
+    public WebElement latestBlogAfterButton;
+
+    // Home Page --> Latest Blog --> Before Button
+    @FindBy(xpath = "//div[@class='owl-nav']//i[@class='fas fa-angle-left']")
+    public WebElement latestBlogBeforeButton;
+
+
+
+    //Home Page --> Newsletter Sag yukarida cikan Allredy Exixst Yazsi
+
+    @FindBy(xpath = "//body/script[5]")
+    public WebElement newsletteeAlreadyExistYAzisi;
+
+    // Home Page --> Newsletter --> Page Expired Yazi
+
+    @FindBy(xpath = "//div[@class='ml-4 text-lg text-gray-500 uppercase tracking-wider']")
+    public WebElement newsLetterPageExpiredYazisi;
+
+    //Home Page --> Registration Button-->>name
+    @FindBy(xpath ="(//*[@class='form-control'])[1]" )
+    public WebElement nameText;
+    //Home Page --> Registration Button-->>email
+    @FindBy(xpath ="(//*[@class='form-control'])[2]" )
+    public WebElement emailText;
+    //Home Page --> Registration Button-->>sifre
+    @FindBy(xpath ="(//*[@class='form-control'])[3]" )
+    public WebElement sifreText;
+    //Home Page --> Registration Button-->>makeRegistration
+    @FindBy(xpath ="//*[text()='Make Registration']" )
+    public WebElement makeRegistrationbutton;
+    //Home Page --> Registration Button-->Pop up mesaji
+    @FindBy(xpath ="//*[contains(text(),'Registration is completed. You can now login.')]" )
+    public WebElement registrationBasariligiriselementi;
+    //userLoginDashboardPage --> Update Button-->Pop up mesaji
+    @FindBy(xpath ="//*[contains(text(),'Profile is updated successfully')]" )
+    public WebElement updateBasariligiriselementi;
+
+    //FAQ sayfasi==FAQ yazisi
+    @FindBy(xpath = "//h1[text()='FAQ']")
+    public WebElement FAQyazisi;
+
+    //FAQ sayfasi == FAQ Sorular
+    @FindBy(xpath = "//button[@class='accordion-button collapsed']")
+    public List<WebElement> FAQSorular;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 }

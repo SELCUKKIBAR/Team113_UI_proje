@@ -270,7 +270,7 @@ public class AdminDashboard {
 
 
     //adminDashBoard>>>PageSettings>>>Testimonial Dogrulama
-    @FindBy(xpath = "Edit Testimonial Page Information")
+    @FindBy(xpath = "//*[@id=\"collapsePageSettings\"]/div/a[7]")
     public WebElement adminDashboardPageSettingsTestimonialDogrulama;
 
 
@@ -295,6 +295,15 @@ public class AdminDashboard {
 
 
     //adminDashBoard>>>PageSettings>>>Contact
+
+    @FindBy(xpath = "//*[@id=\"collapsePageSettings\"]/div/a[2]")
+    public WebElement adminDashboardPageSettingsFAQ;
+
+
+    //adminDashBoard>>>PageSettings>>>faqdosrulama
+    @FindBy(xpath = "//*[@id=\"content\"]/div/h1")
+    public WebElement adminDashboardPageSettingsFAQDogrulama;
+
     @FindBy(xpath = "//*[text()='Contact']")
     public WebElement adminDashboardPageSettingsContact;
 
@@ -437,7 +446,7 @@ public class AdminDashboard {
 
 
     //adminDashboard>>>>>Web Site Section>>>>FAQ
-    @FindBy(xpath ="(//*[text()='FAQ'])[1]")
+    @FindBy(xpath ="//*[@id=\"collapseWebsite\"]/div/a[6]")
     public WebElement adminDashboardWebSiteSectionFAQ;
 
 
@@ -835,7 +844,10 @@ public class AdminDashboard {
     @FindBy(xpath = "//h6[text()='View Destinations']")
     public WebElement adminDashboardViewDestinationsText;
 
+
+
     //************************* DESTINATIONS ****************
+
 
 
 
@@ -932,6 +944,7 @@ public class AdminDashboard {
     public WebElement adminDashboardDestinationUpdateOnay;
 
         //************************* PACKAGES ****************
+
 
     //adminDashBoard >>> Packages >>> View Packages Yazisi
     @FindBy(xpath = "//h6[text()='View Packages']")
@@ -1056,9 +1069,6 @@ public class AdminDashboard {
 
     @FindBy(xpath = "//button[normalize-space()='Login']")
     public WebElement AdminLoginLogin;
-
-
-
 
 
 }
