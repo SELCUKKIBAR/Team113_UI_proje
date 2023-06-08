@@ -1,6 +1,5 @@
 package tests.ercan;
 
-import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
@@ -27,21 +26,25 @@ public class US_15 extends TestBaseRapor {
 
     @Test
 
-    private void ourVissinOurMissionTest(){
+    private void aboutUsTest(){
+
+        extentTest = extentReports.createTest("About US Elementinin aktifligi testi","" +
+                "Kullanici acilan sayfanin Header bolumunde yer alan About us sekmesine tiklar ve acilan sayfayida " +
+                "our mission ve our vission textlerinin  actual ve expected degerlerini test eder");
 
         userHomePage.homePageAboutUsButton.click();
 
         String actualResult = userHomePage.homePageAboutUsButtonOurMissionText.getText();
         String expectedResult = "OUR MISSION";
 
-        Assert.assertEquals(actualResult,expectedResult);
+        softAssert.assertEquals(actualResult,expectedResult);
 
         JSUtilities.scrollToElement(Driver.getDriver(),userHomePage.homePageAboutUsButtonOurVissionText);
 
          actualResult =userHomePage.homePageAboutUsButtonOurVissionText.getText();
          expectedResult = "OUR VISION";
 
-         Assert.assertEquals(actualResult,expectedResult);
+         softAssert.assertEquals(actualResult,expectedResult);
 
 
 

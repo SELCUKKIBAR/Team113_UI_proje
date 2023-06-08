@@ -1,6 +1,5 @@
 package tests.ercan;
 
-import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
@@ -27,6 +26,9 @@ public class US_10 extends TestBaseRapor {
     @Test
     public void TermAndConditionTest(){
 
+        extentTest = extentReports.createTest("Term and Condition Elementinin aktifligi testi","" +
+                "Kullanici acilan sayfanin footer bolumunde yer alan term and condition sekmesine tiklar ve acilan sayfayi  test eder");
+
         JSUtilities.scrollToElement(Driver.getDriver(),userHomePage.termsAndConditions);
         ReusableMethods.bekle(2);
         userHomePage.termsAndConditions.click();
@@ -34,6 +36,6 @@ public class US_10 extends TestBaseRapor {
         String actualResult = userHomePage.termsAndConditionsHeadText.getText();
         String expectedResult =  "TERMS AND CONDITIONS";
 
-        Assert.assertEquals(actualResult,expectedResult);
+        softAssert.assertEquals(actualResult,expectedResult);
     }
 }
