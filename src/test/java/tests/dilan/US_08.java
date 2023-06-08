@@ -20,7 +20,7 @@ public class US_08 extends TestBaseRapor {
         UserDashboard userDashboard = new UserDashboard();
 
         userDashboard.tripandwayCookies.click();
-        extentTest.info("Cookies'e tiklar");
+        extentTest.info("Cookies'i kabul edilir");
 
         UserHomePage userHomePage = new UserHomePage();
 

@@ -397,10 +397,6 @@ public class UserHomePage {
     public WebElement scrollTopHomePage;
 
 
-
-
-
-
     @FindBy(xpath = "//input[@placeholder='Email Address']")
     public WebElement newsletterAramaKutusu;
 
@@ -415,11 +411,9 @@ public class UserHomePage {
     public WebElement newsletterYazisiHomePage;
 
 
-
     // Home Page --> Newsletter sag yukari kosede cikan yazi onay'i
     @FindBy(xpath = "//*[contains(text(), 'To activate your subscription please check your email and follow instruction there.')]")
     public WebElement newsletterYaziOnayHomePage;
-
 
 
     // Home Page --> Our Client Yazisi
@@ -554,32 +548,35 @@ public class UserHomePage {
 
 
 
+
     //Home Page --> Our Service --> International Tour Button
     @FindBy(xpath ="//a[@href='https://qa.tripandway.com/service/international-tour']")
     public WebElement internationalTourButton;
-
 
 
     //Home Page --> Team Members  --> HeadText
     @FindBy(xpath ="//h2[normalize-space()='Team Members']")
     public WebElement teamMembersHeadText;
 
+
     //Home Page --> Team Members  --> Avery
     @FindBy(xpath ="//div[@class='owl-item active']//a[normalize-space()='Avery Johnson']")
     public WebElement teamMembersAvery;
+
 
     //Home Page --> Team Members  --> Knox
     @FindBy(xpath ="//div[@class='owl-item cloned active']//a[normalize-space()='Knox Mitchell']")
     public WebElement teamMembersKnox;
 
+
     //Home Page --> Team Members  --> Zara
     @FindBy(xpath ="//div[@class='owl-item cloned active']//a[normalize-space()='Zara Williams']")
     public WebElement teamMembersZara;
 
+
     //Home Page --> Team Members  --> Jaxon
     @FindBy(xpath ="//div[@class='owl-item cloned active']//a[normalize-space()='Jaxon Green']")
     public WebElement teamMembersJaxon;
-
 
 
     //Home Page --> Testimonial --> Head Text
@@ -591,6 +588,7 @@ public class UserHomePage {
     @FindBy(xpath = "//h2[normalize-space()='Johnson Shealey']")
     public WebElement testimonialJohanson;
 
+
     //Home Page --> Testimonial --> Johanson Button
     @FindBy(xpath = "//div[@class='testimonial-area pt_80 pb_80']//div[@class='owl-dots']//div[1]")
     public WebElement testimonialJeohansonButton;
@@ -600,10 +598,10 @@ public class UserHomePage {
     @FindBy(xpath = "//h2[normalize-space()='Jessica Rainy']")
     public WebElement testimonialJessica;
 
+
     //Home Page --> Testimonial --> Jessica Button
     @FindBy(xpath = "//div[@class='testimonial-gallery owl-carousel wow fadeIn owl-loaded owl-drag']//div[@class='owl-dot active']")
     public WebElement testimonialJessicaButton;
-
 
 
     //Home Page --> Testimonial --> Dadiv
@@ -615,48 +613,45 @@ public class UserHomePage {
     @FindBy(xpath = "//div[@class='testimonial-area pt_80 pb_80']//div[@class='owl-dots']//div[3]")
     public WebElement testimonialDadivButton;
 
-    //div[@class='testimonial-area pt_80 pb_80']//div[@class='owl-dots']//div[3]
 
     //Home Page --> Testimonial --> Stefen
     @FindBy(xpath = "//h2[normalize-space()='Stefen Carman']")
     public WebElement testimonialStefen;
+
 
     //Home Page --> Testimonial --> Head Text
     @FindBy(xpath = "//h2[normalize-space()='Testimonial']")
     public WebElement testimonial;
 
 
- // Home Pages -->footer--> Recent Posts--> 1.satir
- @FindBy(xpath = "(//li)[32]")
- public WebElement birincisatirdakielement;
- // Home Pages -->footer--> Recent Posts--> 2.satir
- @FindBy(xpath = "(//li)[33]")
- public WebElement ikincisatirdakielement;
- // Home Pages -->footer--> Recent Posts--> 3.satir
- @FindBy(xpath = "(//li)[34]")
- public WebElement ucuncusatirdakielement;
- // Home Pages -->footer--> Recent Posts--> 4.satir
- @FindBy(xpath = "(//li)[35]")
- public WebElement dorduncusatirdakielement;
- // Home Pages -->footer--> Recent Posts--> 5.satir
- @FindBy(xpath = "(//li)[36]")
- public WebElement besincisatirdakielement;
+    // Home Pages -->footer--> Recent Posts--> 1.satir
+    @FindBy(xpath = "(//li)[32]")
+    public WebElement birincisatirdakielement;
 
 
+    // Home Pages -->footer--> Recent Posts--> 2.satir
+    @FindBy(xpath = "(//li)[33]")
+    public WebElement ikincisatirdakielement;
 
 
+    // Home Pages -->footer--> Recent Posts--> 3.satir
+    @FindBy(xpath = "(//li)[34]")
+    public WebElement ucuncusatirdakielement;
 
 
+    // Home Pages -->footer--> Recent Posts--> 4.satir
+    @FindBy(xpath = "(//li)[35]")
+    public WebElement dorduncusatirdakielement;
 
 
-
-
+    // Home Pages -->footer--> Recent Posts--> 5.satir
+    @FindBy(xpath = "(//li)[36]")
+    public WebElement besincisatirdakielement;
 
 
     // Home Page --> Destination head Text
     @FindBy(xpath = "//h2[normalize-space()='Destination']")
     public WebElement destinationHeadText;
-
 
 
     //  Home Page --> Destination --> Bangkok
@@ -674,11 +669,10 @@ public class UserHomePage {
     public WebElement buenosArgentinaHomePage;
 
 
-
-
     //Home Page --> Login Button --> Email Adress
     @FindBy(xpath ="//input[@name='traveller_email']")
     public WebElement homePageLoginEmail;
+
 
     //Home Page --> Login Button --> Password
     @FindBy(xpath ="//input[@name='traveller_password']")
@@ -689,14 +683,15 @@ public class UserHomePage {
     @FindBy(xpath = "//h3[normalize-space()='OUR MISSION']")
     public WebElement homePageAboutUsButtonOurMissionText;
 
+
     //Home Page --> AboutUs Button --> Our Vission Text
     @FindBy(xpath = "//h3[normalize-space()='OUR VISION']")
     public WebElement homePageAboutUsButtonOurVissionText;
 
+
     //Home Page --> Testimonial --> Stefen Button
     @FindBy(xpath = "(//div[@class='owl-dot'])[6]")
     public WebElement testimonialStefenButton;
-
 
 
     // Home Page --> footer --> Terms and Conditions Head Text
@@ -708,9 +703,11 @@ public class UserHomePage {
     @FindBy(xpath = "//h2[normalize-space()='Latest Blog']")
     public WebElement latestBlogHeadText;
 
+
     // Home Page --> Latest Blog --> Bangkok
     @FindBy(xpath = "//div[@class='owl-item active']//a[@class='b-head'][normalize-space()='Bangkok: A City of Contrasts']")
     public WebElement latestBlogBangkok;
+
 
     // Home Page --> Latest Blog --> Bangkok Read More
     @FindBy(xpath = "(//*[@class='button mt_15'])[7]")
@@ -721,17 +718,21 @@ public class UserHomePage {
     @FindBy(xpath = "//div[@class='owl-item active']//a[@class='b-head'][normalize-space()='Buenos Aires: The Paris of South America']")
     public WebElement latestBlogAfrica;
 
+
     // Home Page --> Latest Blog --> Sout Africa Read More
     @FindBy(xpath = "(//*[@class='button mt_15'])[8]")
     public WebElement latestBlogAfricaReadMore;
+
 
     // Home Page --> Latest Blog --> Gem
     @FindBy(xpath = "//div[@class='owl-item active']//a[@class='b-head'][contains(text(),'Discovering Greenville: A Hidden Gem in South Caro')]")
     public WebElement latestBlogGem;
 
+
     // Home Page --> Latest Blog --> Gem Read More
     @FindBy(xpath = "(//*[@class='button mt_15'])[9]")
     public WebElement latestBlogGemReadMore;
+
 
     // Home Page --> Latest Blog --> Istanbul
     @FindBy(xpath = "//div[@class='owl-item cloned active']//a[@class='b-head'][normalize-space()='Istanbul: A Fusion of East and West']")
@@ -742,17 +743,21 @@ public class UserHomePage {
     @FindBy(xpath = "(//*[@class='button mt_15'])[10]")
     public WebElement latestBlogIstanbulReadMore;
 
+
     // Home Page --> Latest Blog --> B0gaz Kale
     @FindBy(xpath = "//div[@class='owl-item cloned active']//a[@class='b-head'][contains(text(),'Discovering the Ancient Capital of the Hittites: B')]")
     public WebElement latestBlogBogazKale;
+
 
     // Home Page --> Latest Blog --> BOgaz Kale Read More
     @FindBy(xpath = "(//*[@class='button mt_15'])[11]")
     public WebElement latestBlogBogazKaleReadMore;
 
+
     // Home Page --> Latest Blog --> Salina
     @FindBy(xpath = "//div[@class='owl-item active']//a[@class='b-head'][normalize-space()='Salina Island: A Perfect Family Getaway']")
     public WebElement latestBlogSalina;
+
 
     // Home Page --> Latest Blog --> Salina Read More
     @FindBy(xpath = "(//*[@class='button mt_15'])[12]")
@@ -763,19 +768,18 @@ public class UserHomePage {
     @FindBy(xpath = "(//div[@class='owl-next'])[5]")
     public WebElement latestBlogAfterButton;
 
+
     // Home Page --> Latest Blog --> Before Button
     @FindBy(xpath = "//div[@class='owl-nav']//i[@class='fas fa-angle-left']")
     public WebElement latestBlogBeforeButton;
 
 
-
     //Home Page --> Newsletter Sag yukarida cikan Allredy Exixst Yazsi
-
     @FindBy(xpath = "//body/script[5]")
     public WebElement newsletteeAlreadyExistYAzisi;
 
-    // Home Page --> Newsletter --> Page Expired Yazi
 
+    // Home Page --> Newsletter --> Page Expired Yazi
     @FindBy(xpath = "//div[@class='ml-4 text-lg text-gray-500 uppercase tracking-wider']")
     public WebElement newsLetterPageExpiredYazisi;
 
@@ -805,21 +809,6 @@ public class UserHomePage {
     //FAQ sayfasi == FAQ Sorular
     @FindBy(xpath = "//button[@class='accordion-button collapsed']")
     public List<WebElement> FAQSorular;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
