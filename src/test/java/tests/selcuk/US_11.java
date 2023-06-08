@@ -1,5 +1,8 @@
 package tests.selcuk;
 
+
+public class US_11 {
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
@@ -42,5 +45,6 @@ public class US_11 extends TestBaseRapor {
 
         Driver.quitDriver();
     }
+
 
 }

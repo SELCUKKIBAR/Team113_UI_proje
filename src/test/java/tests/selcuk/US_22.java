@@ -1,5 +1,8 @@
 package tests.selcuk;
 
+
+public class US_22 {
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
@@ -85,4 +88,5 @@ public class US_22 extends TestBaseRapor {
         softAssert.assertAll();
         extentTest.pass("Sayfayı kapatır...");
     }
+
 }

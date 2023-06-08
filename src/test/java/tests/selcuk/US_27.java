@@ -1,5 +1,8 @@
 package tests.selcuk;
 
+
+public class US_27 {
+
 import com.aventstack.extentreports.reporter.configuration.Theme;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -352,4 +355,5 @@ public class US_27 extends SelcukTestBaseRapor {
         extentTest.pass("Kullanıcı Website Section menülsünü test etti ve Testi bitirip webbrowser'ı kapattı");
 
     }
+
 }

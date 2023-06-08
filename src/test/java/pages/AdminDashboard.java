@@ -768,7 +768,10 @@ public class AdminDashboard {
 
     //adminDashBoard>>>> emailIssentSuccesfullyYaziElementi
     //@FindBy  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-    public WebElement emailIssentSuccesfullyYaziElementii;
+
+    // AdminDashBoard>>>> EmailSent All Subs Succesfully
+    @FindBy(xpath = "(//script[4])[2]")
+    public WebElement emailSentAllSuccesfullyElementi;
 
 
     //***************** Hüseyinn ************
@@ -1066,6 +1069,7 @@ public class AdminDashboard {
 
     @FindBy(xpath = "//input[@id='password']")
     public WebElement AdminLoginPassword;
+
 
     @FindBy(xpath = "//button[normalize-space()='Login']")
     public WebElement AdminLoginLogin;
