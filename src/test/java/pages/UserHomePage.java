@@ -5,6 +5,8 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import utilities.Driver;
 
+import java.util.List;
+
 public class UserHomePage {
 
     public UserHomePage(){
@@ -123,6 +125,18 @@ public class UserHomePage {
 
    @FindBy(xpath = "//a[normalize-space()='GOZTEPEIzmir']")
    public WebElement destinationsHerne;
+
+   @FindBy(xpath = "//button[normalize-space()='Login']")
+   public WebElement loginolmaTusu;
+
+   @FindBy(xpath = "//input[@name='traveller_email']")
+   public WebElement emailAdressKutusu;
+
+   @FindBy(xpath = "//input[@name='traveller_password']")
+   public WebElement passwordKutusu;
+
+   @FindBy(xpath = "//a[normalize-space()='Logout']")
+   public WebElement logoutTusu;
 
 
 
@@ -533,6 +547,8 @@ public class UserHomePage {
     public WebElement payTextBox;
 
 
+
+
     //Home Page --> Our Service --> International Tour Button
     @FindBy(xpath ="//a[@href='https://qa.tripandway.com/service/international-tour']")
     public WebElement internationalTourButton;
@@ -766,6 +782,37 @@ public class UserHomePage {
     // Home Page --> Newsletter --> Page Expired Yazi
     @FindBy(xpath = "//div[@class='ml-4 text-lg text-gray-500 uppercase tracking-wider']")
     public WebElement newsLetterPageExpiredYazisi;
+
+    //Home Page --> Registration Button-->>name
+    @FindBy(xpath ="(//*[@class='form-control'])[1]" )
+    public WebElement nameText;
+    //Home Page --> Registration Button-->>email
+    @FindBy(xpath ="(//*[@class='form-control'])[2]" )
+    public WebElement emailText;
+    //Home Page --> Registration Button-->>sifre
+    @FindBy(xpath ="(//*[@class='form-control'])[3]" )
+    public WebElement sifreText;
+    //Home Page --> Registration Button-->>makeRegistration
+    @FindBy(xpath ="//*[text()='Make Registration']" )
+    public WebElement makeRegistrationbutton;
+    //Home Page --> Registration Button-->Pop up mesaji
+    @FindBy(xpath ="//*[contains(text(),'Registration is completed. You can now login.')]" )
+    public WebElement registrationBasariligiriselementi;
+    //userLoginDashboardPage --> Update Button-->Pop up mesaji
+    @FindBy(xpath ="//*[contains(text(),'Profile is updated successfully')]" )
+    public WebElement updateBasariligiriselementi;
+
+    //FAQ sayfasi==FAQ yazisi
+    @FindBy(xpath = "//h1[text()='FAQ']")
+    public WebElement FAQyazisi;
+
+    //FAQ sayfasi == FAQ Sorular
+    @FindBy(xpath = "//button[@class='accordion-button collapsed']")
+    public List<WebElement> FAQSorular;
+
+
+
+
 
 
 
