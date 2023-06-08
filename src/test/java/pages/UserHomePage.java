@@ -124,6 +124,18 @@ public class UserHomePage {
    @FindBy(xpath = "//a[normalize-space()='GOZTEPEIzmir']")
    public WebElement destinationsHerne;
 
+   @FindBy(xpath = "//button[normalize-space()='Login']")
+   public WebElement loginolmaTusu;
+
+   @FindBy(xpath = "//input[@name='traveller_email']")
+   public WebElement emailAdressKutusu;
+
+   @FindBy(xpath = "//input[@name='traveller_password']")
+   public WebElement passwordKutusu;
+
+   @FindBy(xpath = "//a[normalize-space()='Logout']")
+   public WebElement logoutTusu;
+
 
 
     //Home Page --> Service Button
