@@ -519,6 +519,14 @@ public class UserHomePage {
     public WebElement newsLetterPageExpiredYazisi;
 
 
+    @FindBy(xpath = "//a[normalize-space()='See All Destinations']")
+    public  WebElement seeAllDestinationButton;
+
+    // Home Page --> Latest Blog --> Satir Locatei
+    @FindBy(xpath = "(//div[@class='owl-stage'])[5]")
+    public WebElement latestBlogSatirLocate;
+
+
 
 
 

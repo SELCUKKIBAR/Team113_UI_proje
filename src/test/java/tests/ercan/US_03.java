@@ -49,6 +49,22 @@ public class US_03 extends TestBaseRapor {
 
     @Test
 
+    public void ourServiceBolumElementlerininErsilebilirligi() {
+
+        JSUtilities.scrollToElement(Driver.getDriver(), userHomePage.ourServiceaheadLIneText);
+        ReusableMethods.bekle(2);
+
+
+        Assert.assertTrue(userHomePage.internationalTourButton.isEnabled());
+        Assert.assertTrue(userHomePage.adventureTourButton.isEnabled());
+        Assert.assertTrue(userHomePage.cultureTourButton.isEnabled());
+        Assert.assertTrue(userHomePage.bussinessTourHomePage.isEnabled());
+        Assert.assertTrue(userHomePage.healthTourHomePage.isEnabled());
+        Assert.assertTrue(userHomePage.religiousTour.isEnabled());
+    }
+
+    @Test
+
     public void futurePackageGorunurlulugu() {
         JSUtilities.scrollToElement(Driver.getDriver(), userHomePage.featuredPackageHeadText);
         ReusableMethods.bekle(2);
@@ -70,6 +86,20 @@ public class US_03 extends TestBaseRapor {
         Assert.assertTrue(userHomePage.buenosArgentinaHomePage.isDisplayed());
 
     }
+    @Test
+
+    public void destinationElementlerinErisebilirligi() {
+        JSUtilities.scrollToElement(Driver.getDriver(), userHomePage.destinationHeadText);
+        ReusableMethods.bekle(5);
+
+        Assert.assertTrue(userHomePage.marrakeshMoroccoHomePage.isEnabled());
+        Assert.assertTrue(userHomePage.salinaIslandHomePage.isEnabled());
+        Assert.assertTrue(userHomePage.istanbulTurkeyHomePage.isEnabled());
+        Assert.assertTrue(userHomePage.greenvilleCarolinaHomePage.isEnabled());
+        Assert.assertTrue(userHomePage.bangkokThailandHomePage.isEnabled());
+        Assert.assertTrue(userHomePage.buenosArgentinaHomePage.isEnabled());
+        Assert.assertTrue(userHomePage.seeAllDestinationButton.isEnabled());
+    }
 
     @Test
 
@@ -84,6 +114,26 @@ public class US_03 extends TestBaseRapor {
         Assert.assertTrue(userHomePage.teamMembersJaxon.isDisplayed());
         Assert.assertTrue(userHomePage.teamMembersKnox.isDisplayed());
         Assert.assertTrue(userHomePage.teamMembersZara.isDisplayed());
+
+
+    }
+
+    @Test
+
+    public void teamMembersEriselebilirligi() {
+
+        JSUtilities.scrollToElement(Driver.getDriver(), userHomePage.teamMembersHeadText);
+        ReusableMethods.bekle(2);
+
+
+
+        Assert.assertTrue(userHomePage.teamMembersAvery.isEnabled());
+        Assert.assertTrue(userHomePage.teamMembersJaxon.isEnabled());
+        Assert.assertTrue(userHomePage.teamMembersKnox.isEnabled());
+        Assert.assertTrue(userHomePage.teamMembersZara.isEnabled());
+        Assert.assertTrue(userHomePage.facebookLogoHomePage.isEnabled());
+        Assert.assertTrue(userHomePage.twitterLogoHomePage.isEnabled());
+        Assert.assertTrue(userHomePage.linkedInLogoHomePage.isEnabled());
 
 
     }
@@ -113,33 +163,8 @@ public class US_03 extends TestBaseRapor {
         JSUtilities.scrollToElement(Driver.getDriver(), userHomePage.latestBlogHeadText);
         ReusableMethods.bekle(5);
 
-        Assert.assertTrue(userHomePage.latestBlogBangkok.isDisplayed());
-        userHomePage.latestBlogBeforeButton.click();
-        userHomePage.latestBlogBangkokReadMore.click();
-        Driver.getDriver().navigate().back();
-
-        Assert.assertTrue(userHomePage.latestBlogAfrica.isDisplayed());
-        userHomePage.latestBlogAfricaReadMore.click();
-        Driver.getDriver().navigate().back();
-
-        Assert.assertTrue(userHomePage.latestBlogGem.isDisplayed());
-        userHomePage.latestBlogGemReadMore.click();
-        Driver.getDriver().navigate().back();
-
-        userHomePage.latestBlogAfterButton.click();
-
-        Assert.assertTrue(userHomePage.latestBlogIstanbul.isDisplayed());
-        userHomePage.latestBlogIstanbulReadMore.click();
-        Driver.getDriver().navigate().back();
-
-        Assert.assertTrue(userHomePage.latestBlogBogazKale.isDisplayed());
-        userHomePage.latestBlogBogazKaleReadMore.click();
-        Driver.getDriver().navigate().back();
-
-        Assert.assertTrue(userHomePage.latestBlogSalina.isDisplayed());
-        userHomePage.latestBlogSalinaReadMore.click();
-        Driver.getDriver().navigate().back();
-
+        Assert.assertTrue(userHomePage.latestBlogSatirLocate.isDisplayed());
+        Assert.assertTrue(userHomePage.latestBlogSatirLocate.isEnabled());
 
     }
 
@@ -162,6 +187,8 @@ public class US_03 extends TestBaseRapor {
 
        userHomePage.newsletterAramaKutusu.sendKeys(ConfigReader.getProperty("adminEmail_02"));
        userHomePage.newsletterSubmit.click();
+       Assert.assertTrue(userHomePage.newsletteeAlreadyExistYAzisi.isEnabled());
+
 
    }
 

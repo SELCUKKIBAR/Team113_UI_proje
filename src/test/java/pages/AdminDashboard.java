@@ -950,6 +950,14 @@ public class AdminDashboard {
     public WebElement adminDashboardPackageDeletedOnay;
 
 
+    //adminDashBoard>>>> emailIssentSuccesfullyYaziElementi
+    //@FindBy  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+    // AdminDashBoard>>>> EmailSent All Subs Succesfully
+    @FindBy(xpath = "(//script[4])[2]")
+    public WebElement emailSentAllSuccesfullyElementi;
+
+
 
 
 
