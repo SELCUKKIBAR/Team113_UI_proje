@@ -49,7 +49,7 @@ public class US_13  {
       }
 
       String expected = "DESTINATIONS";
-    String actual = userHomePage.destinationsYazisi.getText();
+      String actual = userHomePage.destinationsYazisi.getText();
 
 
 

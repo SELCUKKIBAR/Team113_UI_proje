@@ -16,7 +16,7 @@ import utilities.TestBaseRapor;
 public class US_22 extends TestBaseRapor {
 
     @Test
-    public void testCase01() throws InterruptedException {
+    public void sifreDegistirme() throws InterruptedException {
 
         extentTest = extentReports.createTest("Tripandway ŞİFRE DEĞİŞTİRME testi",
                 "Kullanici açılan sayfanın Header Sağ köşe mesajının DASHBOARD oldugunu test eder");
@@ -36,11 +36,11 @@ public class US_22 extends TestBaseRapor {
         extentTest.info("KUllanıcı Login Butonuna tıkla ve Kullanici footer bölümüne iner ve açılan ACCEPT alertini kabul ededer...");
 
         //3- Kullanıcı Login sayfasında Email ve Password kutucuklarına geçerli email ve password'u girer
-        userDashboard.userLoginDashboradEmailAddressTextBox.sendKeys("selcukkibar88@gmail.com");
+        userDashboard.userLoginDashboradEmailAddressTextBox.sendKeys(ConfigReader.getProperty("mailAdresim"));
         extentTest.info("Kullanıcı Email Adresini girer..");
 
         //4- Kullanıcı Password kutcuğunun altında bulunan Login Butonuna tıklar
-        userDashboard.userLoginDashboradPasswordAddressTextBox.sendKeys("duru1234.");
+        userDashboard.userLoginDashboradPasswordAddressTextBox.sendKeys(ConfigReader.getProperty("sifre_01"));
         userDashboard.userLoginDashboradLogin.click();
         extentTest.info("Kullanıcı Passwordunu girer ve Login e tıklar..");
 
@@ -58,7 +58,7 @@ public class US_22 extends TestBaseRapor {
 
         //7- Kullanıcı açılan sayfadaki "New Password *" kutuscuğuna yeni şifresini yazar ve  Update butonuna tıklar
 
-        userDashboard.userLoginDashboardNewPasswordunYazilacagiButton.sendKeys("selcuk1234.");
+        userDashboard.userLoginDashboardNewPasswordunYazilacagiButton.sendKeys(ConfigReader.getProperty("sifre_02"));
         userDashboard.userLoginDashboardUpdateButton.click();
         extentTest.info("Kullanıcı yeni şifreyi girer ve Update Butonuna tıklar..");
 
