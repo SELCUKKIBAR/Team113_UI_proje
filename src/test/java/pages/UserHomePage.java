@@ -519,7 +519,7 @@ public class UserHomePage {
 
     // Home Page --> Login --> Packages --> 5 days in California --> Book Your Seat button
     @FindBy(xpath = "//button[text()='Book Your Seat']")
-    public WebElement bookYourSearButton;
+    public WebElement bookYourSeatButton;
 
 
     // Home Page --> Login --> Packages --> 7 days in Istanbul --> Book Your Seat button --> Pay with Card
@@ -786,18 +786,23 @@ public class UserHomePage {
     //Home Page --> Registration Button-->>name
     @FindBy(xpath ="(//*[@class='form-control'])[1]" )
     public WebElement nameText;
+
     //Home Page --> Registration Button-->>email
     @FindBy(xpath ="(//*[@class='form-control'])[2]" )
     public WebElement emailText;
+
     //Home Page --> Registration Button-->>sifre
     @FindBy(xpath ="(//*[@class='form-control'])[3]" )
     public WebElement sifreText;
+
     //Home Page --> Registration Button-->>makeRegistration
     @FindBy(xpath ="//*[text()='Make Registration']" )
     public WebElement makeRegistrationbutton;
+
     //Home Page --> Registration Button-->Pop up mesaji
     @FindBy(xpath ="//*[contains(text(),'Registration is completed. You can now login.')]" )
     public WebElement registrationBasariligiriselementi;
+
     //userLoginDashboardPage --> Update Button-->Pop up mesaji
     @FindBy(xpath ="//*[contains(text(),'Profile is updated successfully')]" )
     public WebElement updateBasariligiriselementi;
@@ -810,6 +815,9 @@ public class UserHomePage {
     @FindBy(xpath = "//button[@class='accordion-button collapsed']")
     public List<WebElement> FAQSorular;
 
+    // Package secip odeme ==> iframe
+    @FindBy(xpath = "//iframe[@class='stripe_checkout_app']")
+    public WebElement iframe;
 
 
 
