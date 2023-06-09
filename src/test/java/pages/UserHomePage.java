@@ -279,7 +279,7 @@ public class UserHomePage {
 
 
     // Home Page --> Featured Packages --> 3 days in Buenos Aires
-    @FindBy(xpath = "(//*[text()='3 days in Buenos Aires'])[2]")
+    @FindBy(xpath = "/html/body/div[16]/div/div/div[1]/div/ul/li[1]/a")
     public WebElement threeDaysInBuenosAires;
 
 
