@@ -9,17 +9,13 @@ import pages.UserDashboard;
 import pages.UserHomePage;
 import utilities.ConfigReader;
 import utilities.Driver;
+import utilities.ReusableMethods;
 import utilities.TestBaseRapor;
-
-
-
-    @Test(priority = 1)
-    public void sifreDegistirme(){
 
 
     public class US_22 extends TestBaseRapor {
 
-        @Test
+        @Test(priority = 1)
         public void sifreDegistirme() throws InterruptedException {
 
             extentTest = extentReports.createTest("Tripandway ŞİFRE DEĞİŞTİRME testi",
@@ -84,7 +80,7 @@ import utilities.TestBaseRapor;
             extentTest.pass("Sayfayı kapatır...");
         }
 
-    }
+
 
 
     @Test(priority = 2)
