@@ -25,6 +25,7 @@ public class US_13 extends SelcukTestBaseRapor {
 
 
 
+
     @Test (priority = 1)
     public void destinationsGorunurMu(){
 
@@ -35,6 +36,11 @@ public class US_13 extends SelcukTestBaseRapor {
       Driver.getDriver().get(ConfigReader.getProperty("trpURL"));
 
       extentTest.info("Kullanici Tripandway anasayfaya gider.");
+
+
+    @Test(priority = 1)
+    public void destinationsGorunurMu(){
+
 
       userHomePage.homePageDestinationsButton.click();
 
