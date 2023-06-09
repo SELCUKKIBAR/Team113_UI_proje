@@ -35,7 +35,7 @@ public class US_34 extends TestBaseRapor {
         ReusableMethods.bekle(5);
 
         //4- Kullanıcı sağ üst köşede bulunan admin04 yazsının görürünür olduğunu kontrol ederek Admin panele girdiğini doğrular
-        String expectedMesaj = "admin04";
+        String expectedMesaj =ConfigReader.getProperty("adminIsmi");
         String actualMesaj = adminDashboard.admin04sagustbuton.getText();
         SoftAssert softAssert = new SoftAssert();
         softAssert.assertTrue(actualMesaj.equals(expectedMesaj),"Sağ üst köşedeki admin adı doğru olmalı");
@@ -74,7 +74,7 @@ public class US_34 extends TestBaseRapor {
         actualMesaj = adminDashboard.orderInvoiceButonu.getText();
 
         softAssert.assertTrue(actualMesaj.equals(expectedMesaj),"Sol ust kösedeki “Order Invoice” yazısı dogru olmali");
-        extentTest.pass("Softassert ile Order Invoice yazısının gorunurlugu test eder");
+        extentTest.info("Softassert ile Order Invoice yazısının gorunurlugu test eder");
 
 
         softAssert.assertAll();

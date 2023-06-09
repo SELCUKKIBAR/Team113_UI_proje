@@ -10,6 +10,8 @@ import static org.testng.Assert.*;
 
 public class US_24 extends TestBaseRapor {
 
+    private UserDashboard userDashboard = new UserDashboard();
+    private UserHomePage userHomePage = new UserHomePage();
     @Test
     public void odemeYapilabilirligiDogrulama(){
 
@@ -19,11 +21,9 @@ public class US_24 extends TestBaseRapor {
         Driver.getDriver().get(ConfigReader.getProperty("trpURL"));
         extentTest.info("Kullanici Tripandway sayfasina gider");
 
-        UserDashboard userDashboard = new UserDashboard();
         userDashboard.tripandwayCookies.click();
         extentTest.info("Cookies'i kabul eder");
 
-        UserHomePage userHomePage = new UserHomePage();
         userHomePage.homePageLoginButton.click();
         extentTest.info("Anasayfada login butonuna tiklar");
 
