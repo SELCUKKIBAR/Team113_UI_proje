@@ -21,23 +21,11 @@ public class US_13  {
 
 
 
-  @BeforeTest
-  public void setup(){
 
 
 
-    Driver.getDriver().get(ConfigReader.getProperty("trpURL"));
 
-
-    UserDashboard userDashboard = new UserDashboard();
-    userDashboard.tripandwayCookies.click();
-
-
-  }
-
-
-
-    @Test
+    @Test(priority = 1)
     public void destinationsGorunurMu(){
 
 
@@ -53,7 +41,7 @@ public class US_13  {
 
   }
 
-  @Test
+  @Test(priority = 2)
   public void destinationsBangkokAktifMi(){
 
     JSUtilities.scrollToElement(Driver.getDriver(), userHomePage.destinationsBangkok);
