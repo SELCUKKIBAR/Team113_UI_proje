@@ -14,7 +14,7 @@ public class US_27 extends SelcukTestBaseRapor {
     SoftAssert softAssert = new SoftAssert();
 
 
-    @Test
+    @Test(priority=1)
     public void adminPanel_giris_dogrulama(){
 
         extentTest = extentReports.createTest("Admin panelindeki menülerin kontrol testi",
@@ -45,7 +45,7 @@ public class US_27 extends SelcukTestBaseRapor {
 
     }
 
-    @Test
+    @Test(priority=2)
     public void generalSettingsElementleriGoruntuleme() {
 
         extentTest = extentReports.createTest("Admin panelindeki menülerin kontrol testi",
@@ -151,7 +151,7 @@ public class US_27 extends SelcukTestBaseRapor {
 
     }
 
-    @Test
+    @Test(priority=3)
     public void pageSettings_ElementleriniGoruntuleme(){
 
         extentTest = extentReports.createTest("Admin panelindeki menülerin kontrol testi",
@@ -249,7 +249,7 @@ public class US_27 extends SelcukTestBaseRapor {
 
     }
 
-    @Test
+    @Test(priority=4)
     public void paymentSettingsElementleriniGoruntuleme()   {
 
         extentTest = extentReports.createTest("Admin panelindeki menülerin kontrol testi",
@@ -299,7 +299,7 @@ public class US_27 extends SelcukTestBaseRapor {
                 "ve Website Section menüsünü test etmeye hazır");
     }
 
-    @Test
+    @Test(priority=5)
     public void webSiteSectionElemenleriniGoruntuleme() {
 
         extentTest = extentReports.createTest("Admin panelindeki menülerin kontrol testi",
