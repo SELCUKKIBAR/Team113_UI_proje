@@ -8,13 +8,22 @@ import utilities.TestBaseRapor;
 
 import static utilities.TestBaseRapor.extentReports;
 
+        private SoftAssert softAssert = new SoftAssert();
+        @Test
+        public void webSiteErisebilirligi() {
+
 
 
 
         public class US_01 extends TestBaseRapor {
 
+
+            softAssert.assertEquals(actualTitle, expectedAnasayfaTitle, "Tripandway web sayfasinin title'i Tripandway olmalidir");
+            extentTest.info("softAssert ile web sayfasinin title'inin Trinpandway oldugunu test eder");
+
             @Test
             public void webSiteErisebilirligi() {
+
 
                 extentTest = extentReports.createTest("Tripandway web sayfasi erisilebilirligi testi",
                         "Kullanici Tripandway sitesine girebilmeli ve siteye girdiginde title'i Tripandway olarak gorebilmeli");
