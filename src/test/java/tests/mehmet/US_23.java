@@ -7,14 +7,10 @@ import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 import pages.UserDashboard;
 import pages.UserHomePage;
-import utilities.ConfigReader;
-import utilities.Driver;
-import utilities.JSUtilities;
-import utilities.ReusableMethods;
+import utilities.*;
 
 
-
-public class US_23 {
+public class US_23  extends SelcukTestBaseRapor {
 
     UserHomePage userHomePage = new UserHomePage();
     UserDashboard userDashboard = new UserDashboard();
@@ -38,7 +34,13 @@ public class US_23 {
     @Test
     public void LogInVelogOutOlma(){
 
+        extentTest = extentReports.createTest("Login ve Logout olma testi",
+                "Kullanici sirasiyla Login ve Logout olur");
+
        userHomePage.userHompageSagUstLoginButton.click();
+
+        extentTest.info("Kullanici Login bolumune tiklar.");
+
         JSUtilities.scrollToElement(Driver.getDriver(), userHomePage.homePageLoginEmail);
         ReusableMethods.bekle(2);
 
@@ -46,15 +48,25 @@ public class US_23 {
 
         emailKutusu.sendKeys("mehmetsp5800@gmail.com");
 
+        extentTest.info("Kullanici e-mail bolumune kendi e-mailini yazar. ");
+
         WebElement passwordKutusu=userHomePage.loginPasswordTextBox;
 
         passwordKutusu.sendKeys("123456@@@@@@");
 
+        extentTest.info("Kullanici password bolumune kendi passwordunu yazar. ");
+
         userHomePage.homePageAltLoginButton.click();
+
+        extentTest.info("Kullanici Login tusuna basar. ");
 
         userDashboard.userLoginDashboardLogoutButton.click();
 
+        extentTest.info("Kullanici acilan sayfada Logout tusuna basar. ");
+
         Assert.assertTrue(userHomePage.homePageAltLoginButton.isDisplayed());
+
+        extentTest.pass("Login ve Logout bolumleri kontrol testi.");
 
         Driver.quitDriver();
 
