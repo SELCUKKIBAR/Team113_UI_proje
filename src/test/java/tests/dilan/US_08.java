@@ -8,6 +8,9 @@ import utilities.*;
 
 public class US_08 extends TestBaseRapor {
 
+    private  SoftAssert softAssert = new SoftAssert();
+    private UserDashboard userDashboard = new UserDashboard();
+    private  UserHomePage userHomePage = new UserHomePage();
     @Test
     public void footerFirmaIletisimBilgleriGorunurlugu(){
 
@@ -17,18 +20,12 @@ public class US_08 extends TestBaseRapor {
         Driver.getDriver().get(ConfigReader.getProperty("trpURL"));
         extentTest.info("Kullanici Tripandway sayfasina gider");
 
-        UserDashboard userDashboard = new UserDashboard();
-
         userDashboard.tripandwayCookies.click();
-        extentTest.info("Cookies'i kabul edilir");
-
-        UserHomePage userHomePage = new UserHomePage();
+        extentTest.info("Cookies'i kabul eder");
 
         JSUtilities.scrollToElement(Driver.getDriver(),userHomePage.addressYazisi);
         extentTest.info("JavaScript ile footer bolumundeki Address yazisina kadar scroll yapar");
         ReusableMethods.bekle(1);
-
-        SoftAssert softAssert = new SoftAssert();
 
         softAssert.assertTrue(userHomePage.addressAddress.isDisplayed(),"34, Edd Lane, NYC, 22335 olan konum bilgisi gorunur olmalidir");
         extentTest.info("softAssert ile footer bolumundeki firma iletisim bilgisi olan konum bilgisinin gorunur oldugunu test eder");

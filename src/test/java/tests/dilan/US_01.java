@@ -8,6 +8,7 @@ import utilities.TestBaseRapor;
 
     public class US_01 extends TestBaseRapor {
 
+        private SoftAssert softAssert = new SoftAssert();
         @Test
         public void webSiteErisebilirligi() {
 
@@ -20,7 +21,6 @@ import utilities.TestBaseRapor;
             String expectedAnasayfaTitle = ConfigReader.getProperty("anasayfaTitle");
             String actualTitle = Driver.getDriver().getTitle();
 
-            SoftAssert softAssert = new SoftAssert();
             softAssert.assertEquals(actualTitle, expectedAnasayfaTitle, "Tripandway web sayfasinin title'i Tripandway olmalidir");
             extentTest.info("softAssert ile web sayfasinin title'inin Trinpandway oldugunu test eder");
 

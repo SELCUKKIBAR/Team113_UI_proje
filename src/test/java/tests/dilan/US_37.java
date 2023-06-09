@@ -10,6 +10,7 @@ import static org.testng.Assert.*;
 
 public class US_37 extends TestBaseRapor {
 
+    private AdminDashboard adminDashboard = new AdminDashboard();
     @Test
     public void profilBilgileriDegistirmeEkraniGorunurlugu(){
 
@@ -19,13 +20,11 @@ public class US_37 extends TestBaseRapor {
         Driver.getDriver().get(ConfigReader.getProperty("trpAdminURL"));
         extentTest.info("Kullanici Admin Login Sayfasina gider");
 
-        AdminDashboard adminDashboard = new AdminDashboard();
-
         adminDashboard.adminDashboardEmailKutusu.sendKeys(ConfigReader.getProperty("adminEmail_01"));
         extentTest.info("Admin Login sayfasinda email Address textbox'ina gecerli email girer");
 
         adminDashboard.adminDashboardPasswordKutusu.sendKeys(ConfigReader.getProperty("adminPassword_01"));
-        extentTest.info("Admin Login sayfasinda Password textbox'ina gecerli email girer");
+        extentTest.info("Admin Login sayfasinda Password textbox'ina gecerli sifre girer");
 
         adminDashboard.adminDashboardLoginButonu.click();
         extentTest.info("Admin Login sayfasinda login butonuna tiklar");
