@@ -6,6 +6,7 @@ import utilities.ConfigReader;
 import utilities.Driver;
 import utilities.TestBaseRapor;
 
+
     public class US_01 extends TestBaseRapor {
 
         private SoftAssert softAssert = new SoftAssert();
@@ -29,7 +30,6 @@ import utilities.TestBaseRapor;
 
             Driver.closeDriver();
             extentTest.info("Sayfayi kapatir");
-
 
         }
     }
