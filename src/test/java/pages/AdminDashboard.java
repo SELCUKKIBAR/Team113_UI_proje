@@ -1083,5 +1083,14 @@ public class AdminDashboard {
     @FindBy(xpath = "//button[normalize-space()='Login']")
     public WebElement AdminLoginLogin;
 
+    //Bloc Section >======== Category>=======Update Butonu
+    @FindBy(xpath = "(//a[@class='btn btn-warning btn-sm'])[5]")
+    public WebElement categoryUpdateButon;
+
+    //Bloc Section >======== Category>=======Delete Butonu
+    @FindBy(xpath = "(//i[@class='fas fa-trash-alt'])[5]")
+    public WebElement categoryDeleteButonu;
+
+
 
 }
