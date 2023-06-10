@@ -6,14 +6,6 @@ import utilities.ConfigReader;
 import utilities.Driver;
 import utilities.TestBaseRapor;
 
-import static utilities.TestBaseRapor.extentReports;
-
-
-
-
-
-
-
         public class US_01 extends TestBaseRapor {
             private SoftAssert softAssert = new SoftAssert();
 
@@ -43,4 +35,6 @@ import static utilities.TestBaseRapor.extentReports;
 
 
             }
+
         }
+

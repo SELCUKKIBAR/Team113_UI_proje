@@ -19,31 +19,17 @@ public class US_13 extends SelcukTestBaseRapor {
   private SoftAssert softAssert = new SoftAssert();
 
 
-
-
-
-
-
-
-
-    @Test (priority = 1)
+    @Test(priority = 2)
     public void destinationsGorunurMu(){
-
-      extentTest = extentReports.createTest("Tripandway Anasayfa Destinations Gorunurluk testi",
-              "Kullanici açılan sayfada Title'nin gorunurlugunu test eder.");
-
-
-      Driver.getDriver().get(ConfigReader.getProperty("trpURL"));
-
-      extentTest.info("Kullanici Tripandway anasayfaya gider.");
+        extentTest = extentReports.createTest("Tripandway Anasayfa Destinations Gorunurluk testi",
+                "Kullanici açılan sayfada Title'nin gorunurlugunu test eder.");
 
 
-    @Test(priority = 1)
-    public void destinationsGorunurMu(){
+        Driver.getDriver().get(ConfigReader.getProperty("trpURL"));
+        extentTest.info("Kullanici Tripandway anasayfaya gider.");
 
 
       userHomePage.homePageDestinationsButton.click();
-
       extentTest.info("Kullanici Destination butonuna tiklar.");
 
       String expected = "DESTINATIONS";
@@ -54,9 +40,6 @@ public class US_13 extends SelcukTestBaseRapor {
       Assert.assertEquals(expected,actual);
 
       extentTest.pass("Destination bolumu kontrol testi.");
-
-
-
 
   }
 
@@ -84,7 +67,6 @@ public class US_13 extends SelcukTestBaseRapor {
     extentTest.pass("Bangkok bolumunun aktifligini kontrol testi.");
 
 
-
   }
   @Test(priority = 3)
   public void destinationsGreenvilleAktifMi() {
@@ -109,9 +91,8 @@ public class US_13 extends SelcukTestBaseRapor {
 
     extentTest.pass("Greenville bolumunun aktifligini kontrol testi.");
 
-
-
-  }@Test(priority = 4)
+  }
+  @Test(priority = 4)
   public void destinationsBuenosAiresAktifMi (){
 
 
@@ -163,7 +144,6 @@ public class US_13 extends SelcukTestBaseRapor {
     extentTest.pass("Marrakesh bolumunun aktifligini kontrol testi.");
 
 
-
   }
 
   @Test(priority = 6)
@@ -187,7 +167,6 @@ public class US_13 extends SelcukTestBaseRapor {
     Assert.assertTrue(userHomePage.salinaYazisi.isDisplayed());
 
     extentTest.pass("Salina Island bolumunun aktifligini kontrol testi.");
-
 
 
   }
@@ -214,7 +193,6 @@ public class US_13 extends SelcukTestBaseRapor {
     Assert.assertTrue(userHomePage.istanbulYazisi.isDisplayed());
 
     extentTest.pass("Istanbul bolumunun aktifligini kontrol testi.");
-
 
 
 
