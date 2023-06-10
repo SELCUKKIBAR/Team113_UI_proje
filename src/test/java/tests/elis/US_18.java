@@ -1,14 +1,12 @@
 package tests.elis;
 
+import com.github.javafaker.Faker;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import pages.UserDashboard;
 import pages.UserHomePage;
-import utilities.ConfigReader;
-import utilities.Driver;
-import utilities.TestBaseRapor;
+import utilities.*;
 
 public class US_18 extends TestBaseRapor {
 
@@ -26,17 +24,22 @@ public class US_18 extends TestBaseRapor {
         accept.click();
         extentTest.info("Kullanıcı Registration Butonuna tıklar ve cikan ACCEPT alertini kabul eder");
 
+        Faker faker= new Faker();
+
         //3-Gecerli isim girilir
-        userHomePage.nameText.sendKeys("Elis");
+        userHomePage.nameText.sendKeys(faker.name().firstName());
         extentTest.info("Kullanıcı ismini girer");
 
         //4-Gecerli e mail adresi girilir
-        userHomePage.emailText.sendKeys("elis56777@hotmail.com");
+        userHomePage.emailText.sendKeys(faker.internet().emailAddress());
         extentTest.info("Kullanıcı email adresini girer.");
 
         //5-Gecerli sifre girilir
-        userHomePage.sifreText.sendKeys("E123456e?");
+        userHomePage.sifreText.sendKeys(ConfigReader.getProperty("registrationSifre"));
         extentTest.info("Kullanıcı sifresini girer");
+
+        JSUtilities.scrollToElement(Driver.getDriver(),userHomePage.makeRegistrationbutton);
+        ReusableMethods.bekle(2);
 
         //6-Kayit ol butonuna tiklanir
         userHomePage.makeRegistrationbutton.click();
@@ -44,9 +47,9 @@ public class US_18 extends TestBaseRapor {
 
         //7-Basarili bir sekilde kayit oldugu dogrulanir
         WebElement basariliGiriselementi=Driver.getDriver().findElement(By.xpath("//*[contains(text(),'Registration is completed. You can now login.')]"));
-        String expectedIcerik= "Registration is completed. You can now login.";
-        String actualIcerik=basariliGiriselementi.getText();
-        Assert.assertFalse(basariliGiriselementi.isDisplayed());
+        String expectedIcerik=ConfigReader.getProperty("registrationUyariMesaji");
+        String actualIcerik=userHomePage.warningMessage.getText();
+        Assert.assertEquals(actualIcerik,expectedIcerik);
         extentTest.pass("Kullanici pop up mesajini goruntuledi ve basarili bir sekilde kayit olundugu test edildi");
 
         //8-Sayfa kapatilir
