@@ -2,9 +2,8 @@
 <suite name="Team2 UI Proje sirali calistirma">
     <test name="Passed Test">
         <classes>
-            <class name="tests.dilan.US_24"></class>
-            <class name="tests.selcuk.US_27"></class>
+            <class name="tests.dilan.US_24" />
+            <class name="tests.selcuk.US_27" />
         </classes>
     </test>
-
 </suite>
