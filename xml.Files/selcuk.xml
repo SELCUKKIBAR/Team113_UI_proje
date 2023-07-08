@@ -4,11 +4,10 @@
     
     <test name="Kontrol Testi">
         
-        <packages>
-            <package name="tests.selcuk"></package>
-        </packages>
-        
-        
+        <classes>
+            <class name="tests.dilan.US_24"></class>
+            <class name="tests.selcuk.US_27"></class>
+        </classes>
         
     </test>
     
